@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f7ff" />
+    <title>Mentor — Your Student Guide</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <aside class="profile-panel" aria-label="Student profile">
+        <button id="profile-close" class="profile-close" type="button">Back to chat</button>
+        <header class="brand">
+          <div class="brand-mark" aria-hidden="true">M</div>
+          <div>
+            <p class="eyebrow">STUDENT MENTOR</p>
+            <h1>Mentor</h1>
+          </div>
+        </header>
+
+        <details class="workspace-section">
+          <summary>Student profile</summary>
+          <form id="profile-form" class="profile-form">
+            <div class="field-row">
+              <label for="student-name">Name</label>
+              <input id="student-name" name="name" type="text" maxlength="40" placeholder="Optional" />
+            </div>
+
+            <div class="field-row">
+              <label for="grade">Grade</label>
+              <select id="grade" name="grade">
+                <option value="">Select grade</option>
+                <option value="9">Grade 9</option>
+                <option value="10">Grade 10</option>
+                <option value="11">Grade 11</option>
+                <option value="12">Grade 12</option>
+              </select>
+            </div>
+
+            <div class="field-row">
+              <label for="grade-reports">Recent grades</label>
+              <textarea id="grade-reports" name="gradeReports" rows="3" maxlength="1000" placeholder="Optional: Math 82%, English B+, Biology A-"></textarea>
+            </div>
+
+            <div class="field-row">
+              <label for="courses">Courses</label>
+              <textarea id="courses" rows="2" maxlength="500" placeholder="Examples: Algebra II, Biology, English 10"></textarea>
+            </div>
+
+            <fieldset>
+              <legend>Subjects</legend>
+              <div id="subjects" class="subject-grid">
+                <label class="check-pill"><input type="checkbox" value="Math" /> Math</label>
+                <label class="check-pill"><input type="checkbox" value="Science" /> Science</label>
+                <label class="check-pill"><input type="checkbox" value="English" /> English</label>
+                <label class="check-pill"><input type="checkbox" value="History" /> History</label>
+                <label class="check-pill"><input type="checkbox" value="Arts" /> Arts</label>
+                <label class="check-pill"><input type="checkbox" value="Computer Science" /> Computer Science</label>
+              </div>
+            </fieldset>
+
+            <div class="field-row">
+              <label for="interests">Interests & goals</label>
+              <textarea id="interests" name="interests" rows="4" maxlength="500" placeholder="Examples: robotics, music, becoming an engineer"></textarea>
+            </div>
+
+            <div class="field-row">
+              <label for="experience">Experience and skill levels</label>
+              <textarea id="experience" rows="2" maxlength="500" placeholder="Examples: beginner in Python, two years of piano"></textarea>
+            </div>
+
+            <div class="field-row">
+              <label for="profile-upload">Course, grade, or interest notes</label>
+              <input id="profile-upload" type="file" accept=".txt,.csv,.md" />
+              <label class="sr-only" for="profile-notes">Uploaded notes</label>
+              <textarea id="profile-notes" rows="3" maxlength="1500" placeholder="Paste notes or load a TXT, CSV, or Markdown file"></textarea>
+              <p id="upload-status" class="save-status" role="status"></p>
+            </div>
+
+            <button class="save-button" type="submit">Save my profile</button>
+            <p id="save-status" class="save-status" role="status"></p>
+          </form>
+        </details>
+
+        <details class="workspace-section" open>
+          <summary>Weekly plan</summary>
+          <form id="plan-form" class="profile-form">
+            <div class="field-row">
+              <label for="plan-week">Week of</label>
+              <input id="plan-week" type="date" required />
+              <label for="plan-goal">Goal</label>
+              <input id="plan-goal" maxlength="160" required placeholder="Prepare for my Algebra II quiz" />
+            </div>
+            <fieldset class="plan-actions">
+              <legend>Actions</legend>
+              <div><input type="checkbox" aria-label="Mark action 1 complete" /><input aria-label="Action 1" maxlength="140" /></div>
+              <div><input type="checkbox" aria-label="Mark action 2 complete" /><input aria-label="Action 2" maxlength="140" /></div>
+              <div><input type="checkbox" aria-label="Mark action 3 complete" /><input aria-label="Action 3" maxlength="140" /></div>
+            </fieldset>
+            <button class="save-button" type="submit">Save weekly plan</button>
+            <button id="start-checkin" class="secondary-button" type="button" disabled>Start a check-in</button>
+            <p id="plan-status" class="workspace-status" role="status"></p>
+          </form>
+        </details>
+
+        <details class="workspace-section">
+          <summary>Class materials and catalog</summary>
+          <form id="materials-form" class="profile-form">
+            <div class="field-row">
+              <label for="class-material">Assignment, rubric, or study guide</label>
+              <textarea id="class-material" rows="4" maxlength="24000"></textarea>
+              <label for="class-file">Import class material (TXT, CSV, MD)</label>
+              <input id="class-file" type="file" accept=".txt,.csv,.md" />
+            </div>
+            <div class="field-row">
+              <label for="course-catalog">School course catalog</label>
+              <textarea id="course-catalog" rows="4" maxlength="24000"></textarea>
+              <label for="catalog-file">Import catalog (TXT, CSV, MD)</label>
+              <input id="catalog-file" type="file" accept=".txt,.csv,.md" />
+            </div>
+            <button class="save-button" type="submit">Save materials</button>
+            <p id="materials-status" class="workspace-status" role="status"></p>
+          </form>
+        </details>
+
+        <details class="workspace-section">
+          <summary>Mentoring memory</summary>
+          <form id="memory-form" class="profile-form">
+            <label class="memory-toggle"><input id="memory-paused" type="checkbox" /> Pause chat memory</label>
+            <p class="workspace-status">Pausing stops Mentor from reading or updating the saved summary.</p>
+            <div class="field-row">
+              <label for="memory-notes">Summary used in future chats</label>
+              <textarea id="memory-notes" rows="5" maxlength="900"></textarea>
+            </div>
+            <div class="workspace-buttons">
+              <button type="submit">Save edits</button>
+              <button id="delete-summary" type="button" disabled>Delete summary</button>
+              <button id="export-summary" type="button" disabled>Download summary</button>
+            </div>
+            <p id="memory-status" class="workspace-status" role="status"></p>
+          </form>
+        </details>
+      </aside>
+
+      <section class="chat-panel" aria-label="Chat with Mentor">
+        <header class="chat-header">
+          <button id="profile-toggle" class="profile-toggle" type="button" aria-label="Open student profile" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm-7 8a7 7 0 0 1 14 0H5Z"/></svg>
+          </button>
+          <div class="mentor-avatar" aria-hidden="true">M</div>
+          <div>
+            <h2>Mentor</h2>
+            <p id="model-status"><span class="status-dot checking"></span>Checking local model…</p>
+          </div>
+          <label class="model-picker" for="model-select">
+            <span>Local model</span>
+            <select id="model-select">
+              <option value="qwen2.5:3b">Qwen 2.5 · 3B (default)</option>
+              <option value="qwen2.5:1.5b">Qwen 2.5 · 1.5B (lighter)</option>
+            </select>
+          </label>
+        </header>
+
+        <div id="messages" class="messages" aria-live="polite">
+          <div class="message mentor-message">
+            <div class="message-avatar" aria-hidden="true">M</div>
+            <div class="message-content">
+              <p>Hi! I'm your mentor. Tell me what you're working on, feeling unsure about, or hoping to achieve.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="prompt-area">
+          <div class="mode-picker">
+            <label for="chat-mode">Mentoring mode</label>
+            <select id="chat-mode">
+              <option value="chat">Ask Mentor</option>
+              <option value="plan">Plan my week</option>
+              <option value="checkin">Weekly check-in</option>
+              <option value="hint">Get a hint</option>
+              <option value="example">See a worked example</option>
+              <option value="quiz">Practice with a quiz</option>
+              <option value="materials">Ask about class materials</option>
+              <option value="explore">Explore courses and careers</option>
+            </select>
+            <button id="new-quiz" class="secondary-button" type="button" hidden>New quiz</button>
+          </div>
+          <form id="chat-form" class="chat-form">
+            <label class="sr-only" for="chat-input">Ask your mentor</label>
+            <textarea id="chat-input" rows="1" maxlength="1000" placeholder="Ask your mentor..." required></textarea>
+            <button id="send-button" type="submit" aria-label="Send message">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20V4l18 8-18 8Zm2-3.2 10.9-4.8L5 7.2v3.2l6 1.6-6 1.6v3.2Z"/></svg>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
