@@ -33,7 +33,7 @@
     {
       "number": 1,
       "mode": "explore",
-      "student_message": "Suggest a small project to compare communication design and editing using my yearbook skills. For context, my coursework includes Digital Art (grade 9), Journalism (grade 10) and Graphic Design (grade 11). Use my coursework to explain how this builds on what I've learned.",
+      "student_message": "Suggest a small project to compare communication design and editing using my yearbook skills.",
       "expected_behavior": "Propose a project combining editing and visual layout. Explicitly connect the response to Digital Art (grade 9), Journalism (grade 10) and Graphic Design (grade 11). Use stated marks only if useful.",
       "course_references_by_grade": {
         "9": "Digital Art",
@@ -43,7 +43,7 @@
       "follow_ups": [
         {
           "mode": "explore",
-          "student_message": "Let's switch interests for a moment. What beginner environmental science project could I do by observing plants? For context, my coursework includes Digital Art (grade 9), Journalism (grade 10), Graphic Design (grade 11). Use those courses only where the connection helps this new interest.",
+          "student_message": "Let's switch interests for a moment. What beginner environmental science project could I do by observing plants?",
           "course_references_by_grade": {
             "9": "Digital Art",
             "10": "Journalism",
@@ -56,7 +56,7 @@
     {
       "number": 2,
       "mode": "materials",
-      "student_message": "What does my persuasive essay rubric require for the counterargument? For context, my coursework includes English 9 (grade 9), English 10 (grade 10) and AP English Language (grade 11). Answer from the rubric and add a brief, separate connection to my coursework.",
+      "student_message": "What does my persuasive essay rubric require for the counterargument?",
       "expected_behavior": "Describe the fair counterargument and evidence-based response with a rubric citation. Explicitly connect the response to English 9 (grade 9), English 10 (grade 10) and AP English Language (grade 11). Use stated marks only if useful. Keep the course connection separate from the cited rubric requirement.",
       "course_references_by_grade": {
         "9": "English 9",
@@ -67,7 +67,7 @@
     {
       "number": 3,
       "mode": "chat",
-      "student_message": "How could I build an editing portfolio from schoolwork without sharing classmates' names? For context, my coursework includes English 9 (grade 9), Journalism (grade 10) and AP English Language (grade 11). Use my coursework to explain how this builds on what I've learned.",
+      "student_message": "How could I build an editing portfolio from schoolwork without sharing classmates' names?",
       "expected_behavior": "Suggest portfolio samples that protect classmates' identity. Explicitly connect the response to English 9 (grade 9), Journalism (grade 10) and AP English Language (grade 11). Use stated marks only if useful. Carry forward a concrete relevant detail from the earlier yearbook and editing discussion when it helps, and keep the intervening environmental science topic out of the answer.",
       "course_references_by_grade": {
         "9": "English 9",
@@ -80,7 +80,7 @@
       "number": 4,
       "mode": "explore",
       "scenario_kind": "new_interest_after_reload",
-      "student_message": "Can you suggest a simple way to organize a small herb planter? For context, my coursework includes Earth Science (grade 9), Biology (grade 10), Environmental Science (grade 11). Use it when useful.",
+      "student_message": "Can you suggest a simple way to organize a small herb planter?",
       "course_references_by_grade": {
         "9": "Earth Science",
         "10": "Biology",
@@ -92,7 +92,7 @@
       "number": 5,
       "mode": "chat",
       "scenario_kind": "implicit_return",
-      "student_message": "I removed the names, but the caption still identifies the event. Is there a safer version I could put in my samples? For context, my coursework includes English 9 (grade 9), Journalism (grade 10), AP English Language (grade 11). Use it when useful.",
+      "student_message": "I removed the names, but the caption still identifies the event. Is there a safer version I could put in my samples?",
       "course_references_by_grade": {
         "9": "English 9",
         "10": "Journalism",

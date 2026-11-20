@@ -19,7 +19,7 @@
     {
       "number": 1,
       "mode": "explore",
-      "student_message": "I like writing and drawing. Suggest two small ways I can try illustration and journalism at school. For context, my coursework includes Digital Art (grade 9). Use my coursework to explain how this builds on what I've learned.",
+      "student_message": "I like writing and drawing. Suggest two small ways I can try illustration and journalism at school.",
       "expected_behavior": "Give distinct, feasible illustration and reporting activities. Explicitly connect the response to Digital Art (grade 9). Use stated marks only if useful.",
       "course_references_by_grade": {
         "9": "Digital Art"
@@ -27,7 +27,7 @@
       "follow_ups": [
         {
           "mode": "explore",
-          "student_message": "I'd like to switch gears and try stage design. What's one small set-design sketch I could draw? For context, my coursework includes Digital Art (grade 9). Use those courses only where the connection helps this new interest.",
+          "student_message": "I'd like to switch gears and try stage design. What's one small set-design sketch I could draw?",
           "course_references_by_grade": {
             "9": "Digital Art"
           },
@@ -38,7 +38,7 @@
     {
       "number": 2,
       "mode": "hint",
-      "student_message": "My article starts with background information and feels slow. Give me a hint to improve the opening. For context, my coursework includes English 9 (grade 9). Tie the hint to my coursework without giving the answer.",
+      "student_message": "My article starts with background information and feels slow. Give me a hint to improve the opening.",
       "expected_behavior": "Offer one opening-writing hint without drafting the article. Explicitly connect the response to English 9 (grade 9). Use stated marks only if useful.",
       "course_references_by_grade": {
         "9": "English 9"
@@ -47,7 +47,7 @@
     {
       "number": 3,
       "mode": "chat",
-      "student_message": "Could I use my drawing and writing strengths to make an Earth Science study guide? For context, my coursework includes Earth Science (grade 9). Use my coursework to explain how this builds on what I've learned.",
+      "student_message": "Could I use my drawing and writing strengths to make an Earth Science study guide?",
       "expected_behavior": "Use strengths in visual communication to organize Earth Science concepts. Explicitly connect the response to Earth Science (grade 9). Use stated marks only if useful. Carry forward a concrete relevant detail from the earlier illustration and journalism discussion when it helps, and keep the intervening stage design topic out of the answer.",
       "course_references_by_grade": {
         "9": "Earth Science"
@@ -58,7 +58,7 @@
       "number": 4,
       "mode": "explore",
       "scenario_kind": "new_interest_after_reload",
-      "student_message": "What tiny coding project could help me see if I like programming? For context, my coursework includes Digital Art (grade 9). Use it when useful.",
+      "student_message": "What tiny coding project could help me see if I like programming?",
       "course_references_by_grade": {
         "9": "Digital Art"
       },
@@ -68,7 +68,7 @@
       "number": 5,
       "mode": "chat",
       "scenario_kind": "implicit_return",
-      "student_message": "I tried opening with a scene instead of background, but the first paragraph still feels slow. What should I look for when I revise it? For context, my coursework includes English 9 (grade 9). Use it when useful.",
+      "student_message": "I tried opening with a scene instead of background, but the first paragraph still feels slow. What should I look for when I revise it?",
       "course_references_by_grade": {
         "9": "English 9"
       },

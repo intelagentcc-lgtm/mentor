@@ -26,7 +26,7 @@
     {
       "number": 1,
       "mode": "explore",
-      "student_message": "I like debate and podcasts. What project could help me compare public policy and journalism? For context, my coursework includes Speech and Debate (grade 9) and Media Studies (grade 10). Use my coursework to explain how this builds on what I've learned.",
+      "student_message": "I like debate and podcasts. What project could help me compare public policy and journalism?",
       "expected_behavior": "Connect both interests with a school-appropriate comparison project. Explicitly connect the response to Speech and Debate (grade 9) and Media Studies (grade 10). Use stated marks only if useful.",
       "course_references_by_grade": {
         "9": "Speech and Debate",
@@ -35,7 +35,7 @@
       "follow_ups": [
         {
           "mode": "explore",
-          "student_message": "I want to switch to urban planning for a moment. What could I map in a park to see whether I enjoy it? For context, my coursework includes Speech and Debate (grade 9), Media Studies (grade 10). Use those courses only where the connection helps this new interest.",
+          "student_message": "I want to switch to urban planning for a moment. What could I map in a park to see whether I enjoy it?",
           "course_references_by_grade": {
             "9": "Speech and Debate",
             "10": "Media Studies"
@@ -47,7 +47,7 @@
     {
       "number": 2,
       "mode": "materials",
-      "student_message": "How many sources must my history presentation use, and how many must be primary sources? For context, my coursework includes World Geography (grade 9) and World History (grade 10). Answer from the rubric and add a brief, separate connection to my coursework.",
+      "student_message": "How many sources must my history presentation use, and how many must be primary sources?",
       "expected_behavior": "Return three sources and at least one primary source, with a rubric citation. Explicitly connect the response to World Geography (grade 9) and World History (grade 10). Use stated marks only if useful. Keep the course connection separate from the cited rubric requirement.",
       "course_references_by_grade": {
         "9": "World Geography",
@@ -57,7 +57,7 @@
     {
       "number": 3,
       "mode": "hint",
-      "student_message": "I have a primary source and a textbook summary. Give me a hint to compare what each one can tell me. For context, my coursework includes World Geography (grade 9) and World History (grade 10). Tie the hint to my coursework without giving the answer.",
+      "student_message": "I have a primary source and a textbook summary. Give me a hint to compare what each one can tell me.",
       "expected_behavior": "Give one useful source-comparison hint. Explicitly connect the response to World Geography (grade 9) and World History (grade 10). Use stated marks only if useful. Carry forward a concrete relevant detail from the earlier public policy and journalism discussion when it helps, and keep the intervening urban planning topic out of the answer.",
       "course_references_by_grade": {
         "9": "World Geography",
@@ -69,7 +69,7 @@
       "number": 4,
       "mode": "explore",
       "scenario_kind": "new_interest_after_reload",
-      "student_message": "I'd like to try growing herbs. How could I compare two plants without a lot of supplies? For context, my coursework includes Earth Science (grade 9), Biology (grade 10). Use it when useful.",
+      "student_message": "I'd like to try growing herbs. How could I compare two plants without a lot of supplies?",
       "course_references_by_grade": {
         "9": "Earth Science",
         "10": "Biology"
@@ -80,7 +80,7 @@
       "number": 5,
       "mode": "chat",
       "scenario_kind": "implicit_return",
-      "student_message": "I have two firsthand accounts now. Would a textbook chapter be enough to meet the total? For context, my coursework includes World Geography (grade 9), World History (grade 10). Use it when useful.",
+      "student_message": "I have two firsthand accounts now. Would a textbook chapter be enough to meet the total?",
       "course_references_by_grade": {
         "9": "World Geography",
         "10": "World History"

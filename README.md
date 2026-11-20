@@ -11,9 +11,10 @@ or more memory for other apps. Ollama lists the quantized downloads at
 uses memory for context and runtime. Drafting and review run sequentially
 with the same model on Ollama's loopback API. The optional profile includes
 grade level, courses, recent grades, subjects,
-interests, goals, and experience. You can also import UTF-8 TXT, CSV, or Markdown
-notes up to 1,500 characters and review them before saving. Avoid adding identifying
-or sensitive information.
+interests, goals, and experience. Select **Save my profile** once to make this
+information available across chats and reloads. You can also import UTF-8 TXT,
+CSV, or Markdown notes up to 1,500 characters and review them before saving.
+Avoid adding identifying or sensitive information.
 
 Mentor screens student requests before drafting. A separate review pass checks the
 draft and summary for age appropriateness, factual accuracy, calculations, and

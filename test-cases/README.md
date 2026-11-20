@@ -7,15 +7,17 @@ return to earlier work through clues, without naming a prior session.
 Each JSON file includes the student's courses and percentages grouped by
 grade, hobbies, experience, career interests,
 ordered prompts, and expected behavior. Grade 10 cases include grades 9–10,
-and grade 11 cases include grades 9–11. Every session names at least one course
-from each year in the student's record and specifies those courses in
-`course_references_by_grade`. Some cases also
+and grade 11 cases include grades 9–11. The runner saves each student's
+full course history before the first session. The `course_references_by_grade`
+field lists courses to consider when evaluating a reply. It stays outside
+the student prompt. Some cases also
 include sample class materials, catalog text, or a saved check-in plan.
 
 The [earlier evaluation](evaluation.md) covers the single-year cases. The
 [topic-switch evaluation](topic-switch-evaluation.md) covers the previous run.
 The [implicit-recall evaluation](implicit-recall-evaluation.md) covers the
-current cases.
+earlier prompts that repeated the coursework. The
+[saved-profile evaluation](saved-profile-evaluation.md) covers the current run.
 
 | Grade | Student | Career interests | Case | Conversation |
 | --- | --- | --- | --- | --- |
@@ -35,7 +37,8 @@ current cases.
 Start with a fresh browser profile for each case. Enter the course names and
 percentages from `courses_and_grades_pct_by_grade` in **Courses** and
 **Recent grades**, with a label for each year. Enter hobbies and career interests in
-**Interests & goals** and experience in **Experience and skill levels**. Set the
+**Interests & goals** and experience in **Experience and skill levels**. Select
+**Save my profile** once before session 1. Set the
 given mode before each prompt. Apply any supplied material or weekly plan before
 the session that uses it. Submit any `follow_ups` in the same tab after the
 opening prompt. Reload the page between sessions while keeping the student's
@@ -45,3 +48,6 @@ The [responses](responses/) folder holds the expanded conversations. The
 recording harness used the app's chat handler and browser storage logic with a
 simulated browser interface. Model requests used Qwen 2.5 3B through local
 Ollama. The transcripts include fallback replies where the app returned them.
+Avery's transcript was rerun after the bridge question was rewritten as a
+plain measurement question. It also shows the new context labels underneath
+Mentor's replies.

@@ -19,7 +19,7 @@
     {
       "number": 1,
       "mode": "explore",
-      "student_message": "Given my classes and grades, what beginner project would help me explore mechanical engineering? For context, my coursework includes Introduction to Engineering (grade 9). Use my coursework to explain how this builds on what I've learned.",
+      "student_message": "What beginner project would help me explore mechanical engineering?",
       "expected_behavior": "Connect the project to robotics or engineering and the student's math/science strengths. Explicitly connect the response to Introduction to Engineering (grade 9). Use stated marks only if useful.",
       "course_references_by_grade": {
         "9": "Introduction to Engineering"
@@ -27,7 +27,7 @@
       "follow_ups": [
         {
           "mode": "explore",
-          "student_message": "I'm also curious about astronomy. Suggest a simple way to observe the Moon and record how it looks over a week. For context, my coursework includes Introduction to Engineering (grade 9). Use those courses only where the connection helps this new interest.",
+          "student_message": "I'm also curious about astronomy. Suggest a simple way to observe the Moon and record how it looks over a week.",
           "course_references_by_grade": {
             "9": "Introduction to Engineering"
           },
@@ -38,7 +38,7 @@
     {
       "number": 2,
       "mode": "plan",
-      "student_message": "I have two 30-minute blocks this week. Help me plan a simple cardboard bridge experiment. For context, my coursework includes Geometry (grade 9). Use my coursework to explain how this builds on what I've learned.",
+      "student_message": "I have two 30-minute blocks this week. Help me plan a simple cardboard bridge experiment.",
       "expected_behavior": "Suggest two short blocks with a concrete bridge test. Explicitly connect the response to Geometry (grade 9). Use stated marks only if useful.",
       "course_references_by_grade": {
         "9": "Geometry"
@@ -47,7 +47,7 @@
     {
       "number": 3,
       "mode": "checkin",
-      "student_message": "I built the bridge and made one test, but I forgot to record how much it held. What should I change next week? For context, my coursework includes Introduction to Engineering (grade 9). Use my coursework to explain how this builds on what I've learned.",
+      "student_message": "I built the bridge and made one test, but I forgot to record how much it held. What should I change next week?",
       "save_weekly_plan_before_chat": {
         "week": "2026-11-16",
         "goal": "Test a cardboard bridge",
@@ -70,7 +70,7 @@
     {
       "number": 4,
       "mode": "chat",
-      "student_message": "What is one way I can use my geometry skills to make my next bridge test more useful? For context, my coursework includes Geometry (grade 9). Use my coursework to explain how this builds on what I've learned.",
+      "student_message": "What is one measurement I should record to make my next bridge test more useful?",
       "expected_behavior": "Apply a geometry concept to a measurable bridge-test variable. Explicitly connect the response to Geometry (grade 9). Use stated marks only if useful. Carry forward a concrete relevant detail from the earlier cardboard bridge experiment discussion when it helps, and keep the intervening astronomy topic out of the answer.",
       "course_references_by_grade": {
         "9": "Geometry"
@@ -81,7 +81,7 @@
       "number": 5,
       "mode": "explore",
       "scenario_kind": "new_interest_after_reload",
-      "student_message": "How could I make a three-color poster to explain recycling? For context, my coursework includes Introduction to Engineering (grade 9). Use it when useful.",
+      "student_message": "How could I make a three-color poster to explain recycling?",
       "course_references_by_grade": {
         "9": "Introduction to Engineering"
       },
@@ -91,7 +91,7 @@
       "number": 6,
       "mode": "chat",
       "scenario_kind": "implicit_return",
-      "student_message": "When I tried putting pennies at the center, the folded piece sagged before the flat one. What should I keep the same next time? For context, my coursework includes Geometry (grade 9). Use it when useful.",
+      "student_message": "When I tried putting pennies at the center, the folded piece sagged before the flat one. What should I keep the same next time?",
       "course_references_by_grade": {
         "9": "Geometry"
       },

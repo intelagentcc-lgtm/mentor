@@ -19,7 +19,7 @@
     {
       "number": 1,
       "mode": "plan",
-      "student_message": "Help me make a weekly clarinet plan with three 15-minute practice sessions. For context, my coursework includes Concert Band (grade 9). Use my coursework to explain how this builds on what I've learned.",
+      "student_message": "Help me make a weekly clarinet plan with three 15-minute practice sessions.",
       "expected_behavior": "Give three 15-minute options or a plan that fits three sessions. Explicitly connect the response to Concert Band (grade 9). Use stated marks only if useful.",
       "course_references_by_grade": {
         "9": "Concert Band"
@@ -27,7 +27,7 @@
       "follow_ups": [
         {
           "mode": "explore",
-          "student_message": "Before we finish, could we talk about photography? What could I photograph to practice noticing patterns? For context, my coursework includes Concert Band (grade 9). Use those courses only where the connection helps this new interest.",
+          "student_message": "Before we finish, could we talk about photography? What could I photograph to practice noticing patterns?",
           "course_references_by_grade": {
             "9": "Concert Band"
           },
@@ -38,7 +38,7 @@
     {
       "number": 2,
       "mode": "checkin",
-      "student_message": "I played the first two days, but stopped when I reached a difficult rhythm. How should I adjust? For context, my coursework includes Concert Band (grade 9). Use my coursework to explain how this builds on what I've learned.",
+      "student_message": "I played the first two days, but stopped when I reached a difficult rhythm. How should I adjust?",
       "save_weekly_plan_before_chat": {
         "week": "2026-11-16",
         "goal": "Build a clarinet practice routine",
@@ -61,7 +61,7 @@
     {
       "number": 3,
       "mode": "example",
-      "student_message": "Show a worked example of how to count a measure with two quarter notes and four eighth notes in 4/4. For context, my coursework includes Concert Band (grade 9). Frame the example as practice for that course.",
+      "student_message": "Show a worked example of how to count a measure with two quarter notes and four eighth notes in 4/4.",
       "expected_behavior": "Account for four beats in total and explain the eighth-note counts. Explicitly connect the response to Concert Band (grade 9). Use stated marks only if useful. Carry forward a concrete relevant detail from the earlier clarinet practice discussion when it helps, and keep the intervening photography topic out of the answer.",
       "course_references_by_grade": {
         "9": "Concert Band"
@@ -72,7 +72,7 @@
       "number": 4,
       "mode": "explore",
       "scenario_kind": "new_interest_after_reload",
-      "student_message": "What is a beginner way to compare how seedlings grow in two windows? For context, my coursework includes Biology (grade 9). Use it when useful.",
+      "student_message": "What is a beginner way to compare how seedlings grow in two windows?",
       "course_references_by_grade": {
         "9": "Biology"
       },
@@ -82,7 +82,7 @@
       "number": 5,
       "mode": "chat",
       "scenario_kind": "implicit_return",
-      "student_message": "I can clap the short notes slowly now, but I rush them once I play. What should I change in my next 15 minutes? For context, my coursework includes Concert Band (grade 9). Use it when useful.",
+      "student_message": "I can clap the short notes slowly now, but I rush them once I play. What should I change in my next 15 minutes?",
       "course_references_by_grade": {
         "9": "Concert Band"
       },

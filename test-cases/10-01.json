@@ -26,7 +26,7 @@
     {
       "number": 1,
       "mode": "explore",
-      "student_message": "Which catalog course would build on my programming experience, and what prerequisite is listed? For context, my coursework includes Computing Foundations (grade 9) and Intro to Computer Science (grade 10). Use my coursework to explain how this builds on what I've learned.",
+      "student_message": "Which catalog course would build on my programming experience, and what prerequisite is listed?",
       "expected_behavior": "Name Software Development II and Introduction to Computer Science with a catalog citation. Explicitly connect the response to Computing Foundations (grade 9) and Intro to Computer Science (grade 10). Use stated marks only if useful.",
       "course_references_by_grade": {
         "9": "Computing Foundations",
@@ -35,7 +35,7 @@
       "follow_ups": [
         {
           "mode": "explore",
-          "student_message": "I'm also curious about photography. Suggest a beginner camera project using objects at home. For context, my coursework includes Computing Foundations (grade 9), Intro to Computer Science (grade 10). Use those courses only where the connection helps this new interest.",
+          "student_message": "I'm also curious about photography. Suggest a beginner camera project using objects at home.",
           "course_references_by_grade": {
             "9": "Computing Foundations",
             "10": "Intro to Computer Science"
@@ -47,7 +47,7 @@
     {
       "number": 2,
       "mode": "quiz",
-      "student_message": "Give me one practice question about what a Python for loop prints. Wait for my answer. For context, my coursework includes Computing Foundations (grade 9) and Intro to Computer Science (grade 10). Briefly connect the setup to my coursework while keeping exactly one unanswered quiz question.",
+      "student_message": "Give me one practice question about what a Python for loop prints. Wait for my answer.",
       "expected_behavior": "Provide one loop question without its answer. Explicitly connect the response to Computing Foundations (grade 9) and Intro to Computer Science (grade 10). Use stated marks only if useful.",
       "course_references_by_grade": {
         "9": "Computing Foundations",
@@ -57,7 +57,7 @@
     {
       "number": 3,
       "mode": "plan",
-      "student_message": "Help me plan a small programming project I can do in two one-hour blocks this week. For context, my coursework includes Computing Foundations (grade 9) and Intro to Computer Science (grade 10). Use my coursework to explain how this builds on what I've learned.",
+      "student_message": "Help me plan a small programming project I can do in two one-hour blocks this week.",
       "expected_behavior": "Fit the project into two one-hour blocks. Explicitly connect the response to Computing Foundations (grade 9) and Intro to Computer Science (grade 10). Use stated marks only if useful.",
       "course_references_by_grade": {
         "9": "Computing Foundations",
@@ -67,7 +67,7 @@
     {
       "number": 4,
       "mode": "checkin",
-      "student_message": "I wrote the loop and it works on one example, but I did not test other inputs. What is a good next step? For context, my coursework includes Computing Foundations (grade 9) and Intro to Computer Science (grade 10). Use my coursework to explain how this builds on what I've learned.",
+      "student_message": "I wrote the loop and it works on one example, but I did not test other inputs. What is a good next step?",
       "save_weekly_plan_before_chat": {
         "week": "2026-11-16",
         "goal": "Build a small Python project",
@@ -93,7 +93,7 @@
       "number": 5,
       "mode": "explore",
       "scenario_kind": "new_interest_after_reload",
-      "student_message": "I'd like to try writing a short mystery. What's a beginner outline I could sketch? For context, my coursework includes English 9 (grade 9), English 10 (grade 10). Use it when useful.",
+      "student_message": "I'd like to try writing a short mystery. What's a beginner outline I could sketch?",
       "course_references_by_grade": {
         "9": "English 9",
         "10": "English 10"
@@ -104,7 +104,7 @@
       "number": 6,
       "mode": "chat",
       "scenario_kind": "implicit_return",
-      "student_message": "It works for 1 and 5 now. Should I try zero, and what would I expect to see? For context, my coursework includes Computing Foundations (grade 9), Intro to Computer Science (grade 10). Use it when useful.",
+      "student_message": "It works for 1 and 5 now. Should I try zero, and what would I expect to see?",
       "course_references_by_grade": {
         "9": "Computing Foundations",
         "10": "Intro to Computer Science"

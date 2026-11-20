@@ -1,4 +1,8 @@
-# Implicit-recall evaluation
+# Earlier implicit-recall evaluation
+
+This evaluation covers the prompts at commit `7d1ede7`, when student
+messages repeated their coursework. See the [current run](saved-profile-evaluation.md)
+for the replacement transcripts.
 
 The expanded suite contains 12 fictional student profiles, 64 sessions, and
 76 prompts. Each profile adds a new interest on a later visit, then asks about
@@ -39,18 +43,18 @@ recorded conversation history found an expected earlier exchange in the
 three retrieved candidates for all 12 newly added implicit returns. The
 highest-ranked exchange was one of the expected ones in 10 of 12.
 
-- [Cameron](responses/10-03.md) asked about a strong shadow after an astronomy
+- Cameron (`10-03`) asked about a strong shadow after an astronomy
   detour. Mentor returned to the photography experiment and suggested
   recording the light source, angle, distance, and exposure.
-- [Drew](responses/10-04.md) mentioned only a half-cup and 12. Mentor recovered
+- Drew (`10-04`) mentioned only a half-cup and 12. Mentor recovered
   the earlier 8-to-12 recipe scaling task and worked through the fraction.
-- [Alex](responses/11-01.md) described two bulbs and one route. The rechecked
+- Alex (`11-01`) described two bulbs and one route. The rechecked
   response correctly says that one current path through both bulbs is series.
-- [Taylor](responses/10-02.md) still got a generic question after asking if
+- Taylor (`10-02`) still got a generic question after asking if
   two firsthand accounts and one textbook chapter met the total. The
   selector retrieved the correct rubric exchange behind two other candidates.
-- [Avery](responses/09-01.md) recovered the bridge topic, but the reply did
-  not clearly hold span and load placement constant. [Parker](responses/11-02.md)
+- Avery (`09-01`) recovered the bridge topic, but the reply did
+  not clearly hold span and load placement constant. Parker (`11-02`)
   recovered the editing topic, but the answer invented a sample caption and
   presented it as the original.
 

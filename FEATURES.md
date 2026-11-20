@@ -17,7 +17,7 @@ Mentor is a browser-based study and exploration assistant for high school studen
 
 ## Profile, planner, and materials
 
-- **Student profile.** Save an optional name, grade level from 9 through 12, courses, marks, selected subjects, hobbies and goals, and current experience or skill levels. Course and grade fields accept year-labeled history as text.
+- **Student profile.** Save an optional name, grade level from 9 through 12, courses, marks, selected subjects, hobbies and goals, and current experience or skill levels. Course and grade fields accept year-labeled history as text. Mentor reuses the saved record across chats and page reloads. Select **Save my profile** to apply edits. Pausing chat memory leaves the saved profile available.
 - **Profile notes.** Paste or import UTF-8 TXT, CSV, or Markdown notes up to 1,500 characters. Review the imported text before saving it with the profile.
 - **Weekly planner.** Keep one dated plan with a goal, up to three editable actions, and completion checkboxes. Save the plan to make progress available at the next check-in.
 - **Class materials and catalog.** Paste or import one class-material entry and one course catalog, each up to 24,000 characters. Both fields support UTF-8 TXT, CSV, and Markdown. Saving keeps them available after a reload. PDF, Excel workbooks, and image files require extracting their text before import.
@@ -25,6 +25,8 @@ Mentor is a browser-based study and exploration assistant for high school studen
 ## Conversation memory
 
 - Mentor stores screened exchanges and an editable summary in browser storage. It uses clues from the latest message, saved questions, and earlier replies to retrieve up to three related exchanges, even after intervening topics or a reload.
+- **Context used** appears below a reply when the reviewed answer identifies a saved detail it relied on. **Context checked** lists the available profile, earlier conversations, or weekly plan when the model supplies no specific reference. Class-material and catalog citations still point to their source text.
+- Submitted questions are grouped by page session and timestamped. Fallbacks are recorded too. For screened messages or requests that could not be screened, Mentor records the outcome without the original question. These entries are excluded from topic recall.
 - The current question guides the reply when interests change. A textbook or rubric follow-up can recover an earlier exchange and consult the supplied material again.
 - **Mentoring memory** lets the student read, edit, and download the summary as text. **Pause chat memory** stops chat from using or updating the saved history and summary. **Delete chat memory** clears both. Profile, materials, and planner data have separate controls.
 

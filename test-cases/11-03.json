@@ -33,7 +33,7 @@
     {
       "number": 1,
       "mode": "explore",
-      "student_message": "How can I try sports analytics and media production in one small project? For context, my coursework includes Computer Applications (grade 9), Video Production (grade 10) and Digital Media (grade 11). Use my coursework to explain how this builds on what I've learned.",
+      "student_message": "How can I try sports analytics and media production in one small project?",
       "expected_behavior": "Suggest a project spanning data analysis and video editing. Explicitly connect the response to Computer Applications (grade 9), Video Production (grade 10) and Digital Media (grade 11). Use stated marks only if useful.",
       "course_references_by_grade": {
         "9": "Computer Applications",
@@ -43,7 +43,7 @@
       "follow_ups": [
         {
           "mode": "explore",
-          "student_message": "I also want to explore architecture. What's a beginner building-design task I could try? For context, my coursework includes Computer Applications (grade 9), Video Production (grade 10), Digital Media (grade 11). Use those courses only where the connection helps this new interest.",
+          "student_message": "I also want to explore architecture. What's a beginner building-design task I could try?",
           "course_references_by_grade": {
             "9": "Computer Applications",
             "10": "Video Production",
@@ -56,7 +56,7 @@
     {
       "number": 2,
       "mode": "quiz",
-      "student_message": "Quiz me on finding a mean from a small set of sports scores. Give only one question. For context, my coursework includes Geometry (grade 9), Algebra II (grade 10) and Precalculus (grade 11). Briefly connect the setup to my coursework while keeping exactly one unanswered quiz question.",
+      "student_message": "Quiz me on finding a mean from a small set of sports scores. Give only one question.",
       "expected_behavior": "Pose one mean question without the answer. Explicitly connect the response to Geometry (grade 9), Algebra II (grade 10) and Precalculus (grade 11). Use stated marks only if useful.",
       "course_references_by_grade": {
         "9": "Geometry",
@@ -67,7 +67,7 @@
     {
       "number": 3,
       "mode": "plan",
-      "student_message": "Help me split a sports statistics video into two tasks I can complete in one week. For context, my coursework includes Computer Applications (grade 9), Video Production (grade 10) and Digital Media (grade 11). Use my coursework to explain how this builds on what I've learned.",
+      "student_message": "Help me split a sports statistics video into two tasks I can complete in one week.",
       "expected_behavior": "Split the video into two feasible tasks. Explicitly connect the response to Computer Applications (grade 9), Video Production (grade 10) and Digital Media (grade 11). Use stated marks only if useful. Carry forward a concrete relevant detail from the earlier sports analytics and media production discussion when it helps, and keep the intervening architecture topic out of the answer.",
       "course_references_by_grade": {
         "9": "Computer Applications",
@@ -80,7 +80,7 @@
       "number": 4,
       "mode": "explore",
       "scenario_kind": "new_interest_after_reload",
-      "student_message": "What is an easy way to outline a short story in one afternoon? For context, my coursework includes English 9 (grade 9), English 10 (grade 10), English 11 (grade 11). Use it when useful.",
+      "student_message": "What is an easy way to outline a short story in one afternoon?",
       "course_references_by_grade": {
         "9": "English 9",
         "10": "English 10",
@@ -92,7 +92,7 @@
       "number": 5,
       "mode": "chat",
       "scenario_kind": "implicit_return",
-      "student_message": "I have the average in the spreadsheet and only 30 seconds of footage. What should go first? For context, my coursework includes Computer Applications (grade 9), Video Production (grade 10), Digital Media (grade 11). Use it when useful.",
+      "student_message": "I have the average in the spreadsheet and only 30 seconds of footage. What should go first?",
       "course_references_by_grade": {
         "9": "Computer Applications",
         "10": "Video Production",

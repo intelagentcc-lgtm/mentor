@@ -33,7 +33,7 @@
     {
       "number": 1,
       "mode": "explore",
-      "student_message": "Which beginner activity would let me compare elementary teaching with library services? For context, my coursework includes English 9 (grade 9), Child Development (grade 10) and Early Childhood Education (grade 11). Use my coursework to explain how this builds on what I've learned.",
+      "student_message": "Which beginner activity would let me compare elementary teaching with library services?",
       "expected_behavior": "Offer an accessible way to compare teaching and library services. Explicitly connect the response to English 9 (grade 9), Child Development (grade 10) and Early Childhood Education (grade 11). Use stated marks only if useful.",
       "course_references_by_grade": {
         "9": "English 9",
@@ -43,7 +43,7 @@
       "follow_ups": [
         {
           "mode": "explore",
-          "student_message": "I'd like to explore illustration too. What is a small sketchbook project I could try this week? For context, my coursework includes English 9 (grade 9), Child Development (grade 10), Early Childhood Education (grade 11). Use those courses only where the connection helps this new interest.",
+          "student_message": "I'd like to explore illustration too. What is a small sketchbook project I could try this week?",
           "course_references_by_grade": {
             "9": "English 9",
             "10": "Child Development",
@@ -57,7 +57,7 @@
       "number": 2,
       "mode": "explore",
       "scenario_kind": "new_interest_after_reload",
-      "student_message": "Today I'd like to switch to game design. What is a simple paper game I could make for younger readers? For context, my coursework includes English 9 (grade 9), Child Development (grade 10), and Early Childhood Education (grade 11). Use those courses where they help with the new interest.",
+      "student_message": "Today I'd like to switch to game design. What is a simple paper game I could make for younger readers?",
       "expected_behavior": "Recognize game design as the new interest after a reload. Suggest a small paper prototype and link it to the three course years without continuing the earlier illustration suggestion.",
       "course_references_by_grade": {
         "9": "English 9",
@@ -68,7 +68,7 @@
     {
       "number": 3,
       "mode": "plan",
-      "student_message": "Help me make a two-session plan to practice explaining a math concept to a younger student. For context, my coursework includes Algebra I (grade 9), Child Development (grade 10) and Early Childhood Education (grade 11). Use my coursework to explain how this builds on what I've learned.",
+      "student_message": "Help me make a two-session plan to practice explaining a math concept to a younger student.",
       "expected_behavior": "Suggest a manageable two-session teaching plan. Explicitly connect the response to Algebra I (grade 9), Child Development (grade 10) and Early Childhood Education (grade 11). Use stated marks only if useful.",
       "course_references_by_grade": {
         "9": "Algebra I",
@@ -79,7 +79,7 @@
     {
       "number": 4,
       "mode": "checkin",
-      "student_message": "I explained fractions using paper shapes. The student understood halves but not quarters. How should I adjust? For context, my coursework includes Algebra I (grade 9), Child Development (grade 10) and Early Childhood Education (grade 11). Use my coursework to explain how this builds on what I've learned.",
+      "student_message": "I explained fractions using paper shapes. The student understood halves but not quarters. How should I adjust?",
       "save_weekly_plan_before_chat": {
         "week": "2026-11-16",
         "goal": "Practice explaining fractions",
@@ -106,7 +106,7 @@
       "number": 5,
       "mode": "explore",
       "scenario_kind": "new_interest_after_reload",
-      "student_message": "How could I try taking a set of three portraits of objects using only window light? For context, my coursework includes Visual Arts (grade 9), Child Development (grade 10), Early Childhood Education (grade 11). Use it when useful.",
+      "student_message": "How could I try taking a set of three portraits of objects using only window light?",
       "course_references_by_grade": {
         "9": "Visual Arts",
         "10": "Child Development",
@@ -118,7 +118,7 @@
       "number": 6,
       "mode": "chat",
       "scenario_kind": "implicit_return",
-      "student_message": "They can fold the square twice now, but still call every piece a half. What could I ask them to check? For context, my coursework includes Algebra I (grade 9), Child Development (grade 10), Early Childhood Education (grade 11). Use it when useful.",
+      "student_message": "They can fold the square twice now, but still call every piece a half. What could I ask them to check?",
       "course_references_by_grade": {
         "9": "Algebra I",
         "10": "Child Development",

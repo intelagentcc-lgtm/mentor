@@ -19,7 +19,7 @@
     {
       "number": 1,
       "mode": "explore",
-      "student_message": "What beginner activity could help me explore landscape design using my garden and sketchbook? For context, my coursework includes Visual Arts (grade 9). Use my coursework to explain how this builds on what I've learned.",
+      "student_message": "What beginner activity could help me explore landscape design using my garden and sketchbook?",
       "expected_behavior": "Suggest an accessible garden design activity using the student's existing skills. Explicitly connect the response to Visual Arts (grade 9). Use stated marks only if useful.",
       "course_references_by_grade": {
         "9": "Visual Arts"
@@ -27,7 +27,7 @@
       "follow_ups": [
         {
           "mode": "explore",
-          "student_message": "I might also enjoy animation. Suggest a simple sketchbook animation I could make without special gear. For context, my coursework includes Visual Arts (grade 9). Use those courses only where the connection helps this new interest.",
+          "student_message": "I might also enjoy animation. Suggest a simple sketchbook animation I could make without special gear.",
           "course_references_by_grade": {
             "9": "Visual Arts"
           },
@@ -38,7 +38,7 @@
     {
       "number": 2,
       "mode": "hint",
-      "student_message": "I need to find the area of a rectangular garden bed that is 6 feet by 4 feet. Give me only a hint. For context, my coursework includes Algebra I (grade 9). Tie the hint to my coursework without giving the answer.",
+      "student_message": "I need to find the area of a rectangular garden bed that is 6 feet by 4 feet. Give me only a hint.",
       "expected_behavior": "Prompt the area formula without giving the numerical result. Explicitly connect the response to Algebra I (grade 9). Use stated marks only if useful. Carry forward a concrete relevant detail from the earlier landscape design discussion when it helps, and keep the intervening animation topic out of the answer.",
       "course_references_by_grade": {
         "9": "Algebra I"
@@ -48,7 +48,7 @@
     {
       "number": 3,
       "mode": "materials",
-      "student_message": "How many labeled plants does the garden design assignment require? For context, my coursework includes Visual Arts (grade 9). Answer from the rubric and add a brief, separate connection to my coursework.",
+      "student_message": "How many labeled plants does the garden design assignment require?",
       "expected_behavior": "Return four different plants and cite the rubric. Explicitly connect the response to Visual Arts (grade 9). Use stated marks only if useful. Keep the course connection separate from the cited rubric requirement.",
       "course_references_by_grade": {
         "9": "Visual Arts"
@@ -58,7 +58,7 @@
       "number": 4,
       "mode": "explore",
       "scenario_kind": "new_interest_after_reload",
-      "student_message": "Can you suggest a tiny writing project about a place in my neighborhood? For context, my coursework includes English 9 (grade 9). Use it when useful.",
+      "student_message": "Can you suggest a tiny writing project about a place in my neighborhood?",
       "course_references_by_grade": {
         "9": "English 9"
       },
@@ -68,7 +68,7 @@
       "number": 5,
       "mode": "chat",
       "scenario_kind": "implicit_return",
-      "student_message": "I have four kinds labeled and a key. How can I check that the path is easy to see before I hand it in? For context, my coursework includes Visual Arts (grade 9). Use it when useful.",
+      "student_message": "I have four kinds labeled and a key. How can I check that the path is easy to see before I hand it in?",
       "course_references_by_grade": {
         "9": "Visual Arts"
       },

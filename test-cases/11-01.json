@@ -33,7 +33,7 @@
     {
       "number": 1,
       "mode": "explore",
-      "student_message": "Which catalog option best fits my interest in circuits, and what prerequisite is listed? For context, my coursework includes Introduction to Engineering (grade 9), Electronics Fundamentals (grade 10) and Engineering Design (grade 11). Use my coursework to explain how this builds on what I've learned.",
+      "student_message": "Which catalog option best fits my interest in circuits, and what prerequisite is listed?",
       "expected_behavior": "Name Electronics and Circuit Design with both alternative prerequisites and a catalog citation. Explicitly connect the response to Introduction to Engineering (grade 9), Electronics Fundamentals (grade 10) and Engineering Design (grade 11). Use stated marks only if useful.",
       "course_references_by_grade": {
         "9": "Introduction to Engineering",
@@ -43,7 +43,7 @@
       "follow_ups": [
         {
           "mode": "explore",
-          "student_message": "Switching topics, I might like animation. Suggest a simple movement study with paper and pencil. For context, my coursework includes Introduction to Engineering (grade 9), Electronics Fundamentals (grade 10), Engineering Design (grade 11). Use those courses only where the connection helps this new interest.",
+          "student_message": "Switching topics, I might like animation. Suggest a simple movement study with paper and pencil.",
           "course_references_by_grade": {
             "9": "Introduction to Engineering",
             "10": "Electronics Fundamentals",
@@ -56,7 +56,7 @@
     {
       "number": 2,
       "mode": "example",
-      "student_message": "Show a worked example of using Ohm's law with a 9 V source and a 3 ohm resistor. For context, my coursework includes Introduction to Engineering (grade 9), Electronics Fundamentals (grade 10) and AP Physics 1 (grade 11). Use my coursework to explain how this builds on what I've learned.",
+      "student_message": "Show a worked example of using Ohm's law with a 9 V source and a 3 ohm resistor.",
       "expected_behavior": "Use Ohm's law accurately and label the result in amperes. Explicitly connect the response to Introduction to Engineering (grade 9), Electronics Fundamentals (grade 10) and AP Physics 1 (grade 11). Use stated marks only if useful.",
       "course_references_by_grade": {
         "9": "Introduction to Engineering",
@@ -67,7 +67,7 @@
     {
       "number": 3,
       "mode": "plan",
-      "student_message": "Create a two-action study plan to improve my circuit diagram skills. For context, my coursework includes Introduction to Engineering (grade 9), Electronics Fundamentals (grade 10) and Engineering Design (grade 11). Use my coursework to explain how this builds on what I've learned.",
+      "student_message": "Create a two-action study plan to improve my circuit diagram skills.",
       "expected_behavior": "Suggest two small actions that target circuit diagrams. Explicitly connect the response to Introduction to Engineering (grade 9), Electronics Fundamentals (grade 10) and Engineering Design (grade 11). Use stated marks only if useful.",
       "course_references_by_grade": {
         "9": "Introduction to Engineering",
@@ -78,7 +78,7 @@
     {
       "number": 4,
       "mode": "checkin",
-      "student_message": "I drew two diagrams, but I still mix up series and parallel layouts. What should I practice next? For context, my coursework includes Introduction to Engineering (grade 9), Electronics Fundamentals (grade 10) and AP Physics 1 (grade 11). Use my coursework to explain how this builds on what I've learned.",
+      "student_message": "I drew two diagrams, but I still mix up series and parallel layouts. What should I practice next?",
       "save_weekly_plan_before_chat": {
         "week": "2026-11-16",
         "goal": "Improve circuit diagrams",
@@ -105,7 +105,7 @@
       "number": 5,
       "mode": "explore",
       "scenario_kind": "new_interest_after_reload",
-      "student_message": "How could I make a three-photo series about shapes around my home? For context, my coursework includes Geometry (grade 9), Algebra II (grade 10), Precalculus (grade 11). Use it when useful.",
+      "student_message": "How could I make a three-photo series about shapes around my home?",
       "course_references_by_grade": {
         "9": "Geometry",
         "10": "Algebra II",
@@ -117,7 +117,7 @@
       "number": 6,
       "mode": "chat",
       "scenario_kind": "implicit_return",
-      "student_message": "Both bulbs are drawn next to each other, but I can trace only one route. How should I label that layout? For context, my coursework includes Introduction to Engineering (grade 9), Electronics Fundamentals (grade 10), AP Physics 1 (grade 11). Use it when useful.",
+      "student_message": "Both bulbs are drawn next to each other, but I can trace only one route. How should I label that layout?",
       "course_references_by_grade": {
         "9": "Introduction to Engineering",
         "10": "Electronics Fundamentals",
