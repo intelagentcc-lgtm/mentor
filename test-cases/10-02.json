@@ -3,12 +3,21 @@
   "student": "Taylor",
   "fictional": true,
   "grade_level": 10,
-  "courses_and_grades_pct": {
-    "Geometry": 82,
-    "Biology": 84,
-    "English 10": 96,
-    "World History": 95,
-    "Media Studies": 93
+  "courses_and_grades_pct_by_grade": {
+    "9": {
+      "Algebra I": 80,
+      "Earth Science": 82,
+      "English 9": 94,
+      "World Geography": 93,
+      "Speech and Debate": 92
+    },
+    "10": {
+      "Geometry": 82,
+      "Biology": 84,
+      "English 10": 96,
+      "World History": 95,
+      "Media Studies": 93
+    }
   },
   "hobbies": "Debate, podcasts, maps",
   "current_experience": "Has presented in debate club and edited a short audio clip.",
@@ -17,20 +26,43 @@
     {
       "number": 1,
       "mode": "explore",
-      "student_message": "I like debate and podcasts. What project could help me compare public policy and journalism?",
-      "expected_behavior": "Connect both interests with a school-appropriate comparison project."
+      "student_message": "I like debate and podcasts. What project could help me compare public policy and journalism? For context, my coursework includes Speech and Debate (grade 9) and Media Studies (grade 10). Use my coursework to explain how this builds on what I've learned.",
+      "expected_behavior": "Connect both interests with a school-appropriate comparison project. Explicitly connect the response to Speech and Debate (grade 9) and Media Studies (grade 10). Use stated marks only if useful.",
+      "course_references_by_grade": {
+        "9": "Speech and Debate",
+        "10": "Media Studies"
+      },
+      "follow_ups": [
+        {
+          "mode": "explore",
+          "student_message": "I want to switch to urban planning for a moment. What could I map in a park to see whether I enjoy it? For context, my coursework includes Speech and Debate (grade 9), Media Studies (grade 10). Use those courses only where the connection helps this new interest.",
+          "course_references_by_grade": {
+            "9": "Speech and Debate",
+            "10": "Media Studies"
+          },
+          "expected_behavior": "Treat urban planning as the current interest. Suggest one project, connect it to at least one applicable course per grade year when useful, and avoid framing it as the prior interest or changing the saved profile."
+        }
+      ]
     },
     {
       "number": 2,
       "mode": "materials",
-      "student_message": "How many sources must my history presentation use, and how many must be primary sources?",
-      "expected_behavior": "Return three sources and at least one primary source, with a rubric citation."
+      "student_message": "How many sources must my history presentation use, and how many must be primary sources? For context, my coursework includes World Geography (grade 9) and World History (grade 10). Answer from the rubric and add a brief, separate connection to my coursework.",
+      "expected_behavior": "Return three sources and at least one primary source, with a rubric citation. Explicitly connect the response to World Geography (grade 9) and World History (grade 10). Use stated marks only if useful. Keep the course connection separate from the cited rubric requirement.",
+      "course_references_by_grade": {
+        "9": "World Geography",
+        "10": "World History"
+      }
     },
     {
       "number": 3,
       "mode": "hint",
-      "student_message": "I have a primary source and a textbook summary. Give me a hint to compare what each one can tell me.",
-      "expected_behavior": "Give one useful source-comparison hint."
+      "student_message": "Returning to public policy and journalism from session 1, use any relevant detail from that discussion. I have a primary source and a textbook summary. Give me a hint to compare what each one can tell me. For context, my coursework includes World Geography (grade 9) and World History (grade 10). Tie the hint to my coursework without giving the answer.",
+      "expected_behavior": "Give one useful source-comparison hint. Explicitly connect the response to World Geography (grade 9) and World History (grade 10). Use stated marks only if useful. Carry forward a concrete relevant detail from the earlier public policy and journalism discussion when it helps, and keep the intervening urban planning topic out of the answer.",
+      "course_references_by_grade": {
+        "9": "World Geography",
+        "10": "World History"
+      }
     }
   ],
   "class_material": "History Presentation Rubric\nUse at least three sources.\nAt least one source must be a primary source.\nAdd a bibliography on the last slide."

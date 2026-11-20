@@ -3,12 +3,21 @@
   "student": "Drew",
   "fictional": true,
   "grade_level": 10,
-  "courses_and_grades_pct": {
-    "Geometry": 75,
-    "Biology": 78,
-    "English 10": 84,
-    "World History": 81,
-    "Culinary Foundations": 93
+  "courses_and_grades_pct_by_grade": {
+    "9": {
+      "Algebra I": 73,
+      "Earth Science": 76,
+      "English 9": 82,
+      "World Geography": 80,
+      "Family and Consumer Sciences": 90
+    },
+    "10": {
+      "Geometry": 75,
+      "Biology": 78,
+      "English 10": 84,
+      "World History": 81,
+      "Culinary Foundations": 93
+    }
   },
   "hobbies": "Baking, volunteering",
   "current_experience": "Can follow recipes independently and has helped at school events.",
@@ -17,19 +26,38 @@
     {
       "number": 1,
       "mode": "explore",
-      "student_message": "How could my baking interest help me explore food science and improve my math skills?",
-      "expected_behavior": "Connect baking to a beginner food science or measurement activity."
+      "student_message": "How could my baking interest help me explore food science and improve my math skills? For context, my coursework includes Family and Consumer Sciences (grade 9) and Culinary Foundations (grade 10). Use my coursework to explain how this builds on what I've learned.",
+      "expected_behavior": "Connect baking to a beginner food science or measurement activity. Explicitly connect the response to Family and Consumer Sciences (grade 9) and Culinary Foundations (grade 10). Use stated marks only if useful.",
+      "course_references_by_grade": {
+        "9": "Family and Consumer Sciences",
+        "10": "Culinary Foundations"
+      },
+      "follow_ups": [
+        {
+          "mode": "explore",
+          "student_message": "I'm also considering architecture. What's a small room-layout sketch I could try? For context, my coursework includes Family and Consumer Sciences (grade 9), Culinary Foundations (grade 10). Use those courses only where the connection helps this new interest.",
+          "course_references_by_grade": {
+            "9": "Family and Consumer Sciences",
+            "10": "Culinary Foundations"
+          },
+          "expected_behavior": "Treat architecture as the current interest. Suggest one project, connect it to at least one applicable course per grade year when useful, and avoid framing it as the prior interest or changing the saved profile."
+        }
+      ]
     },
     {
       "number": 2,
       "mode": "hint",
-      "student_message": "A recipe serves 8, but I need 12 portions. Give me a hint for finding the scaling factor.",
-      "expected_behavior": "Guide the student to compare portions without revealing the result."
+      "student_message": "A recipe serves 8, but I need 12 portions. Give me a hint for finding the scaling factor. For context, my coursework includes Algebra I (grade 9) and Culinary Foundations (grade 10). Tie the hint to my coursework without giving the answer.",
+      "expected_behavior": "Guide the student to compare portions without revealing the result. Explicitly connect the response to Algebra I (grade 9) and Culinary Foundations (grade 10). Use stated marks only if useful.",
+      "course_references_by_grade": {
+        "9": "Algebra I",
+        "10": "Culinary Foundations"
+      }
     },
     {
       "number": 3,
       "mode": "checkin",
-      "student_message": "I completed one recipe scaling practice, but I got stuck with the fractions. Help me adjust my goal.",
+      "student_message": "Returning to baking and food science from session 1, use any relevant detail from that discussion. I completed one recipe scaling practice, but I got stuck with the fractions. Help me adjust my goal. For context, my coursework includes Algebra I (grade 9) and Culinary Foundations (grade 10). Use my coursework to explain how this builds on what I've learned.",
       "save_weekly_plan_before_chat": {
         "week": "2026-11-16",
         "goal": "Practice recipe scaling",
@@ -44,7 +72,11 @@
           }
         ]
       },
-      "expected_behavior": "Acknowledge completed practice and give a smaller fractions action."
+      "expected_behavior": "Acknowledge completed practice and give a smaller fractions action. Explicitly connect the response to Algebra I (grade 9) and Culinary Foundations (grade 10). Use stated marks only if useful. Carry forward a concrete relevant detail from the earlier baking and food science discussion when it helps, and keep the intervening architecture topic out of the answer.",
+      "course_references_by_grade": {
+        "9": "Algebra I",
+        "10": "Culinary Foundations"
+      }
     }
   ]
 }

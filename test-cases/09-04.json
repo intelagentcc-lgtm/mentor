@@ -3,12 +3,14 @@
   "student": "Casey",
   "fictional": true,
   "grade_level": 9,
-  "courses_and_grades_pct": {
-    "Algebra I": 72,
-    "Earth Science": 76,
-    "English 9": 82,
-    "World Geography": 80,
-    "Visual Arts": 90
+  "courses_and_grades_pct_by_grade": {
+    "9": {
+      "Algebra I": 72,
+      "Earth Science": 76,
+      "English 9": 82,
+      "World Geography": 80,
+      "Visual Arts": 90
+    }
   },
   "hobbies": "Gardening, painting, nature journaling",
   "current_experience": "Helps maintain a small garden and keeps a sketchbook.",
@@ -17,20 +19,39 @@
     {
       "number": 1,
       "mode": "explore",
-      "student_message": "What beginner activity could help me explore landscape design using my garden and sketchbook?",
-      "expected_behavior": "Suggest an accessible garden design activity using the student's existing skills."
+      "student_message": "What beginner activity could help me explore landscape design using my garden and sketchbook? For context, my coursework includes Visual Arts (grade 9). Use my coursework to explain how this builds on what I've learned.",
+      "expected_behavior": "Suggest an accessible garden design activity using the student's existing skills. Explicitly connect the response to Visual Arts (grade 9). Use stated marks only if useful.",
+      "course_references_by_grade": {
+        "9": "Visual Arts"
+      },
+      "follow_ups": [
+        {
+          "mode": "explore",
+          "student_message": "I might also enjoy animation. Suggest a simple sketchbook animation I could make without special gear. For context, my coursework includes Visual Arts (grade 9). Use those courses only where the connection helps this new interest.",
+          "course_references_by_grade": {
+            "9": "Visual Arts"
+          },
+          "expected_behavior": "Treat animation as the current interest. Suggest one project, connect it to at least one applicable course per grade year when useful, and avoid framing it as the prior interest or changing the saved profile."
+        }
+      ]
     },
     {
       "number": 2,
       "mode": "hint",
-      "student_message": "I need to find the area of a rectangular garden bed that is 6 feet by 4 feet. Give me only a hint.",
-      "expected_behavior": "Prompt the area formula without giving the numerical result."
+      "student_message": "Returning to landscape design from session 1, use any relevant detail from that discussion. I need to find the area of a rectangular garden bed that is 6 feet by 4 feet. Give me only a hint. For context, my coursework includes Algebra I (grade 9). Tie the hint to my coursework without giving the answer.",
+      "expected_behavior": "Prompt the area formula without giving the numerical result. Explicitly connect the response to Algebra I (grade 9). Use stated marks only if useful. Carry forward a concrete relevant detail from the earlier landscape design discussion when it helps, and keep the intervening animation topic out of the answer.",
+      "course_references_by_grade": {
+        "9": "Algebra I"
+      }
     },
     {
       "number": 3,
       "mode": "materials",
-      "student_message": "How many labeled plants does the garden design assignment require?",
-      "expected_behavior": "Return four different plants and cite the rubric."
+      "student_message": "How many labeled plants does the garden design assignment require? For context, my coursework includes Visual Arts (grade 9). Answer from the rubric and add a brief, separate connection to my coursework.",
+      "expected_behavior": "Return four different plants and cite the rubric. Explicitly connect the response to Visual Arts (grade 9). Use stated marks only if useful. Keep the course connection separate from the cited rubric requirement.",
+      "course_references_by_grade": {
+        "9": "Visual Arts"
+      }
     }
   ],
   "class_material": "Garden Design Assignment\nDraw the garden to scale.\nLabel at least four different plants.\nInclude a key and show the main path."

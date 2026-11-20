@@ -3,12 +3,21 @@
   "student": "Riley",
   "fictional": true,
   "grade_level": 10,
-  "courses_and_grades_pct": {
-    "Algebra II": 96,
-    "Chemistry": 94,
-    "English 10": 87,
-    "World History": 88,
-    "Intro to Computer Science": 97
+  "courses_and_grades_pct_by_grade": {
+    "9": {
+      "Geometry": 94,
+      "Biology": 92,
+      "English 9": 85,
+      "World Geography": 87,
+      "Computing Foundations": 95
+    },
+    "10": {
+      "Algebra II": 96,
+      "Chemistry": 94,
+      "English 10": 87,
+      "World History": 88,
+      "Intro to Computer Science": 97
+    }
   },
   "hobbies": "Programming, puzzles",
   "current_experience": "Can write Python loops and simple functions.",
@@ -17,25 +26,48 @@
     {
       "number": 1,
       "mode": "explore",
-      "student_message": "Which catalog course would build on my programming experience, and what prerequisite is listed?",
-      "expected_behavior": "Name Software Development II and Introduction to Computer Science with a catalog citation."
+      "student_message": "Which catalog course would build on my programming experience, and what prerequisite is listed? For context, my coursework includes Computing Foundations (grade 9) and Intro to Computer Science (grade 10). Use my coursework to explain how this builds on what I've learned.",
+      "expected_behavior": "Name Software Development II and Introduction to Computer Science with a catalog citation. Explicitly connect the response to Computing Foundations (grade 9) and Intro to Computer Science (grade 10). Use stated marks only if useful.",
+      "course_references_by_grade": {
+        "9": "Computing Foundations",
+        "10": "Intro to Computer Science"
+      },
+      "follow_ups": [
+        {
+          "mode": "explore",
+          "student_message": "I'm also curious about photography. Suggest a beginner camera project using objects at home. For context, my coursework includes Computing Foundations (grade 9), Intro to Computer Science (grade 10). Use those courses only where the connection helps this new interest.",
+          "course_references_by_grade": {
+            "9": "Computing Foundations",
+            "10": "Intro to Computer Science"
+          },
+          "expected_behavior": "Treat photography as the current interest. Suggest one project, connect it to at least one applicable course per grade year when useful, and avoid framing it as the prior interest or changing the saved profile."
+        }
+      ]
     },
     {
       "number": 2,
       "mode": "quiz",
-      "student_message": "Give me one practice question about what a Python for loop prints. Wait for my answer.",
-      "expected_behavior": "Provide one loop question without its answer."
+      "student_message": "Give me one practice question about what a Python for loop prints. Wait for my answer. For context, my coursework includes Computing Foundations (grade 9) and Intro to Computer Science (grade 10). Briefly connect the setup to my coursework while keeping exactly one unanswered quiz question.",
+      "expected_behavior": "Provide one loop question without its answer. Explicitly connect the response to Computing Foundations (grade 9) and Intro to Computer Science (grade 10). Use stated marks only if useful.",
+      "course_references_by_grade": {
+        "9": "Computing Foundations",
+        "10": "Intro to Computer Science"
+      }
     },
     {
       "number": 3,
       "mode": "plan",
-      "student_message": "Help me plan a small programming project I can do in two one-hour blocks this week.",
-      "expected_behavior": "Fit the project into two one-hour blocks."
+      "student_message": "Help me plan a small programming project I can do in two one-hour blocks this week. For context, my coursework includes Computing Foundations (grade 9) and Intro to Computer Science (grade 10). Use my coursework to explain how this builds on what I've learned.",
+      "expected_behavior": "Fit the project into two one-hour blocks. Explicitly connect the response to Computing Foundations (grade 9) and Intro to Computer Science (grade 10). Use stated marks only if useful.",
+      "course_references_by_grade": {
+        "9": "Computing Foundations",
+        "10": "Intro to Computer Science"
+      }
     },
     {
       "number": 4,
       "mode": "checkin",
-      "student_message": "I wrote the loop and it works on one example, but I did not test other inputs. What is a good next step?",
+      "student_message": "Returning to Python programming from session 1, use any relevant detail from that discussion. I wrote the loop and it works on one example, but I did not test other inputs. What is a good next step? For context, my coursework includes Computing Foundations (grade 9) and Intro to Computer Science (grade 10). Use my coursework to explain how this builds on what I've learned.",
       "save_weekly_plan_before_chat": {
         "week": "2026-11-16",
         "goal": "Build a small Python project",
@@ -50,7 +82,11 @@
           }
         ]
       },
-      "expected_behavior": "Use the saved completion status and recommend testing different inputs."
+      "expected_behavior": "Use the saved completion status and recommend testing different inputs. Explicitly connect the response to Computing Foundations (grade 9) and Intro to Computer Science (grade 10). Use stated marks only if useful. Carry forward a concrete relevant detail from the earlier Python programming discussion when it helps, and keep the intervening photography topic out of the answer.",
+      "course_references_by_grade": {
+        "9": "Computing Foundations",
+        "10": "Intro to Computer Science"
+      }
     }
   ],
   "course_catalog": "Software Development II\nPrerequisite: Introduction to Computer Science.\nDescription: Build and test programs with functions and collections.\nDigital Photography\nPrerequisite: None."

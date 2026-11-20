@@ -3,12 +3,14 @@
   "student": "Morgan",
   "fictional": true,
   "grade_level": 9,
-  "courses_and_grades_pct": {
-    "Algebra I": 88,
-    "Biology": 86,
-    "English 9": 91,
-    "World Geography": 89,
-    "Concert Band": 95
+  "courses_and_grades_pct_by_grade": {
+    "9": {
+      "Algebra I": 88,
+      "Biology": 86,
+      "English 9": 91,
+      "World Geography": 89,
+      "Concert Band": 95
+    }
   },
   "hobbies": "Clarinet, rhythm games",
   "current_experience": "Reads simple sheet music and plays in the school band.",
@@ -17,13 +19,26 @@
     {
       "number": 1,
       "mode": "plan",
-      "student_message": "Help me make a weekly clarinet plan with three 15-minute practice sessions.",
-      "expected_behavior": "Give three 15-minute options or a plan that fits three sessions."
+      "student_message": "Help me make a weekly clarinet plan with three 15-minute practice sessions. For context, my coursework includes Concert Band (grade 9). Use my coursework to explain how this builds on what I've learned.",
+      "expected_behavior": "Give three 15-minute options or a plan that fits three sessions. Explicitly connect the response to Concert Band (grade 9). Use stated marks only if useful.",
+      "course_references_by_grade": {
+        "9": "Concert Band"
+      },
+      "follow_ups": [
+        {
+          "mode": "explore",
+          "student_message": "Before we finish, could we talk about photography? What could I photograph to practice noticing patterns? For context, my coursework includes Concert Band (grade 9). Use those courses only where the connection helps this new interest.",
+          "course_references_by_grade": {
+            "9": "Concert Band"
+          },
+          "expected_behavior": "Treat photography as the current interest. Suggest one project, connect it to at least one applicable course per grade year when useful, and avoid framing it as the prior interest or changing the saved profile."
+        }
+      ]
     },
     {
       "number": 2,
       "mode": "checkin",
-      "student_message": "I played the first two days, but stopped when I reached a difficult rhythm. How should I adjust?",
+      "student_message": "I played the first two days, but stopped when I reached a difficult rhythm. How should I adjust? For context, my coursework includes Concert Band (grade 9). Use my coursework to explain how this builds on what I've learned.",
       "save_weekly_plan_before_chat": {
         "week": "2026-11-16",
         "goal": "Build a clarinet practice routine",
@@ -38,13 +53,19 @@
           }
         ]
       },
-      "expected_behavior": "Respond to the difficult rhythm and suggest a manageable adjustment."
+      "expected_behavior": "Respond to the difficult rhythm and suggest a manageable adjustment. Explicitly connect the response to Concert Band (grade 9). Use stated marks only if useful.",
+      "course_references_by_grade": {
+        "9": "Concert Band"
+      }
     },
     {
       "number": 3,
       "mode": "example",
-      "student_message": "Show a worked example of how to count a measure with two quarter notes and four eighth notes in 4/4.",
-      "expected_behavior": "Account for four beats in total and explain the eighth-note counts."
+      "student_message": "Returning to clarinet practice from session 1, use any relevant detail from that discussion. Show a worked example of how to count a measure with two quarter notes and four eighth notes in 4/4. For context, my coursework includes Concert Band (grade 9). Frame the example as practice for that course.",
+      "expected_behavior": "Account for four beats in total and explain the eighth-note counts. Explicitly connect the response to Concert Band (grade 9). Use stated marks only if useful. Carry forward a concrete relevant detail from the earlier clarinet practice discussion when it helps, and keep the intervening photography topic out of the answer.",
+      "course_references_by_grade": {
+        "9": "Concert Band"
+      }
     }
   ]
 }

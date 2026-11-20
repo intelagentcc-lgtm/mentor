@@ -3,12 +3,28 @@
   "student": "Parker",
   "fictional": true,
   "grade_level": 11,
-  "courses_and_grades_pct": {
-    "Algebra II": 83,
-    "Environmental Science": 87,
-    "AP English Language": 96,
-    "AP U.S. History": 94,
-    "Graphic Design": 92
+  "courses_and_grades_pct_by_grade": {
+    "9": {
+      "Algebra I": 80,
+      "Earth Science": 82,
+      "English 9": 92,
+      "World Geography": 90,
+      "Digital Art": 89
+    },
+    "10": {
+      "Geometry": 82,
+      "Biology": 85,
+      "English 10": 94,
+      "World History": 92,
+      "Journalism": 91
+    },
+    "11": {
+      "Algebra II": 83,
+      "Environmental Science": 87,
+      "AP English Language": 96,
+      "AP U.S. History": 94,
+      "Graphic Design": 92
+    }
   },
   "hobbies": "Writing, typography, yearbook",
   "current_experience": "Edited yearbook captions and created two page layouts.",
@@ -17,20 +33,47 @@
     {
       "number": 1,
       "mode": "explore",
-      "student_message": "Suggest a small project to compare communication design and editing using my yearbook skills.",
-      "expected_behavior": "Propose a project combining editing and visual layout."
+      "student_message": "Suggest a small project to compare communication design and editing using my yearbook skills. For context, my coursework includes Digital Art (grade 9), Journalism (grade 10) and Graphic Design (grade 11). Use my coursework to explain how this builds on what I've learned.",
+      "expected_behavior": "Propose a project combining editing and visual layout. Explicitly connect the response to Digital Art (grade 9), Journalism (grade 10) and Graphic Design (grade 11). Use stated marks only if useful.",
+      "course_references_by_grade": {
+        "9": "Digital Art",
+        "10": "Journalism",
+        "11": "Graphic Design"
+      },
+      "follow_ups": [
+        {
+          "mode": "explore",
+          "student_message": "Let's switch interests for a moment. What beginner environmental science project could I do by observing plants? For context, my coursework includes Digital Art (grade 9), Journalism (grade 10), Graphic Design (grade 11). Use those courses only where the connection helps this new interest.",
+          "course_references_by_grade": {
+            "9": "Digital Art",
+            "10": "Journalism",
+            "11": "Graphic Design"
+          },
+          "expected_behavior": "Treat environmental science as the current interest. Suggest one project, connect it to at least one applicable course per grade year when useful, and avoid framing it as the prior interest or changing the saved profile."
+        }
+      ]
     },
     {
       "number": 2,
       "mode": "materials",
-      "student_message": "What does my persuasive essay rubric require for the counterargument?",
-      "expected_behavior": "Describe the fair counterargument and evidence-based response with a rubric citation."
+      "student_message": "What does my persuasive essay rubric require for the counterargument? For context, my coursework includes English 9 (grade 9), English 10 (grade 10) and AP English Language (grade 11). Answer from the rubric and add a brief, separate connection to my coursework.",
+      "expected_behavior": "Describe the fair counterargument and evidence-based response with a rubric citation. Explicitly connect the response to English 9 (grade 9), English 10 (grade 10) and AP English Language (grade 11). Use stated marks only if useful. Keep the course connection separate from the cited rubric requirement.",
+      "course_references_by_grade": {
+        "9": "English 9",
+        "10": "English 10",
+        "11": "AP English Language"
+      }
     },
     {
       "number": 3,
       "mode": "chat",
-      "student_message": "How could I build an editing portfolio from schoolwork without sharing classmates' names?",
-      "expected_behavior": "Suggest portfolio samples that protect classmates' identity."
+      "student_message": "Returning to yearbook and editing from session 1, use any relevant detail from that discussion. How could I build an editing portfolio from schoolwork without sharing classmates' names? For context, my coursework includes English 9 (grade 9), Journalism (grade 10) and AP English Language (grade 11). Use my coursework to explain how this builds on what I've learned.",
+      "expected_behavior": "Suggest portfolio samples that protect classmates' identity. Explicitly connect the response to English 9 (grade 9), Journalism (grade 10) and AP English Language (grade 11). Use stated marks only if useful. Carry forward a concrete relevant detail from the earlier yearbook and editing discussion when it helps, and keep the intervening environmental science topic out of the answer.",
+      "course_references_by_grade": {
+        "9": "English 9",
+        "10": "Journalism",
+        "11": "AP English Language"
+      }
     }
   ],
   "class_material": "Persuasive Essay Rubric\nState a clear claim in the introduction.\nPresent a fair counterargument and respond to it with evidence.\nUse examples from the assigned readings."

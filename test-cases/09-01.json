@@ -3,12 +3,14 @@
   "student": "Avery",
   "fictional": true,
   "grade_level": 9,
-  "courses_and_grades_pct": {
-    "Geometry": 95,
-    "Biology": 93,
-    "English 9": 84,
-    "World Geography": 87,
-    "Introduction to Engineering": 96
+  "courses_and_grades_pct_by_grade": {
+    "9": {
+      "Geometry": 95,
+      "Biology": 93,
+      "English 9": 84,
+      "World Geography": 87,
+      "Introduction to Engineering": 96
+    }
   },
   "hobbies": "Robotics, model building",
   "current_experience": "Built a kit and can edit simple Arduino code.",
@@ -17,19 +19,35 @@
     {
       "number": 1,
       "mode": "explore",
-      "student_message": "Given my classes and grades, what beginner project would help me explore mechanical engineering?",
-      "expected_behavior": "Connect the project to robotics or engineering and the student's math/science strengths."
+      "student_message": "Given my classes and grades, what beginner project would help me explore mechanical engineering? For context, my coursework includes Introduction to Engineering (grade 9). Use my coursework to explain how this builds on what I've learned.",
+      "expected_behavior": "Connect the project to robotics or engineering and the student's math/science strengths. Explicitly connect the response to Introduction to Engineering (grade 9). Use stated marks only if useful.",
+      "course_references_by_grade": {
+        "9": "Introduction to Engineering"
+      },
+      "follow_ups": [
+        {
+          "mode": "explore",
+          "student_message": "I'm also curious about astronomy. Suggest a simple way to observe the Moon and record how it looks over a week. For context, my coursework includes Introduction to Engineering (grade 9). Use those courses only where the connection helps this new interest.",
+          "course_references_by_grade": {
+            "9": "Introduction to Engineering"
+          },
+          "expected_behavior": "Treat astronomy as the current interest. Suggest one project, connect it to at least one applicable course per grade year when useful, and avoid framing it as the prior interest or changing the saved profile."
+        }
+      ]
     },
     {
       "number": 2,
       "mode": "plan",
-      "student_message": "I have two 30-minute blocks this week. Help me plan a simple cardboard bridge experiment.",
-      "expected_behavior": "Suggest two short blocks with a concrete bridge test."
+      "student_message": "I have two 30-minute blocks this week. Help me plan a simple cardboard bridge experiment. For context, my coursework includes Geometry (grade 9). Use my coursework to explain how this builds on what I've learned.",
+      "expected_behavior": "Suggest two short blocks with a concrete bridge test. Explicitly connect the response to Geometry (grade 9). Use stated marks only if useful.",
+      "course_references_by_grade": {
+        "9": "Geometry"
+      }
     },
     {
       "number": 3,
       "mode": "checkin",
-      "student_message": "I built the bridge and made one test, but I forgot to record how much it held. What should I change next week?",
+      "student_message": "I built the bridge and made one test, but I forgot to record how much it held. What should I change next week? For context, my coursework includes Introduction to Engineering (grade 9). Use my coursework to explain how this builds on what I've learned.",
       "save_weekly_plan_before_chat": {
         "week": "2026-11-16",
         "goal": "Test a cardboard bridge",
@@ -44,13 +62,19 @@
           }
         ]
       },
-      "expected_behavior": "Use the saved partial progress and recommend recording the load."
+      "expected_behavior": "Use the saved partial progress and recommend recording the load. Explicitly connect the response to Introduction to Engineering (grade 9). Use stated marks only if useful.",
+      "course_references_by_grade": {
+        "9": "Introduction to Engineering"
+      }
     },
     {
       "number": 4,
       "mode": "chat",
-      "student_message": "What is one way I can use my geometry skills to make my next bridge test more useful?",
-      "expected_behavior": "Apply a geometry concept to a measurable bridge-test variable."
+      "student_message": "Returning to cardboard bridge experiment from session 2, use any relevant detail from that discussion. What is one way I can use my geometry skills to make my next bridge test more useful? For context, my coursework includes Geometry (grade 9). Use my coursework to explain how this builds on what I've learned.",
+      "expected_behavior": "Apply a geometry concept to a measurable bridge-test variable. Explicitly connect the response to Geometry (grade 9). Use stated marks only if useful. Carry forward a concrete relevant detail from the earlier cardboard bridge experiment discussion when it helps, and keep the intervening astronomy topic out of the answer.",
+      "course_references_by_grade": {
+        "9": "Geometry"
+      }
     }
   ]
 }

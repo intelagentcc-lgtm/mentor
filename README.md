@@ -28,11 +28,12 @@ drugs, alcohol, tobacco, vaping, gambling, and other inappropriate content.
 All generated replies, summaries, quiz questions, and plan actions pass through
 a local keyword filter and an Ollama review before display or saving.
 
-Mentor saves the six most recent screened exchanges and a short editable summary
-in browser storage for the current site address. It uses up to three exchanges
-and the summary to answer follow-up questions, including after a reload. A new
-rubric lookup focuses on the supplied assignment rather than unrelated chat.
-Select
+Mentor saves screened exchanges and a short editable summary
+in browser storage for the current site address, as space allows. It retrieves up to three
+related exchanges, even if other topics came up in between or the page was
+reloaded. The current question guides the reply when a student's interests
+change. A new rubric lookup focuses on the supplied assignment rather than
+unrelated chat. Select
 **Download summary** for a text copy of the summary, or **Delete chat memory**
 to remove both the summary and saved exchanges.
 

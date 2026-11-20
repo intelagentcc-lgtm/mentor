@@ -1,4 +1,8 @@
-# Mentor regression evaluation
+# Earlier Mentor regression evaluation
+
+This evaluation covers the single-year cases at commit `a17a949`. The
+[current evaluation](topic-switch-evaluation.md) covers the expanded prompts
+and the conversations in `responses/`.
 
 Each transcript records one prompt and one visible reply per session. The run
 used the app's chat handler and real Qwen 2.5 3B inference on local Ollama.
@@ -47,18 +51,18 @@ the student saw, and the following review records specific quality issues.
 
 | Case | What improved | What still needs work |
 | --- | --- | --- |
-| [09-01](responses/09-01.md) | The bridge check-in acknowledges the build and recommends recording two load trials. The next reply stays on the bridge topic. | The first reply assumes mechanical engineering experience. The proposed experiment exceeds the two short blocks, and the geometry reply gives several ideas instead of one controlled variable. |
-| [09-02](responses/09-02.md) | Mentor gives an opening hint and a useful Earth Science study-guide idea based on drawing and writing. | The first reply suggests two illustration activities and gives little distinct journalism practice. |
-| [09-03](responses/09-03.md) | The check-in addresses the rhythm difficulty. The worked example identifies six note onsets across four beats. | The plan could assign a concrete goal to each of the three 15-minute sessions. |
-| [09-04](responses/09-04.md) | The garden activity fits the sketchbook and the area hint preserves the calculation for the student. The cited rubric answer correctly says at least four different plants. | The landscape activity could start with one smaller sketch. |
-| [10-01](responses/10-01.md) | The course and prerequisite are correct and cited. The Python quiz provides one unanswered question. | Planning and check-in fall back to questions, despite the two hours and the reported loop progress. Both sessions were more useful in the original run. |
-| [10-02](responses/10-02.md) | The reply cites the exact requirement of three sources with at least one primary source. It also gives a usable comparison hint. | The career comparison falls back to a question instead of suggesting a podcast or debate project. |
-| [10-03](responses/10-03.md) | The example correctly scales the photo to 8 by 12. The plan carries forward the photography context and suggests two lighting setups. | The experiment could explicitly hold camera settings, product position, and framing constant. |
-| [10-04](responses/10-04.md) | The hint sets up target servings over original servings. The check-in focuses on fractional recipe quantities. | The initial food-science question falls back to a probe. The practice example needs to restate the original serving count to be solvable on its own. |
-| [11-01](responses/11-01.md) | The current calculation is 3 A. The plan avoids crediting unreported work, and the check-in refers to the completed diagrams. | The first reply still fails to name the catalog course and its alternative prerequisites. |
-| [11-02](responses/11-02.md) | The cited rubric reply correctly requires a fair counterargument and an evidence-based response. The portfolio reply suggests privacy-preserving samples. | The first project emphasizes layout and typography more than comparing design with editing. |
-| [11-03](responses/11-03.md) | A small project now combines data and video editing. The quiz gives one unanswered mean question. | The last reply lists three actions even though the student requested two. |
-| [11-04](responses/11-04.md) | The project compares library and teaching work. The plan sticks to math, and the check-in builds on the student's use of paper shapes. | The check-in could explicitly show quarters by folding each half again. |
+| `09-01` | The bridge check-in acknowledges the build and recommends recording two load trials. The next reply stays on the bridge topic. | The first reply assumes mechanical engineering experience. The proposed experiment exceeds the two short blocks, and the geometry reply gives several ideas instead of one controlled variable. |
+| `09-02` | Mentor gives an opening hint and a useful Earth Science study-guide idea based on drawing and writing. | The first reply suggests two illustration activities and gives little distinct journalism practice. |
+| `09-03` | The check-in addresses the rhythm difficulty. The worked example identifies six note onsets across four beats. | The plan could assign a concrete goal to each of the three 15-minute sessions. |
+| `09-04` | The garden activity fits the sketchbook and the area hint preserves the calculation for the student. The cited rubric answer correctly says at least four different plants. | The landscape activity could start with one smaller sketch. |
+| `10-01` | The course and prerequisite are correct and cited. The Python quiz provides one unanswered question. | Planning and check-in fall back to questions, despite the two hours and the reported loop progress. Both sessions were more useful in the original run. |
+| `10-02` | The reply cites the exact requirement of three sources with at least one primary source. It also gives a usable comparison hint. | The career comparison falls back to a question instead of suggesting a podcast or debate project. |
+| `10-03` | The example correctly scales the photo to 8 by 12. The plan carries forward the photography context and suggests two lighting setups. | The experiment could explicitly hold camera settings, product position, and framing constant. |
+| `10-04` | The hint sets up target servings over original servings. The check-in focuses on fractional recipe quantities. | The initial food-science question falls back to a probe. The practice example needs to restate the original serving count to be solvable on its own. |
+| `11-01` | The current calculation is 3 A. The plan avoids crediting unreported work, and the check-in refers to the completed diagrams. | The first reply still fails to name the catalog course and its alternative prerequisites. |
+| `11-02` | The cited rubric reply correctly requires a fair counterargument and an evidence-based response. The portfolio reply suggests privacy-preserving samples. | The first project emphasizes layout and typography more than comparing design with editing. |
+| `11-03` | A small project now combines data and video editing. The quiz gives one unanswered mean question. | The last reply lists three actions even though the student requested two. |
+| `11-04` | The project compares library and teaching work. The plan sticks to math, and the check-in builds on the student's use of paper shapes. | The check-in could explicitly show quarters by folding each half again. |
 
 The Wikipedia endpoint returned results for a public topic in a separate
 live check. Tests with simulated replies verified that only the predefined

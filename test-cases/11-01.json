@@ -3,12 +3,28 @@
   "student": "Alex",
   "fictional": true,
   "grade_level": 11,
-  "courses_and_grades_pct": {
-    "Precalculus": 97,
-    "AP Physics 1": 95,
-    "English 11": 89,
-    "U.S. History": 90,
-    "Engineering Design": 98
+  "courses_and_grades_pct_by_grade": {
+    "9": {
+      "Geometry": 95,
+      "Biology": 92,
+      "English 9": 85,
+      "World Geography": 86,
+      "Introduction to Engineering": 96
+    },
+    "10": {
+      "Algebra II": 96,
+      "Chemistry": 94,
+      "English 10": 87,
+      "World History": 88,
+      "Electronics Fundamentals": 97
+    },
+    "11": {
+      "Precalculus": 97,
+      "AP Physics 1": 95,
+      "English 11": 89,
+      "U.S. History": 90,
+      "Engineering Design": 98
+    }
   },
   "hobbies": "Robotics, electronics",
   "current_experience": "Can wire basic circuits and use entry-level CAD.",
@@ -17,25 +33,52 @@
     {
       "number": 1,
       "mode": "explore",
-      "student_message": "Which catalog option best fits my interest in circuits, and what prerequisite is listed?",
-      "expected_behavior": "Name Electronics and Circuit Design with both alternative prerequisites and a catalog citation."
+      "student_message": "Which catalog option best fits my interest in circuits, and what prerequisite is listed? For context, my coursework includes Introduction to Engineering (grade 9), Electronics Fundamentals (grade 10) and Engineering Design (grade 11). Use my coursework to explain how this builds on what I've learned.",
+      "expected_behavior": "Name Electronics and Circuit Design with both alternative prerequisites and a catalog citation. Explicitly connect the response to Introduction to Engineering (grade 9), Electronics Fundamentals (grade 10) and Engineering Design (grade 11). Use stated marks only if useful.",
+      "course_references_by_grade": {
+        "9": "Introduction to Engineering",
+        "10": "Electronics Fundamentals",
+        "11": "Engineering Design"
+      },
+      "follow_ups": [
+        {
+          "mode": "explore",
+          "student_message": "Switching topics, I might like animation. Suggest a simple movement study with paper and pencil. For context, my coursework includes Introduction to Engineering (grade 9), Electronics Fundamentals (grade 10), Engineering Design (grade 11). Use those courses only where the connection helps this new interest.",
+          "course_references_by_grade": {
+            "9": "Introduction to Engineering",
+            "10": "Electronics Fundamentals",
+            "11": "Engineering Design"
+          },
+          "expected_behavior": "Treat animation as the current interest. Suggest one project, connect it to at least one applicable course per grade year when useful, and avoid framing it as the prior interest or changing the saved profile."
+        }
+      ]
     },
     {
       "number": 2,
       "mode": "example",
-      "student_message": "Show a worked example of using Ohm's law with a 9 V source and a 3 ohm resistor.",
-      "expected_behavior": "Use Ohm's law accurately and label the result in amperes."
+      "student_message": "Show a worked example of using Ohm's law with a 9 V source and a 3 ohm resistor. For context, my coursework includes Introduction to Engineering (grade 9), Electronics Fundamentals (grade 10) and AP Physics 1 (grade 11). Use my coursework to explain how this builds on what I've learned.",
+      "expected_behavior": "Use Ohm's law accurately and label the result in amperes. Explicitly connect the response to Introduction to Engineering (grade 9), Electronics Fundamentals (grade 10) and AP Physics 1 (grade 11). Use stated marks only if useful.",
+      "course_references_by_grade": {
+        "9": "Introduction to Engineering",
+        "10": "Electronics Fundamentals",
+        "11": "AP Physics 1"
+      }
     },
     {
       "number": 3,
       "mode": "plan",
-      "student_message": "Create a two-action study plan to improve my circuit diagram skills.",
-      "expected_behavior": "Suggest two small actions that target circuit diagrams."
+      "student_message": "Create a two-action study plan to improve my circuit diagram skills. For context, my coursework includes Introduction to Engineering (grade 9), Electronics Fundamentals (grade 10) and Engineering Design (grade 11). Use my coursework to explain how this builds on what I've learned.",
+      "expected_behavior": "Suggest two small actions that target circuit diagrams. Explicitly connect the response to Introduction to Engineering (grade 9), Electronics Fundamentals (grade 10) and Engineering Design (grade 11). Use stated marks only if useful.",
+      "course_references_by_grade": {
+        "9": "Introduction to Engineering",
+        "10": "Electronics Fundamentals",
+        "11": "Engineering Design"
+      }
     },
     {
       "number": 4,
       "mode": "checkin",
-      "student_message": "I drew two diagrams, but I still mix up series and parallel layouts. What should I practice next?",
+      "student_message": "Returning to circuits from session 1, use any relevant detail from that discussion. I drew two diagrams, but I still mix up series and parallel layouts. What should I practice next? For context, my coursework includes Introduction to Engineering (grade 9), Electronics Fundamentals (grade 10) and AP Physics 1 (grade 11). Use my coursework to explain how this builds on what I've learned.",
       "save_weekly_plan_before_chat": {
         "week": "2026-11-16",
         "goal": "Improve circuit diagrams",
@@ -50,7 +93,12 @@
           }
         ]
       },
-      "expected_behavior": "Acknowledge completed diagrams and address the series/parallel distinction."
+      "expected_behavior": "Acknowledge completed diagrams and address the series/parallel distinction. Explicitly connect the response to Introduction to Engineering (grade 9), Electronics Fundamentals (grade 10) and AP Physics 1 (grade 11). Use stated marks only if useful. Carry forward a concrete relevant detail from the earlier circuits discussion when it helps, and keep the intervening animation topic out of the answer.",
+      "course_references_by_grade": {
+        "9": "Introduction to Engineering",
+        "10": "Electronics Fundamentals",
+        "11": "AP Physics 1"
+      }
     }
   ],
   "course_catalog": "Electronics and Circuit Design\nPrerequisite: Engineering Design or AP Physics 1.\nDescription: Design, simulate, and test basic circuits.\nArchitectural Drawing\nPrerequisite: Engineering Design."

@@ -3,12 +3,28 @@
   "student": "Quinn",
   "fictional": true,
   "grade_level": 11,
-  "courses_and_grades_pct": {
-    "Precalculus": 86,
-    "Chemistry": 87,
-    "English 11": 92,
-    "U.S. History": 90,
-    "Digital Media": 94
+  "courses_and_grades_pct_by_grade": {
+    "9": {
+      "Geometry": 83,
+      "Biology": 84,
+      "English 9": 88,
+      "World Geography": 87,
+      "Computer Applications": 90
+    },
+    "10": {
+      "Algebra II": 85,
+      "Physics": 86,
+      "English 10": 90,
+      "World History": 89,
+      "Video Production": 92
+    },
+    "11": {
+      "Precalculus": 86,
+      "Chemistry": 87,
+      "English 11": 92,
+      "U.S. History": 90,
+      "Digital Media": 94
+    }
   },
   "hobbies": "Video editing, sports statistics",
   "current_experience": "Uses a spreadsheet for game summaries and edited one short video.",
@@ -17,20 +33,47 @@
     {
       "number": 1,
       "mode": "explore",
-      "student_message": "How can I try sports analytics and media production in one small project?",
-      "expected_behavior": "Suggest a project spanning data analysis and video editing."
+      "student_message": "How can I try sports analytics and media production in one small project? For context, my coursework includes Computer Applications (grade 9), Video Production (grade 10) and Digital Media (grade 11). Use my coursework to explain how this builds on what I've learned.",
+      "expected_behavior": "Suggest a project spanning data analysis and video editing. Explicitly connect the response to Computer Applications (grade 9), Video Production (grade 10) and Digital Media (grade 11). Use stated marks only if useful.",
+      "course_references_by_grade": {
+        "9": "Computer Applications",
+        "10": "Video Production",
+        "11": "Digital Media"
+      },
+      "follow_ups": [
+        {
+          "mode": "explore",
+          "student_message": "I also want to explore architecture. What's a beginner building-design task I could try? For context, my coursework includes Computer Applications (grade 9), Video Production (grade 10), Digital Media (grade 11). Use those courses only where the connection helps this new interest.",
+          "course_references_by_grade": {
+            "9": "Computer Applications",
+            "10": "Video Production",
+            "11": "Digital Media"
+          },
+          "expected_behavior": "Treat architecture as the current interest. Suggest one project, connect it to at least one applicable course per grade year when useful, and avoid framing it as the prior interest or changing the saved profile."
+        }
+      ]
     },
     {
       "number": 2,
       "mode": "quiz",
-      "student_message": "Quiz me on finding a mean from a small set of sports scores. Give only one question.",
-      "expected_behavior": "Pose one mean question without the answer."
+      "student_message": "Quiz me on finding a mean from a small set of sports scores. Give only one question. For context, my coursework includes Geometry (grade 9), Algebra II (grade 10) and Precalculus (grade 11). Briefly connect the setup to my coursework while keeping exactly one unanswered quiz question.",
+      "expected_behavior": "Pose one mean question without the answer. Explicitly connect the response to Geometry (grade 9), Algebra II (grade 10) and Precalculus (grade 11). Use stated marks only if useful.",
+      "course_references_by_grade": {
+        "9": "Geometry",
+        "10": "Algebra II",
+        "11": "Precalculus"
+      }
     },
     {
       "number": 3,
       "mode": "plan",
-      "student_message": "Help me split a sports statistics video into two tasks I can complete in one week.",
-      "expected_behavior": "Split the video into two feasible tasks."
+      "student_message": "Returning to sports analytics and media production from session 1, use any relevant detail from that discussion. Help me split a sports statistics video into two tasks I can complete in one week. For context, my coursework includes Computer Applications (grade 9), Video Production (grade 10) and Digital Media (grade 11). Use my coursework to explain how this builds on what I've learned.",
+      "expected_behavior": "Split the video into two feasible tasks. Explicitly connect the response to Computer Applications (grade 9), Video Production (grade 10) and Digital Media (grade 11). Use stated marks only if useful. Carry forward a concrete relevant detail from the earlier sports analytics and media production discussion when it helps, and keep the intervening architecture topic out of the answer.",
+      "course_references_by_grade": {
+        "9": "Computer Applications",
+        "10": "Video Production",
+        "11": "Digital Media"
+      }
     }
   ]
 }

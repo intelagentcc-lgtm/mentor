@@ -3,12 +3,14 @@
   "student": "Jordan",
   "fictional": true,
   "grade_level": 9,
-  "courses_and_grades_pct": {
-    "Algebra I": 79,
-    "Earth Science": 81,
-    "English 9": 95,
-    "World Geography": 92,
-    "Digital Art": 94
+  "courses_and_grades_pct_by_grade": {
+    "9": {
+      "Algebra I": 79,
+      "Earth Science": 81,
+      "English 9": 95,
+      "World Geography": 92,
+      "Digital Art": 94
+    }
   },
   "hobbies": "Comics, drawing, school newspaper",
   "current_experience": "Can sketch characters and wrote one newspaper article.",
@@ -17,20 +19,39 @@
     {
       "number": 1,
       "mode": "explore",
-      "student_message": "I like writing and drawing. Suggest two small ways I can try illustration and journalism at school.",
-      "expected_behavior": "Give distinct, feasible illustration and reporting activities."
+      "student_message": "I like writing and drawing. Suggest two small ways I can try illustration and journalism at school. For context, my coursework includes Digital Art (grade 9). Use my coursework to explain how this builds on what I've learned.",
+      "expected_behavior": "Give distinct, feasible illustration and reporting activities. Explicitly connect the response to Digital Art (grade 9). Use stated marks only if useful.",
+      "course_references_by_grade": {
+        "9": "Digital Art"
+      },
+      "follow_ups": [
+        {
+          "mode": "explore",
+          "student_message": "I'd like to switch gears and try stage design. What's one small set-design sketch I could draw? For context, my coursework includes Digital Art (grade 9). Use those courses only where the connection helps this new interest.",
+          "course_references_by_grade": {
+            "9": "Digital Art"
+          },
+          "expected_behavior": "Treat stage design as the current interest. Suggest one project, connect it to at least one applicable course per grade year when useful, and avoid framing it as the prior interest or changing the saved profile."
+        }
+      ]
     },
     {
       "number": 2,
       "mode": "hint",
-      "student_message": "My article starts with background information and feels slow. Give me a hint to improve the opening.",
-      "expected_behavior": "Offer one opening-writing hint without drafting the article."
+      "student_message": "My article starts with background information and feels slow. Give me a hint to improve the opening. For context, my coursework includes English 9 (grade 9). Tie the hint to my coursework without giving the answer.",
+      "expected_behavior": "Offer one opening-writing hint without drafting the article. Explicitly connect the response to English 9 (grade 9). Use stated marks only if useful.",
+      "course_references_by_grade": {
+        "9": "English 9"
+      }
     },
     {
       "number": 3,
       "mode": "chat",
-      "student_message": "Could I use my drawing and writing strengths to make an Earth Science study guide?",
-      "expected_behavior": "Use strengths in visual communication to organize Earth Science concepts."
+      "student_message": "Returning to illustration and journalism from session 1, use any relevant detail from that discussion. Could I use my drawing and writing strengths to make an Earth Science study guide? For context, my coursework includes Earth Science (grade 9). Use my coursework to explain how this builds on what I've learned.",
+      "expected_behavior": "Use strengths in visual communication to organize Earth Science concepts. Explicitly connect the response to Earth Science (grade 9). Use stated marks only if useful. Carry forward a concrete relevant detail from the earlier illustration and journalism discussion when it helps, and keep the intervening stage design topic out of the answer.",
+      "course_references_by_grade": {
+        "9": "Earth Science"
+      }
     }
   ]
 }

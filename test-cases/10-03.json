@@ -3,12 +3,21 @@
   "student": "Cameron",
   "fictional": true,
   "grade_level": 10,
-  "courses_and_grades_pct": {
-    "Geometry": 91,
-    "Chemistry": 89,
-    "English 10": 88,
-    "World History": 84,
-    "Photography": 95
+  "courses_and_grades_pct_by_grade": {
+    "9": {
+      "Algebra I": 88,
+      "Biology": 86,
+      "English 9": 86,
+      "World Geography": 83,
+      "Visual Arts": 92
+    },
+    "10": {
+      "Geometry": 91,
+      "Chemistry": 89,
+      "English 10": 88,
+      "World History": 84,
+      "Photography": 95
+    }
   },
   "hobbies": "Photography, biking",
   "current_experience": "Uses manual focus and edits brightness and contrast.",
@@ -17,20 +26,43 @@
     {
       "number": 1,
       "mode": "chat",
-      "student_message": "How might my geometry and photography grades guide a small product design project?",
-      "expected_behavior": "Connect the project to geometry and photography strengths."
+      "student_message": "How might my geometry and photography grades guide a small product design project? For context, my coursework includes Visual Arts (grade 9) and Photography (grade 10). Use my coursework to explain how this builds on what I've learned.",
+      "expected_behavior": "Connect the project to geometry and photography strengths. Explicitly connect the response to Visual Arts (grade 9) and Photography (grade 10). Use stated marks only if useful.",
+      "course_references_by_grade": {
+        "9": "Visual Arts",
+        "10": "Photography"
+      },
+      "follow_ups": [
+        {
+          "mode": "explore",
+          "student_message": "I want to try music production too. What would be a short first project using sounds I can record? For context, my coursework includes Visual Arts (grade 9), Photography (grade 10). Use those courses only where the connection helps this new interest.",
+          "course_references_by_grade": {
+            "9": "Visual Arts",
+            "10": "Photography"
+          },
+          "expected_behavior": "Treat music production as the current interest. Suggest one project, connect it to at least one applicable course per grade year when useful, and avoid framing it as the prior interest or changing the saved profile."
+        }
+      ]
     },
     {
       "number": 2,
       "mode": "example",
-      "student_message": "Show a worked example of scaling a 4 by 6 photo to a proportional print with a width of 8.",
-      "expected_behavior": "Demonstrate proportional scaling with a check and consistent dimensions."
+      "student_message": "Show a worked example of scaling a 4 by 6 photo to a proportional print with a width of 8. For context, my coursework includes Algebra I (grade 9) and Geometry (grade 10). Use my coursework to explain how this builds on what I've learned.",
+      "expected_behavior": "Demonstrate proportional scaling with a check and consistent dimensions. Explicitly connect the response to Algebra I (grade 9) and Geometry (grade 10). Use stated marks only if useful.",
+      "course_references_by_grade": {
+        "9": "Algebra I",
+        "10": "Geometry"
+      }
     },
     {
       "number": 3,
       "mode": "plan",
-      "student_message": "Help me plan a photo-based product design experiment using two lighting setups.",
-      "expected_behavior": "Keep two lighting setups and specify what to compare."
+      "student_message": "Returning to product design and photography from session 1, use any relevant detail from that discussion. Help me plan a photo-based product design experiment using two lighting setups. For context, my coursework includes Visual Arts (grade 9) and Photography (grade 10). Use my coursework to explain how this builds on what I've learned.",
+      "expected_behavior": "Keep two lighting setups and specify what to compare. Explicitly connect the response to Visual Arts (grade 9) and Photography (grade 10). Use stated marks only if useful. Carry forward a concrete relevant detail from the earlier product design and photography discussion when it helps, and keep the intervening music production topic out of the answer.",
+      "course_references_by_grade": {
+        "9": "Visual Arts",
+        "10": "Photography"
+      }
     }
   ]
 }

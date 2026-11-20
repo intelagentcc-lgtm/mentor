@@ -3,12 +3,28 @@
   "student": "Skyler",
   "fictional": true,
   "grade_level": 11,
-  "courses_and_grades_pct": {
-    "Algebra II": 77,
-    "Environmental Science": 80,
-    "English 11": 89,
-    "U.S. History": 87,
-    "Early Childhood Education": 94
+  "courses_and_grades_pct_by_grade": {
+    "9": {
+      "Algebra I": 73,
+      "Earth Science": 76,
+      "English 9": 85,
+      "World Geography": 84,
+      "Visual Arts": 89
+    },
+    "10": {
+      "Geometry": 75,
+      "Biology": 78,
+      "English 10": 87,
+      "World History": 85,
+      "Child Development": 91
+    },
+    "11": {
+      "Algebra II": 77,
+      "Environmental Science": 80,
+      "English 11": 89,
+      "U.S. History": 87,
+      "Early Childhood Education": 94
+    }
   },
   "hobbies": "Tutoring, crafts, volunteering",
   "current_experience": "Has helped younger students read and organized one craft activity.",
@@ -17,19 +33,53 @@
     {
       "number": 1,
       "mode": "explore",
-      "student_message": "Which beginner activity would let me compare elementary teaching with library services?",
-      "expected_behavior": "Offer an accessible way to compare teaching and library services."
+      "student_message": "Which beginner activity would let me compare elementary teaching with library services? For context, my coursework includes English 9 (grade 9), Child Development (grade 10) and Early Childhood Education (grade 11). Use my coursework to explain how this builds on what I've learned.",
+      "expected_behavior": "Offer an accessible way to compare teaching and library services. Explicitly connect the response to English 9 (grade 9), Child Development (grade 10) and Early Childhood Education (grade 11). Use stated marks only if useful.",
+      "course_references_by_grade": {
+        "9": "English 9",
+        "10": "Child Development",
+        "11": "Early Childhood Education"
+      },
+      "follow_ups": [
+        {
+          "mode": "explore",
+          "student_message": "I'd like to explore illustration too. What is a small sketchbook project I could try this week? For context, my coursework includes English 9 (grade 9), Child Development (grade 10), Early Childhood Education (grade 11). Use those courses only where the connection helps this new interest.",
+          "course_references_by_grade": {
+            "9": "English 9",
+            "10": "Child Development",
+            "11": "Early Childhood Education"
+          },
+          "expected_behavior": "Treat illustration as the current interest. Suggest one project, connect it to at least one applicable course per grade year when useful, and avoid framing it as the prior interest or changing the saved profile."
+        }
+      ]
     },
     {
       "number": 2,
-      "mode": "plan",
-      "student_message": "Help me make a two-session plan to practice explaining a math concept to a younger student.",
-      "expected_behavior": "Suggest a manageable two-session teaching plan."
+      "mode": "explore",
+      "scenario_kind": "new_interest_after_reload",
+      "student_message": "Today I'd like to switch to game design. What is a simple paper game I could make for younger readers? For context, my coursework includes English 9 (grade 9), Child Development (grade 10), and Early Childhood Education (grade 11). Use those courses where they help with the new interest.",
+      "expected_behavior": "Recognize game design as the new interest after a reload. Suggest a small paper prototype and link it to the three course years without continuing the earlier illustration suggestion.",
+      "course_references_by_grade": {
+        "9": "English 9",
+        "10": "Child Development",
+        "11": "Early Childhood Education"
+      }
     },
     {
       "number": 3,
+      "mode": "plan",
+      "student_message": "Help me make a two-session plan to practice explaining a math concept to a younger student. For context, my coursework includes Algebra I (grade 9), Child Development (grade 10) and Early Childhood Education (grade 11). Use my coursework to explain how this builds on what I've learned.",
+      "expected_behavior": "Suggest a manageable two-session teaching plan. Explicitly connect the response to Algebra I (grade 9), Child Development (grade 10) and Early Childhood Education (grade 11). Use stated marks only if useful.",
+      "course_references_by_grade": {
+        "9": "Algebra I",
+        "10": "Child Development",
+        "11": "Early Childhood Education"
+      }
+    },
+    {
+      "number": 4,
       "mode": "checkin",
-      "student_message": "I explained fractions using paper shapes. The student understood halves but not quarters. How should I adjust?",
+      "student_message": "Returning to elementary teaching from session 1, use any relevant detail from that discussion. I explained fractions using paper shapes. The student understood halves but not quarters. How should I adjust? For context, my coursework includes Algebra I (grade 9), Child Development (grade 10) and Early Childhood Education (grade 11). Use my coursework to explain how this builds on what I've learned.",
       "save_weekly_plan_before_chat": {
         "week": "2026-11-16",
         "goal": "Practice explaining fractions",
@@ -44,7 +94,12 @@
           }
         ]
       },
-      "expected_behavior": "Build on the learner's understanding of halves and break quarters into a smaller step."
+      "expected_behavior": "Build on the learner's understanding of halves and break quarters into a smaller step. Explicitly connect the response to Algebra I (grade 9), Child Development (grade 10) and Early Childhood Education (grade 11). Use stated marks only if useful. Carry forward a concrete relevant detail from the earlier elementary teaching discussion when it helps, and keep the intervening illustration topic out of the answer.",
+      "course_references_by_grade": {
+        "9": "Algebra I",
+        "10": "Child Development",
+        "11": "Early Childhood Education"
+      }
     }
   ]
 }

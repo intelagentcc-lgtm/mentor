@@ -1,13 +1,19 @@
 # Mentor student test cases
 
-The suite contains 12 fictional students, four per grade, and 39 sessions with
-one prompt and reply per session. Each JSON file includes the student's courses
-and percentages, hobbies, experience,
-career interests, ordered prompts, and expected behavior. Some cases also
+The suite contains 12 fictional students, four per grade, and 40 sessions with
+52 student prompts. Each student explores a different interest in a follow-up
+within the first session, then returns to an earlier interest in a later session.
+Skyler also starts a new interest after a reload in session 2.
+Each JSON file includes the student's courses and percentages grouped by
+grade, hobbies, experience, career interests,
+ordered prompts, and expected behavior. Grade 10 cases include grades 9–10,
+and grade 11 cases include grades 9–11. Every session names at least one course
+from each year in the student's record and specifies those courses in
+`course_references_by_grade`. Some cases also
 include sample class materials, catalog text, or a saved check-in plan.
 
-The [rerun evaluation](evaluation.md) compares the original behavior with the
-replacement transcripts and identifies remaining quality gaps.
+The [earlier evaluation](evaluation.md) covers the single-year cases. The
+[topic-switch evaluation](topic-switch-evaluation.md) covers the current cases.
 
 | Grade | Student | Career interests | Case | Conversation |
 | --- | --- | --- | --- | --- |
@@ -24,15 +30,16 @@ replacement transcripts and identifies remaining quality gaps.
 | 11 | Quinn | Sports analytics and media production | [11-03](11-03.json) | [Transcript](responses/11-03.md) |
 | 11 | Skyler | Elementary teaching and library services | [11-04](11-04.json) | [Transcript](responses/11-04.md) |
 
-Start with a fresh browser profile for each case. Map the course names and
-percentages to **Courses** and **Recent grades**, hobbies and career interests to
-**Interests & goals**, and experience to **Experience and skill levels**. Set the
+Start with a fresh browser profile for each case. Enter the course names and
+percentages from `courses_and_grades_pct_by_grade` in **Courses** and
+**Recent grades**, with a label for each year. Enter hobbies and career interests in
+**Interests & goals** and experience in **Experience and skill levels**. Set the
 given mode before each prompt. Apply any supplied material or weekly plan before
-the session that uses it. Keep mentoring memory available between sessions for
-the same student.
+the session that uses it. Submit any `follow_ups` in the same tab after the
+opening prompt. Reload the page between sessions while keeping the student's
+browser storage.
 
-The [responses](responses/) folder contains the recorded student prompts and
-Mentor replies. The recording harness used the app's chat handler and browser
-storage logic with a simulated browser interface. Model requests used Qwen 2.5
-3B through local Ollama. The transcripts include any fallback replies; use the
-expected behavior in each test case when evaluating the results.
+The [responses](responses/) folder holds the expanded conversations. The
+recording harness used the app's chat handler and browser storage logic with a
+simulated browser interface. Model requests used Qwen 2.5 3B through local
+Ollama. The transcripts include fallback replies where the app returned them.
