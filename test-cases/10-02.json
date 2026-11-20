@@ -1,0 +1,37 @@
+{
+  "id": "10-02",
+  "student": "Taylor",
+  "fictional": true,
+  "grade_level": 10,
+  "courses_and_grades_pct": {
+    "Geometry": 82,
+    "Biology": 84,
+    "English 10": 96,
+    "World History": 95,
+    "Media Studies": 93
+  },
+  "hobbies": "Debate, podcasts, maps",
+  "current_experience": "Has presented in debate club and edited a short audio clip.",
+  "career_interests": "Public policy and journalism",
+  "sessions": [
+    {
+      "number": 1,
+      "mode": "explore",
+      "student_message": "I like debate and podcasts. What project could help me compare public policy and journalism?",
+      "expected_behavior": "Connect both interests with a school-appropriate comparison project."
+    },
+    {
+      "number": 2,
+      "mode": "materials",
+      "student_message": "How many sources must my history presentation use, and how many must be primary sources?",
+      "expected_behavior": "Return three sources and at least one primary source, with a rubric citation."
+    },
+    {
+      "number": 3,
+      "mode": "hint",
+      "student_message": "I have a primary source and a textbook summary. Give me a hint to compare what each one can tell me.",
+      "expected_behavior": "Give one useful source-comparison hint."
+    }
+  ],
+  "class_material": "History Presentation Rubric\nUse at least three sources.\nAt least one source must be a primary source.\nAdd a bibliography on the last slide."
+}

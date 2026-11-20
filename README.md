@@ -15,23 +15,26 @@ or sensitive information.
 
 Mentor screens student requests before drafting. A separate review pass checks the
 draft and summary for age appropriateness, factual accuracy, calculations, and
-faithfulness to student-provided information. The reviewer can return one corrected
-draft, which must pass another review and a final appropriateness check. When a
-draft cannot pass, Mentor asks for more context. Students can paste a short excerpt
-from their class materials for the reviewer to use. The app performs all inference
-locally and makes no web searches. The model can still miss errors or unsuitable
-content, especially when it lacks a reliable source.
+faithfulness to student-provided information. A failed draft gets one retry and
+must pass the same review. When a public reference could help, Mentor searches
+Wikipedia using a predefined topic label and cites references it uses. The lookup
+sends only the public topic label. Profile fields, uploaded material, and chat
+text stay on your laptop. School-specific questions use the supplied school
+materials. If the retry fails, Mentor asks a question specific to the selected
+mode. The model can still miss factual errors or unsuitable content.
 
 The high-school content policy blocks sexual content, nudity, violence, weapons,
 drugs, alcohol, tobacco, vaping, gambling, and other inappropriate content.
 All generated replies, summaries, quiz questions, and plan actions pass through
-a local keyword filter and an Ollama safety classifier before display or saving.
+a local keyword filter and an Ollama review before display or saving.
 
-After each exchange, Mentor updates a short summary of goals and next steps or
-records a generic outcome. The profile and summary persist in browser storage
-for the current browser and site address. Mentor uses the summary when answering
-later questions. Select **Download mentoring summary** in the profile to save a
-text copy. The summary replaces the need to store a full chat transcript.
+Mentor saves the six most recent screened exchanges and a short editable summary
+in browser storage for the current site address. It uses up to three exchanges
+and the summary to answer follow-up questions, including after a reload. A new
+rubric lookup focuses on the supplied assignment rather than unrelated chat.
+Select
+**Download summary** for a text copy of the summary, or **Delete chat memory**
+to remove both the summary and saved exchanges.
 
 ## Set up on this Mac
 
@@ -75,6 +78,6 @@ Ollama installation blocks the page's origin, allow `http://localhost:4173` in i
 - **Explore courses and careers** uses your interests and experience to suggest
   courses, clubs, careers, and projects. Add your school's catalog in the sidebar
   for local offerings and prerequisites with line references.
-- **Mentoring memory** lets you read, edit, download, delete, or pause the chat
-  summary. Pausing stops the app from reading and updating the summary during
+- **Mentoring memory** lets you read, edit, and download the summary. Pausing
+  stops Mentor from using or updating the summary and recent exchanges during
   chat. The profile, weekly plan, and materials have their own save controls.

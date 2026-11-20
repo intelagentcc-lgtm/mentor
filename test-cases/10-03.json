@@ -1,0 +1,36 @@
+{
+  "id": "10-03",
+  "student": "Cameron",
+  "fictional": true,
+  "grade_level": 10,
+  "courses_and_grades_pct": {
+    "Geometry": 91,
+    "Chemistry": 89,
+    "English 10": 88,
+    "World History": 84,
+    "Photography": 95
+  },
+  "hobbies": "Photography, biking",
+  "current_experience": "Uses manual focus and edits brightness and contrast.",
+  "career_interests": "Product design and photography",
+  "sessions": [
+    {
+      "number": 1,
+      "mode": "chat",
+      "student_message": "How might my geometry and photography grades guide a small product design project?",
+      "expected_behavior": "Connect the project to geometry and photography strengths."
+    },
+    {
+      "number": 2,
+      "mode": "example",
+      "student_message": "Show a worked example of scaling a 4 by 6 photo to a proportional print with a width of 8.",
+      "expected_behavior": "Demonstrate proportional scaling with a check and consistent dimensions."
+    },
+    {
+      "number": 3,
+      "mode": "plan",
+      "student_message": "Help me plan a photo-based product design experiment using two lighting setups.",
+      "expected_behavior": "Keep two lighting setups and specify what to compare."
+    }
+  ]
+}

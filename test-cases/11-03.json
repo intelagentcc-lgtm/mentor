@@ -1,0 +1,36 @@
+{
+  "id": "11-03",
+  "student": "Quinn",
+  "fictional": true,
+  "grade_level": 11,
+  "courses_and_grades_pct": {
+    "Precalculus": 86,
+    "Chemistry": 87,
+    "English 11": 92,
+    "U.S. History": 90,
+    "Digital Media": 94
+  },
+  "hobbies": "Video editing, sports statistics",
+  "current_experience": "Uses a spreadsheet for game summaries and edited one short video.",
+  "career_interests": "Sports analytics and media production",
+  "sessions": [
+    {
+      "number": 1,
+      "mode": "explore",
+      "student_message": "How can I try sports analytics and media production in one small project?",
+      "expected_behavior": "Suggest a project spanning data analysis and video editing."
+    },
+    {
+      "number": 2,
+      "mode": "quiz",
+      "student_message": "Quiz me on finding a mean from a small set of sports scores. Give only one question.",
+      "expected_behavior": "Pose one mean question without the answer."
+    },
+    {
+      "number": 3,
+      "mode": "plan",
+      "student_message": "Help me split a sports statistics video into two tasks I can complete in one week.",
+      "expected_behavior": "Split the video into two feasible tasks."
+    }
+  ]
+}

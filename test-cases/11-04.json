@@ -1,0 +1,50 @@
+{
+  "id": "11-04",
+  "student": "Skyler",
+  "fictional": true,
+  "grade_level": 11,
+  "courses_and_grades_pct": {
+    "Algebra II": 77,
+    "Environmental Science": 80,
+    "English 11": 89,
+    "U.S. History": 87,
+    "Early Childhood Education": 94
+  },
+  "hobbies": "Tutoring, crafts, volunteering",
+  "current_experience": "Has helped younger students read and organized one craft activity.",
+  "career_interests": "Elementary teaching and library services",
+  "sessions": [
+    {
+      "number": 1,
+      "mode": "explore",
+      "student_message": "Which beginner activity would let me compare elementary teaching with library services?",
+      "expected_behavior": "Offer an accessible way to compare teaching and library services."
+    },
+    {
+      "number": 2,
+      "mode": "plan",
+      "student_message": "Help me make a two-session plan to practice explaining a math concept to a younger student.",
+      "expected_behavior": "Suggest a manageable two-session teaching plan."
+    },
+    {
+      "number": 3,
+      "mode": "checkin",
+      "student_message": "I explained fractions using paper shapes. The student understood halves but not quarters. How should I adjust?",
+      "save_weekly_plan_before_chat": {
+        "week": "2026-11-16",
+        "goal": "Practice explaining fractions",
+        "actions": [
+          {
+            "text": "Demonstrate halves with paper shapes",
+            "done": true
+          },
+          {
+            "text": "Try the same method for quarters",
+            "done": false
+          }
+        ]
+      },
+      "expected_behavior": "Build on the learner's understanding of halves and break quarters into a smaller step."
+    }
+  ]
+}

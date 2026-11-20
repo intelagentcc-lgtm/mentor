@@ -128,14 +128,14 @@
           <summary>Mentoring memory</summary>
           <form id="memory-form" class="profile-form">
             <label class="memory-toggle"><input id="memory-paused" type="checkbox" /> Pause chat memory</label>
-            <p class="workspace-status">Pausing stops Mentor from reading or updating the saved summary.</p>
+            <p class="workspace-status">Mentor saves your last six exchanges on this device and uses up to three as context. Pausing stops Mentor from using or updating saved chat memory.</p>
             <div class="field-row">
               <label for="memory-notes">Summary used in future chats</label>
               <textarea id="memory-notes" rows="5" maxlength="900"></textarea>
             </div>
             <div class="workspace-buttons">
               <button type="submit">Save edits</button>
-              <button id="delete-summary" type="button" disabled>Delete summary</button>
+              <button id="delete-summary" type="button" disabled>Delete chat memory</button>
               <button id="export-summary" type="button" disabled>Download summary</button>
             </div>
             <p id="memory-status" class="workspace-status" role="status"></p>

@@ -1,0 +1,37 @@
+{
+  "id": "11-02",
+  "student": "Parker",
+  "fictional": true,
+  "grade_level": 11,
+  "courses_and_grades_pct": {
+    "Algebra II": 83,
+    "Environmental Science": 87,
+    "AP English Language": 96,
+    "AP U.S. History": 94,
+    "Graphic Design": 92
+  },
+  "hobbies": "Writing, typography, yearbook",
+  "current_experience": "Edited yearbook captions and created two page layouts.",
+  "career_interests": "Communication design and editing",
+  "sessions": [
+    {
+      "number": 1,
+      "mode": "explore",
+      "student_message": "Suggest a small project to compare communication design and editing using my yearbook skills.",
+      "expected_behavior": "Propose a project combining editing and visual layout."
+    },
+    {
+      "number": 2,
+      "mode": "materials",
+      "student_message": "What does my persuasive essay rubric require for the counterargument?",
+      "expected_behavior": "Describe the fair counterargument and evidence-based response with a rubric citation."
+    },
+    {
+      "number": 3,
+      "mode": "chat",
+      "student_message": "How could I build an editing portfolio from schoolwork without sharing classmates' names?",
+      "expected_behavior": "Suggest portfolio samples that protect classmates' identity."
+    }
+  ],
+  "class_material": "Persuasive Essay Rubric\nState a clear claim in the introduction.\nPresent a fair counterargument and respond to it with evidence.\nUse examples from the assigned readings."
+}

@@ -1,0 +1,36 @@
+{
+  "id": "09-02",
+  "student": "Jordan",
+  "fictional": true,
+  "grade_level": 9,
+  "courses_and_grades_pct": {
+    "Algebra I": 79,
+    "Earth Science": 81,
+    "English 9": 95,
+    "World Geography": 92,
+    "Digital Art": 94
+  },
+  "hobbies": "Comics, drawing, school newspaper",
+  "current_experience": "Can sketch characters and wrote one newspaper article.",
+  "career_interests": "Illustration and journalism",
+  "sessions": [
+    {
+      "number": 1,
+      "mode": "explore",
+      "student_message": "I like writing and drawing. Suggest two small ways I can try illustration and journalism at school.",
+      "expected_behavior": "Give distinct, feasible illustration and reporting activities."
+    },
+    {
+      "number": 2,
+      "mode": "hint",
+      "student_message": "My article starts with background information and feels slow. Give me a hint to improve the opening.",
+      "expected_behavior": "Offer one opening-writing hint without drafting the article."
+    },
+    {
+      "number": 3,
+      "mode": "chat",
+      "student_message": "Could I use my drawing and writing strengths to make an Earth Science study guide?",
+      "expected_behavior": "Use strengths in visual communication to organize Earth Science concepts."
+    }
+  ]
+}

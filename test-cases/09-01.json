@@ -1,0 +1,56 @@
+{
+  "id": "09-01",
+  "student": "Avery",
+  "fictional": true,
+  "grade_level": 9,
+  "courses_and_grades_pct": {
+    "Geometry": 95,
+    "Biology": 93,
+    "English 9": 84,
+    "World Geography": 87,
+    "Introduction to Engineering": 96
+  },
+  "hobbies": "Robotics, model building",
+  "current_experience": "Built a kit and can edit simple Arduino code.",
+  "career_interests": "Mechanical engineering",
+  "sessions": [
+    {
+      "number": 1,
+      "mode": "explore",
+      "student_message": "Given my classes and grades, what beginner project would help me explore mechanical engineering?",
+      "expected_behavior": "Connect the project to robotics or engineering and the student's math/science strengths."
+    },
+    {
+      "number": 2,
+      "mode": "plan",
+      "student_message": "I have two 30-minute blocks this week. Help me plan a simple cardboard bridge experiment.",
+      "expected_behavior": "Suggest two short blocks with a concrete bridge test."
+    },
+    {
+      "number": 3,
+      "mode": "checkin",
+      "student_message": "I built the bridge and made one test, but I forgot to record how much it held. What should I change next week?",
+      "save_weekly_plan_before_chat": {
+        "week": "2026-11-16",
+        "goal": "Test a cardboard bridge",
+        "actions": [
+          {
+            "text": "Build a model bridge",
+            "done": true
+          },
+          {
+            "text": "Record the load from two trials",
+            "done": false
+          }
+        ]
+      },
+      "expected_behavior": "Use the saved partial progress and recommend recording the load."
+    },
+    {
+      "number": 4,
+      "mode": "chat",
+      "student_message": "What is one way I can use my geometry skills to make my next bridge test more useful?",
+      "expected_behavior": "Apply a geometry concept to a measurable bridge-test variable."
+    }
+  ]
+}

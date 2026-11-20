@@ -1,0 +1,57 @@
+{
+  "id": "11-01",
+  "student": "Alex",
+  "fictional": true,
+  "grade_level": 11,
+  "courses_and_grades_pct": {
+    "Precalculus": 97,
+    "AP Physics 1": 95,
+    "English 11": 89,
+    "U.S. History": 90,
+    "Engineering Design": 98
+  },
+  "hobbies": "Robotics, electronics",
+  "current_experience": "Can wire basic circuits and use entry-level CAD.",
+  "career_interests": "Electrical engineering",
+  "sessions": [
+    {
+      "number": 1,
+      "mode": "explore",
+      "student_message": "Which catalog option best fits my interest in circuits, and what prerequisite is listed?",
+      "expected_behavior": "Name Electronics and Circuit Design with both alternative prerequisites and a catalog citation."
+    },
+    {
+      "number": 2,
+      "mode": "example",
+      "student_message": "Show a worked example of using Ohm's law with a 9 V source and a 3 ohm resistor.",
+      "expected_behavior": "Use Ohm's law accurately and label the result in amperes."
+    },
+    {
+      "number": 3,
+      "mode": "plan",
+      "student_message": "Create a two-action study plan to improve my circuit diagram skills.",
+      "expected_behavior": "Suggest two small actions that target circuit diagrams."
+    },
+    {
+      "number": 4,
+      "mode": "checkin",
+      "student_message": "I drew two diagrams, but I still mix up series and parallel layouts. What should I practice next?",
+      "save_weekly_plan_before_chat": {
+        "week": "2026-11-16",
+        "goal": "Improve circuit diagrams",
+        "actions": [
+          {
+            "text": "Draw two sample circuits",
+            "done": true
+          },
+          {
+            "text": "Compare series and parallel layouts",
+            "done": false
+          }
+        ]
+      },
+      "expected_behavior": "Acknowledge completed diagrams and address the series/parallel distinction."
+    }
+  ],
+  "course_catalog": "Electronics and Circuit Design\nPrerequisite: Engineering Design or AP Physics 1.\nDescription: Design, simulate, and test basic circuits.\nArchitectural Drawing\nPrerequisite: Engineering Design."
+}

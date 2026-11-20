@@ -1,0 +1,50 @@
+{
+  "id": "10-04",
+  "student": "Drew",
+  "fictional": true,
+  "grade_level": 10,
+  "courses_and_grades_pct": {
+    "Geometry": 75,
+    "Biology": 78,
+    "English 10": 84,
+    "World History": 81,
+    "Culinary Foundations": 93
+  },
+  "hobbies": "Baking, volunteering",
+  "current_experience": "Can follow recipes independently and has helped at school events.",
+  "career_interests": "Food science and hospitality",
+  "sessions": [
+    {
+      "number": 1,
+      "mode": "explore",
+      "student_message": "How could my baking interest help me explore food science and improve my math skills?",
+      "expected_behavior": "Connect baking to a beginner food science or measurement activity."
+    },
+    {
+      "number": 2,
+      "mode": "hint",
+      "student_message": "A recipe serves 8, but I need 12 portions. Give me a hint for finding the scaling factor.",
+      "expected_behavior": "Guide the student to compare portions without revealing the result."
+    },
+    {
+      "number": 3,
+      "mode": "checkin",
+      "student_message": "I completed one recipe scaling practice, but I got stuck with the fractions. Help me adjust my goal.",
+      "save_weekly_plan_before_chat": {
+        "week": "2026-11-16",
+        "goal": "Practice recipe scaling",
+        "actions": [
+          {
+            "text": "Scale a recipe for 12 portions",
+            "done": true
+          },
+          {
+            "text": "Check the fractional quantities",
+            "done": false
+          }
+        ]
+      },
+      "expected_behavior": "Acknowledge completed practice and give a smaller fractions action."
+    }
+  ]
+}

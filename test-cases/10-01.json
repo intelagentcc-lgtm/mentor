@@ -1,0 +1,57 @@
+{
+  "id": "10-01",
+  "student": "Riley",
+  "fictional": true,
+  "grade_level": 10,
+  "courses_and_grades_pct": {
+    "Algebra II": 96,
+    "Chemistry": 94,
+    "English 10": 87,
+    "World History": 88,
+    "Intro to Computer Science": 97
+  },
+  "hobbies": "Programming, puzzles",
+  "current_experience": "Can write Python loops and simple functions.",
+  "career_interests": "Software engineering",
+  "sessions": [
+    {
+      "number": 1,
+      "mode": "explore",
+      "student_message": "Which catalog course would build on my programming experience, and what prerequisite is listed?",
+      "expected_behavior": "Name Software Development II and Introduction to Computer Science with a catalog citation."
+    },
+    {
+      "number": 2,
+      "mode": "quiz",
+      "student_message": "Give me one practice question about what a Python for loop prints. Wait for my answer.",
+      "expected_behavior": "Provide one loop question without its answer."
+    },
+    {
+      "number": 3,
+      "mode": "plan",
+      "student_message": "Help me plan a small programming project I can do in two one-hour blocks this week.",
+      "expected_behavior": "Fit the project into two one-hour blocks."
+    },
+    {
+      "number": 4,
+      "mode": "checkin",
+      "student_message": "I wrote the loop and it works on one example, but I did not test other inputs. What is a good next step?",
+      "save_weekly_plan_before_chat": {
+        "week": "2026-11-16",
+        "goal": "Build a small Python project",
+        "actions": [
+          {
+            "text": "Write the main loop",
+            "done": true
+          },
+          {
+            "text": "Try three different inputs",
+            "done": false
+          }
+        ]
+      },
+      "expected_behavior": "Use the saved completion status and recommend testing different inputs."
+    }
+  ],
+  "course_catalog": "Software Development II\nPrerequisite: Introduction to Computer Science.\nDescription: Build and test programs with functions and collections.\nDigital Photography\nPrerequisite: None."
+}
