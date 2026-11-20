@@ -2,6 +2,8 @@
 
 A responsive high school student mentor powered by a local open-weight language model.
 
+See the [feature guide](FEATURES.md) for the full list of supported capabilities.
+
 The app defaults to the open-weight **Qwen 2.5 3B** on this Apple M1 MacBook Air
 with 8 GB of unified memory. Choose **Qwen 2.5 1.5B** if you need quicker replies
 or more memory for other apps. Ollama lists the quantized downloads at
