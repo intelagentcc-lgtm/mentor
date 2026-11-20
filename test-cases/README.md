@@ -1,9 +1,9 @@
 # Mentor student test cases
 
-The suite contains 12 fictional students, four per grade, and 40 sessions with
-52 student prompts. Each student explores a different interest in a follow-up
-within the first session, then returns to an earlier interest in a later session.
-Skyler also starts a new interest after a reload in session 2.
+The suite contains 12 fictional students, four per grade, and 64 sessions with
+76 student prompts. Each student explores a different interest within the first
+session, then starts another interest on a later visit. Two prompts per student
+return to earlier work through clues, without naming a prior session.
 Each JSON file includes the student's courses and percentages grouped by
 grade, hobbies, experience, career interests,
 ordered prompts, and expected behavior. Grade 10 cases include grades 9–10,
@@ -13,7 +13,9 @@ from each year in the student's record and specifies those courses in
 include sample class materials, catalog text, or a saved check-in plan.
 
 The [earlier evaluation](evaluation.md) covers the single-year cases. The
-[topic-switch evaluation](topic-switch-evaluation.md) covers the current cases.
+[topic-switch evaluation](topic-switch-evaluation.md) covers the previous run.
+The [implicit-recall evaluation](implicit-recall-evaluation.md) covers the
+current cases.
 
 | Grade | Student | Career interests | Case | Conversation |
 | --- | --- | --- | --- | --- |

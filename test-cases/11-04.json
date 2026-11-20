@@ -79,7 +79,7 @@
     {
       "number": 4,
       "mode": "checkin",
-      "student_message": "Returning to elementary teaching from session 1, use any relevant detail from that discussion. I explained fractions using paper shapes. The student understood halves but not quarters. How should I adjust? For context, my coursework includes Algebra I (grade 9), Child Development (grade 10) and Early Childhood Education (grade 11). Use my coursework to explain how this builds on what I've learned.",
+      "student_message": "I explained fractions using paper shapes. The student understood halves but not quarters. How should I adjust? For context, my coursework includes Algebra I (grade 9), Child Development (grade 10) and Early Childhood Education (grade 11). Use my coursework to explain how this builds on what I've learned.",
       "save_weekly_plan_before_chat": {
         "week": "2026-11-16",
         "goal": "Practice explaining fractions",
@@ -99,7 +99,36 @@
         "9": "Algebra I",
         "10": "Child Development",
         "11": "Early Childhood Education"
-      }
+      },
+      "scenario_kind": "implicit_return"
+    },
+    {
+      "number": 5,
+      "mode": "explore",
+      "scenario_kind": "new_interest_after_reload",
+      "student_message": "How could I try taking a set of three portraits of objects using only window light? For context, my coursework includes Visual Arts (grade 9), Child Development (grade 10), Early Childhood Education (grade 11). Use it when useful.",
+      "course_references_by_grade": {
+        "9": "Visual Arts",
+        "10": "Child Development",
+        "11": "Early Childhood Education"
+      },
+      "expected_behavior": "Address photography as the active interest and suggest a manageable starting project."
+    },
+    {
+      "number": 6,
+      "mode": "chat",
+      "scenario_kind": "implicit_return",
+      "student_message": "They can fold the square twice now, but still call every piece a half. What could I ask them to check? For context, my coursework includes Algebra I (grade 9), Child Development (grade 10), Early Childhood Education (grade 11). Use it when useful.",
+      "course_references_by_grade": {
+        "9": "Algebra I",
+        "10": "Child Development",
+        "11": "Early Childhood Education"
+      },
+      "expected_behavior": "Infer the paper-folding fractions lesson. Prompt the learner to count the equal pieces that make the whole.",
+      "expected_recall_sessions": [
+        3,
+        4
+      ]
     }
   ]
 }

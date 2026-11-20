@@ -1,4 +1,8 @@
-# Topic-switch evaluation
+# Earlier topic-switch evaluation
+
+This evaluation covers commit `f626510`. See the
+[implicit-recall evaluation](implicit-recall-evaluation.md) for the current
+scenarios and replacement transcripts.
 
 The expanded suite tests 12 fictional student profiles across 40 sessions
 and 52 prompts. Each profile has a same-session topic change and a later
@@ -18,17 +22,17 @@ All 52 prompts matched their fixture and have a recorded reply. Mentor gave
 43 substantive replies and nine fallbacks. Substantive replies varied in how
 well they used prior work and the course record.
 
-- [Avery](responses/09-01.md) got a Moon-observation project during the switch
+- Avery (`09-01`) got a Moon-observation project during the switch
   and returned to measuring a cardboard bridge after later sessions. The
   final reply still inferred how Avery had built the bridge.
-- [Parker](responses/11-02.md) got a plant-observation project that connected
+- Parker (`11-02`) got a plant-observation project that connected
   all three grade years to the new interest. The later portfolio question
   still received a generic probe.
-- [Skyler](responses/11-04.md) got a paper game after a reload and later
+- Skyler (`11-04`) got a paper game after a reload and later
   returned to teaching fractions with paper shapes. The game and check-in
   drew on child development and early education but omitted the grade 9
   course connection.
-- [Morgan](responses/09-03.md) and [Cameron](responses/10-03.md) received
+- Morgan (`09-03`) and Cameron (`10-03`) received
   generic probes for photography and music production. A few other
   same-session replies answered the new topic but leaned on the prior
   interest more than the current request warranted.

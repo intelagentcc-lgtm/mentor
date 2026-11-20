@@ -70,11 +70,37 @@
     {
       "number": 4,
       "mode": "chat",
-      "student_message": "Returning to cardboard bridge experiment from session 2, use any relevant detail from that discussion. What is one way I can use my geometry skills to make my next bridge test more useful? For context, my coursework includes Geometry (grade 9). Use my coursework to explain how this builds on what I've learned.",
+      "student_message": "What is one way I can use my geometry skills to make my next bridge test more useful? For context, my coursework includes Geometry (grade 9). Use my coursework to explain how this builds on what I've learned.",
       "expected_behavior": "Apply a geometry concept to a measurable bridge-test variable. Explicitly connect the response to Geometry (grade 9). Use stated marks only if useful. Carry forward a concrete relevant detail from the earlier cardboard bridge experiment discussion when it helps, and keep the intervening astronomy topic out of the answer.",
       "course_references_by_grade": {
         "9": "Geometry"
-      }
+      },
+      "scenario_kind": "implicit_return"
+    },
+    {
+      "number": 5,
+      "mode": "explore",
+      "scenario_kind": "new_interest_after_reload",
+      "student_message": "How could I make a three-color poster to explain recycling? For context, my coursework includes Introduction to Engineering (grade 9). Use it when useful.",
+      "course_references_by_grade": {
+        "9": "Introduction to Engineering"
+      },
+      "expected_behavior": "Address graphic design as the active interest and suggest a manageable starting project."
+    },
+    {
+      "number": 6,
+      "mode": "chat",
+      "scenario_kind": "implicit_return",
+      "student_message": "When I tried putting pennies at the center, the folded piece sagged before the flat one. What should I keep the same next time? For context, my coursework includes Geometry (grade 9). Use it when useful.",
+      "course_references_by_grade": {
+        "9": "Geometry"
+      },
+      "expected_behavior": "Infer the earlier cardboard bridge load test. Keep span and load placement fixed, change only the design, and record the maximum load.",
+      "expected_recall_sessions": [
+        2,
+        3,
+        4
+      ]
     }
   ]
 }

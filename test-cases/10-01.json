@@ -67,7 +67,7 @@
     {
       "number": 4,
       "mode": "checkin",
-      "student_message": "Returning to Python programming from session 1, use any relevant detail from that discussion. I wrote the loop and it works on one example, but I did not test other inputs. What is a good next step? For context, my coursework includes Computing Foundations (grade 9) and Intro to Computer Science (grade 10). Use my coursework to explain how this builds on what I've learned.",
+      "student_message": "I wrote the loop and it works on one example, but I did not test other inputs. What is a good next step? For context, my coursework includes Computing Foundations (grade 9) and Intro to Computer Science (grade 10). Use my coursework to explain how this builds on what I've learned.",
       "save_weekly_plan_before_chat": {
         "week": "2026-11-16",
         "goal": "Build a small Python project",
@@ -86,7 +86,35 @@
       "course_references_by_grade": {
         "9": "Computing Foundations",
         "10": "Intro to Computer Science"
-      }
+      },
+      "scenario_kind": "implicit_return"
+    },
+    {
+      "number": 5,
+      "mode": "explore",
+      "scenario_kind": "new_interest_after_reload",
+      "student_message": "I'd like to try writing a short mystery. What's a beginner outline I could sketch? For context, my coursework includes English 9 (grade 9), English 10 (grade 10). Use it when useful.",
+      "course_references_by_grade": {
+        "9": "English 9",
+        "10": "English 10"
+      },
+      "expected_behavior": "Address creative writing as the active interest and suggest a manageable starting project."
+    },
+    {
+      "number": 6,
+      "mode": "chat",
+      "scenario_kind": "implicit_return",
+      "student_message": "It works for 1 and 5 now. Should I try zero, and what would I expect to see? For context, my coursework includes Computing Foundations (grade 9), Intro to Computer Science (grade 10). Use it when useful.",
+      "course_references_by_grade": {
+        "9": "Computing Foundations",
+        "10": "Intro to Computer Science"
+      },
+      "expected_behavior": "Infer the earlier Python loop and input tests. Describe the expected result conditionally if the loop uses range with zero.",
+      "expected_recall_sessions": [
+        2,
+        3,
+        4
+      ]
     }
   ],
   "course_catalog": "Software Development II\nPrerequisite: Introduction to Computer Science.\nDescription: Build and test programs with functions and collections.\nDigital Photography\nPrerequisite: None."

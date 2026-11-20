@@ -78,7 +78,7 @@
     {
       "number": 4,
       "mode": "checkin",
-      "student_message": "Returning to circuits from session 1, use any relevant detail from that discussion. I drew two diagrams, but I still mix up series and parallel layouts. What should I practice next? For context, my coursework includes Introduction to Engineering (grade 9), Electronics Fundamentals (grade 10) and AP Physics 1 (grade 11). Use my coursework to explain how this builds on what I've learned.",
+      "student_message": "I drew two diagrams, but I still mix up series and parallel layouts. What should I practice next? For context, my coursework includes Introduction to Engineering (grade 9), Electronics Fundamentals (grade 10) and AP Physics 1 (grade 11). Use my coursework to explain how this builds on what I've learned.",
       "save_weekly_plan_before_chat": {
         "week": "2026-11-16",
         "goal": "Improve circuit diagrams",
@@ -98,7 +98,37 @@
         "9": "Introduction to Engineering",
         "10": "Electronics Fundamentals",
         "11": "AP Physics 1"
-      }
+      },
+      "scenario_kind": "implicit_return"
+    },
+    {
+      "number": 5,
+      "mode": "explore",
+      "scenario_kind": "new_interest_after_reload",
+      "student_message": "How could I make a three-photo series about shapes around my home? For context, my coursework includes Geometry (grade 9), Algebra II (grade 10), Precalculus (grade 11). Use it when useful.",
+      "course_references_by_grade": {
+        "9": "Geometry",
+        "10": "Algebra II",
+        "11": "Precalculus"
+      },
+      "expected_behavior": "Address photography as the active interest and suggest a manageable starting project."
+    },
+    {
+      "number": 6,
+      "mode": "chat",
+      "scenario_kind": "implicit_return",
+      "student_message": "Both bulbs are drawn next to each other, but I can trace only one route. How should I label that layout? For context, my coursework includes Introduction to Engineering (grade 9), Electronics Fundamentals (grade 10), AP Physics 1 (grade 11). Use it when useful.",
+      "course_references_by_grade": {
+        "9": "Introduction to Engineering",
+        "10": "Electronics Fundamentals",
+        "11": "AP Physics 1"
+      },
+      "expected_behavior": "Infer the circuit diagrams. Explain that one path indicates series when components share it, regardless of physical position.",
+      "expected_recall_sessions": [
+        2,
+        3,
+        4
+      ]
     }
   ],
   "course_catalog": "Electronics and Circuit Design\nPrerequisite: Engineering Design or AP Physics 1.\nDescription: Design, simulate, and test basic circuits.\nArchitectural Drawing\nPrerequisite: Engineering Design."

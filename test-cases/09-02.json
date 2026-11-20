@@ -47,11 +47,35 @@
     {
       "number": 3,
       "mode": "chat",
-      "student_message": "Returning to illustration and journalism from session 1, use any relevant detail from that discussion. Could I use my drawing and writing strengths to make an Earth Science study guide? For context, my coursework includes Earth Science (grade 9). Use my coursework to explain how this builds on what I've learned.",
+      "student_message": "Could I use my drawing and writing strengths to make an Earth Science study guide? For context, my coursework includes Earth Science (grade 9). Use my coursework to explain how this builds on what I've learned.",
       "expected_behavior": "Use strengths in visual communication to organize Earth Science concepts. Explicitly connect the response to Earth Science (grade 9). Use stated marks only if useful. Carry forward a concrete relevant detail from the earlier illustration and journalism discussion when it helps, and keep the intervening stage design topic out of the answer.",
       "course_references_by_grade": {
         "9": "Earth Science"
-      }
+      },
+      "scenario_kind": "implicit_return"
+    },
+    {
+      "number": 4,
+      "mode": "explore",
+      "scenario_kind": "new_interest_after_reload",
+      "student_message": "What tiny coding project could help me see if I like programming? For context, my coursework includes Digital Art (grade 9). Use it when useful.",
+      "course_references_by_grade": {
+        "9": "Digital Art"
+      },
+      "expected_behavior": "Address coding as the active interest and suggest a manageable starting project."
+    },
+    {
+      "number": 5,
+      "mode": "chat",
+      "scenario_kind": "implicit_return",
+      "student_message": "I tried opening with a scene instead of background, but the first paragraph still feels slow. What should I look for when I revise it? For context, my coursework includes English 9 (grade 9). Use it when useful.",
+      "course_references_by_grade": {
+        "9": "English 9"
+      },
+      "expected_behavior": "Infer the earlier article-opening advice and offer a revision hint about the scene or lead.",
+      "expected_recall_sessions": [
+        2
+      ]
     }
   ]
 }

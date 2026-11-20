@@ -31,8 +31,10 @@ a local keyword filter and an Ollama review before display or saving.
 Mentor saves screened exchanges and a short editable summary
 in browser storage for the current site address, as space allows. It retrieves up to three
 related exchanges, even if other topics came up in between or the page was
-reloaded. The current question guides the reply when a student's interests
-change. A new rubric lookup focuses on the supplied assignment rather than
+reloaded. It looks for clues in the current wording and in past questions and
+replies, so a student can pick up an earlier task without naming the session.
+When several earlier topics fit, Mentor is instructed to ask a focused question.
+A new rubric lookup focuses on the supplied assignment rather than
 unrelated chat. Select
 **Download summary** for a text copy of the summary, or **Delete chat memory**
 to remove both the summary and saved exchanges.

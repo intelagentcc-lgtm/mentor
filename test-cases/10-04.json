@@ -57,7 +57,7 @@
     {
       "number": 3,
       "mode": "checkin",
-      "student_message": "Returning to baking and food science from session 1, use any relevant detail from that discussion. I completed one recipe scaling practice, but I got stuck with the fractions. Help me adjust my goal. For context, my coursework includes Algebra I (grade 9) and Culinary Foundations (grade 10). Use my coursework to explain how this builds on what I've learned.",
+      "student_message": "I completed one recipe scaling practice, but I got stuck with the fractions. Help me adjust my goal. For context, my coursework includes Algebra I (grade 9) and Culinary Foundations (grade 10). Use my coursework to explain how this builds on what I've learned.",
       "save_weekly_plan_before_chat": {
         "week": "2026-11-16",
         "goal": "Practice recipe scaling",
@@ -76,7 +76,34 @@
       "course_references_by_grade": {
         "9": "Algebra I",
         "10": "Culinary Foundations"
-      }
+      },
+      "scenario_kind": "implicit_return"
+    },
+    {
+      "number": 4,
+      "mode": "explore",
+      "scenario_kind": "new_interest_after_reload",
+      "student_message": "Could I try sketching a short comic about a school day? For context, my coursework includes English 9 (grade 9), English 10 (grade 10). Use it when useful.",
+      "course_references_by_grade": {
+        "9": "English 9",
+        "10": "English 10"
+      },
+      "expected_behavior": "Address visual storytelling as the active interest and suggest a manageable starting project."
+    },
+    {
+      "number": 5,
+      "mode": "chat",
+      "scenario_kind": "implicit_return",
+      "student_message": "I got the whole amounts right, but the half-cup one still trips me up for 12. Can you give me a small next step? For context, my coursework includes Algebra I (grade 9), Culinary Foundations (grade 10). Use it when useful.",
+      "course_references_by_grade": {
+        "9": "Algebra I",
+        "10": "Culinary Foundations"
+      },
+      "expected_behavior": "Infer recipe scaling from 8 to 12 portions and offer a small fraction hint without inventing a new serving count.",
+      "expected_recall_sessions": [
+        2,
+        3
+      ]
     }
   ]
 }

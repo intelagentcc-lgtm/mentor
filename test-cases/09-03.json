@@ -61,11 +61,37 @@
     {
       "number": 3,
       "mode": "example",
-      "student_message": "Returning to clarinet practice from session 1, use any relevant detail from that discussion. Show a worked example of how to count a measure with two quarter notes and four eighth notes in 4/4. For context, my coursework includes Concert Band (grade 9). Frame the example as practice for that course.",
+      "student_message": "Show a worked example of how to count a measure with two quarter notes and four eighth notes in 4/4. For context, my coursework includes Concert Band (grade 9). Frame the example as practice for that course.",
       "expected_behavior": "Account for four beats in total and explain the eighth-note counts. Explicitly connect the response to Concert Band (grade 9). Use stated marks only if useful. Carry forward a concrete relevant detail from the earlier clarinet practice discussion when it helps, and keep the intervening photography topic out of the answer.",
       "course_references_by_grade": {
         "9": "Concert Band"
-      }
+      },
+      "scenario_kind": "implicit_return"
+    },
+    {
+      "number": 4,
+      "mode": "explore",
+      "scenario_kind": "new_interest_after_reload",
+      "student_message": "What is a beginner way to compare how seedlings grow in two windows? For context, my coursework includes Biology (grade 9). Use it when useful.",
+      "course_references_by_grade": {
+        "9": "Biology"
+      },
+      "expected_behavior": "Address gardening as the active interest and suggest a manageable starting project."
+    },
+    {
+      "number": 5,
+      "mode": "chat",
+      "scenario_kind": "implicit_return",
+      "student_message": "I can clap the short notes slowly now, but I rush them once I play. What should I change in my next 15 minutes? For context, my coursework includes Concert Band (grade 9). Use it when useful.",
+      "course_references_by_grade": {
+        "9": "Concert Band"
+      },
+      "expected_behavior": "Infer the earlier clarinet rhythm practice. Build on clapping slowly and propose a short transition to playing.",
+      "expected_recall_sessions": [
+        1,
+        2,
+        3
+      ]
     }
   ]
 }

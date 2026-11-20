@@ -1,7 +1,7 @@
 # Earlier Mentor regression evaluation
 
 This evaluation covers the single-year cases at commit `a17a949`. The
-[current evaluation](topic-switch-evaluation.md) covers the expanded prompts
+[current evaluation](implicit-recall-evaluation.md) covers the expanded prompts
 and the conversations in `responses/`.
 
 Each transcript records one prompt and one visible reply per session. The run

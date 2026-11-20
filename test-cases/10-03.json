@@ -57,12 +57,38 @@
     {
       "number": 3,
       "mode": "plan",
-      "student_message": "Returning to product design and photography from session 1, use any relevant detail from that discussion. Help me plan a photo-based product design experiment using two lighting setups. For context, my coursework includes Visual Arts (grade 9) and Photography (grade 10). Use my coursework to explain how this builds on what I've learned.",
+      "student_message": "Help me plan a photo-based product design experiment using two lighting setups. For context, my coursework includes Visual Arts (grade 9) and Photography (grade 10). Use my coursework to explain how this builds on what I've learned.",
       "expected_behavior": "Keep two lighting setups and specify what to compare. Explicitly connect the response to Visual Arts (grade 9) and Photography (grade 10). Use stated marks only if useful. Carry forward a concrete relevant detail from the earlier product design and photography discussion when it helps, and keep the intervening music production topic out of the answer.",
       "course_references_by_grade": {
         "9": "Visual Arts",
         "10": "Photography"
-      }
+      },
+      "scenario_kind": "implicit_return"
+    },
+    {
+      "number": 4,
+      "mode": "explore",
+      "scenario_kind": "new_interest_after_reload",
+      "student_message": "What is a small astronomy project I can do from my window? For context, my coursework includes Biology (grade 9), Chemistry (grade 10). Use it when useful.",
+      "course_references_by_grade": {
+        "9": "Biology",
+        "10": "Chemistry"
+      },
+      "expected_behavior": "Address astronomy as the active interest and suggest a manageable starting project."
+    },
+    {
+      "number": 5,
+      "mode": "chat",
+      "scenario_kind": "implicit_return",
+      "student_message": "One shot has a strong shadow and the other has almost none. What should I write down so the comparison is fair? For context, my coursework includes Visual Arts (grade 9), Photography (grade 10). Use it when useful.",
+      "course_references_by_grade": {
+        "9": "Visual Arts",
+        "10": "Photography"
+      },
+      "expected_behavior": "Infer the two-lighting photo experiment. Recommend recording settings and holding framing and product placement constant.",
+      "expected_recall_sessions": [
+        3
+      ]
     }
   ]
 }

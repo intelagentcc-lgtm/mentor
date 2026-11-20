@@ -67,13 +67,42 @@
     {
       "number": 3,
       "mode": "plan",
-      "student_message": "Returning to sports analytics and media production from session 1, use any relevant detail from that discussion. Help me split a sports statistics video into two tasks I can complete in one week. For context, my coursework includes Computer Applications (grade 9), Video Production (grade 10) and Digital Media (grade 11). Use my coursework to explain how this builds on what I've learned.",
+      "student_message": "Help me split a sports statistics video into two tasks I can complete in one week. For context, my coursework includes Computer Applications (grade 9), Video Production (grade 10) and Digital Media (grade 11). Use my coursework to explain how this builds on what I've learned.",
       "expected_behavior": "Split the video into two feasible tasks. Explicitly connect the response to Computer Applications (grade 9), Video Production (grade 10) and Digital Media (grade 11). Use stated marks only if useful. Carry forward a concrete relevant detail from the earlier sports analytics and media production discussion when it helps, and keep the intervening architecture topic out of the answer.",
       "course_references_by_grade": {
         "9": "Computer Applications",
         "10": "Video Production",
         "11": "Digital Media"
-      }
+      },
+      "scenario_kind": "implicit_return"
+    },
+    {
+      "number": 4,
+      "mode": "explore",
+      "scenario_kind": "new_interest_after_reload",
+      "student_message": "What is an easy way to outline a short story in one afternoon? For context, my coursework includes English 9 (grade 9), English 10 (grade 10), English 11 (grade 11). Use it when useful.",
+      "course_references_by_grade": {
+        "9": "English 9",
+        "10": "English 10",
+        "11": "English 11"
+      },
+      "expected_behavior": "Address creative writing as the active interest and suggest a manageable starting project."
+    },
+    {
+      "number": 5,
+      "mode": "chat",
+      "scenario_kind": "implicit_return",
+      "student_message": "I have the average in the spreadsheet and only 30 seconds of footage. What should go first? For context, my coursework includes Computer Applications (grade 9), Video Production (grade 10), Digital Media (grade 11). Use it when useful.",
+      "course_references_by_grade": {
+        "9": "Computer Applications",
+        "10": "Video Production",
+        "11": "Digital Media"
+      },
+      "expected_behavior": "Infer the sports-statistics video. Recommend an opening that pairs a clear takeaway with the footage and keeps the statistic legible.",
+      "expected_recall_sessions": [
+        1,
+        3
+      ]
     }
   ]
 }

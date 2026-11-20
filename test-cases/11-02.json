@@ -67,13 +67,42 @@
     {
       "number": 3,
       "mode": "chat",
-      "student_message": "Returning to yearbook and editing from session 1, use any relevant detail from that discussion. How could I build an editing portfolio from schoolwork without sharing classmates' names? For context, my coursework includes English 9 (grade 9), Journalism (grade 10) and AP English Language (grade 11). Use my coursework to explain how this builds on what I've learned.",
+      "student_message": "How could I build an editing portfolio from schoolwork without sharing classmates' names? For context, my coursework includes English 9 (grade 9), Journalism (grade 10) and AP English Language (grade 11). Use my coursework to explain how this builds on what I've learned.",
       "expected_behavior": "Suggest portfolio samples that protect classmates' identity. Explicitly connect the response to English 9 (grade 9), Journalism (grade 10) and AP English Language (grade 11). Use stated marks only if useful. Carry forward a concrete relevant detail from the earlier yearbook and editing discussion when it helps, and keep the intervening environmental science topic out of the answer.",
       "course_references_by_grade": {
         "9": "English 9",
         "10": "Journalism",
         "11": "AP English Language"
-      }
+      },
+      "scenario_kind": "implicit_return"
+    },
+    {
+      "number": 4,
+      "mode": "explore",
+      "scenario_kind": "new_interest_after_reload",
+      "student_message": "Can you suggest a simple way to organize a small herb planter? For context, my coursework includes Earth Science (grade 9), Biology (grade 10), Environmental Science (grade 11). Use it when useful.",
+      "course_references_by_grade": {
+        "9": "Earth Science",
+        "10": "Biology",
+        "11": "Environmental Science"
+      },
+      "expected_behavior": "Address gardening as the active interest and suggest a manageable starting project."
+    },
+    {
+      "number": 5,
+      "mode": "chat",
+      "scenario_kind": "implicit_return",
+      "student_message": "I removed the names, but the caption still identifies the event. Is there a safer version I could put in my samples? For context, my coursework includes English 9 (grade 9), Journalism (grade 10), AP English Language (grade 11). Use it when useful.",
+      "course_references_by_grade": {
+        "9": "English 9",
+        "10": "Journalism",
+        "11": "AP English Language"
+      },
+      "expected_behavior": "Infer the editing portfolio and suggest a fictionalized or generalized caption and permission where appropriate.",
+      "expected_recall_sessions": [
+        1,
+        3
+      ]
     }
   ],
   "class_material": "Persuasive Essay Rubric\nState a clear claim in the introduction.\nPresent a fair counterargument and respond to it with evidence.\nUse examples from the assigned readings."

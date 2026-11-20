@@ -57,12 +57,38 @@
     {
       "number": 3,
       "mode": "hint",
-      "student_message": "Returning to public policy and journalism from session 1, use any relevant detail from that discussion. I have a primary source and a textbook summary. Give me a hint to compare what each one can tell me. For context, my coursework includes World Geography (grade 9) and World History (grade 10). Tie the hint to my coursework without giving the answer.",
+      "student_message": "I have a primary source and a textbook summary. Give me a hint to compare what each one can tell me. For context, my coursework includes World Geography (grade 9) and World History (grade 10). Tie the hint to my coursework without giving the answer.",
       "expected_behavior": "Give one useful source-comparison hint. Explicitly connect the response to World Geography (grade 9) and World History (grade 10). Use stated marks only if useful. Carry forward a concrete relevant detail from the earlier public policy and journalism discussion when it helps, and keep the intervening urban planning topic out of the answer.",
       "course_references_by_grade": {
         "9": "World Geography",
         "10": "World History"
-      }
+      },
+      "scenario_kind": "implicit_return"
+    },
+    {
+      "number": 4,
+      "mode": "explore",
+      "scenario_kind": "new_interest_after_reload",
+      "student_message": "I'd like to try growing herbs. How could I compare two plants without a lot of supplies? For context, my coursework includes Earth Science (grade 9), Biology (grade 10). Use it when useful.",
+      "course_references_by_grade": {
+        "9": "Earth Science",
+        "10": "Biology"
+      },
+      "expected_behavior": "Address botany as the active interest and suggest a manageable starting project."
+    },
+    {
+      "number": 5,
+      "mode": "chat",
+      "scenario_kind": "implicit_return",
+      "student_message": "I have two firsthand accounts now. Would a textbook chapter be enough to meet the total? For context, my coursework includes World Geography (grade 9), World History (grade 10). Use it when useful.",
+      "course_references_by_grade": {
+        "9": "World Geography",
+        "10": "World History"
+      },
+      "expected_behavior": "Infer the history presentation rubric. Distinguish the three-source total and at least one primary source. State any assumption about the accounts.",
+      "expected_recall_sessions": [
+        2
+      ]
     }
   ],
   "class_material": "History Presentation Rubric\nUse at least three sources.\nAt least one source must be a primary source.\nAdd a bibliography on the last slide."
