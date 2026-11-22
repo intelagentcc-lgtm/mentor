@@ -129,6 +129,42 @@
         3,
         4
       ]
+    },
+    {
+      "mode": "chat",
+      "scenario_kind": "topic_depth",
+      "student_message": "Help me compare two bulb diagrams, one with a single path and one with two branches.",
+      "course_references_by_grade": {
+        "9": "Introduction to Engineering",
+        "10": "Electronics Fundamentals",
+        "11": "AP Physics 1"
+      },
+      "expected_behavior": "Answer the new task while using relevant saved profile or earlier context.",
+      "number": 7,
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "same_session_depth",
+          "student_message": "How can I check whether the wires share a single path even if the bulbs are drawn side by side?",
+          "course_references_by_grade": {
+            "9": "Introduction to Engineering",
+            "10": "Electronics Fundamentals",
+            "11": "AP Physics 1"
+          },
+          "expected_behavior": "Use the just-discussed setup and answer the detail without restarting the whole task."
+        },
+        {
+          "mode": "chat",
+          "scenario_kind": "same_session_multi_topic",
+          "student_message": "How should I label a layout with a single current path? Separately, how could I show movement in four pencil drawings?",
+          "course_references_by_grade": {
+            "9": "Introduction to Engineering",
+            "10": "Electronics Fundamentals",
+            "11": "AP Physics 1"
+          },
+          "expected_behavior": "Correctly identify series and switch to an independent animation exercise."
+        }
+      ]
     }
   ],
   "course_catalog": "Electronics and Circuit Design\nPrerequisite: Engineering Design or AP Physics 1.\nDescription: Design, simulate, and test basic circuits.\nArchitectural Drawing\nPrerequisite: Engineering Design."

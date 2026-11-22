@@ -92,6 +92,36 @@
         2,
         3
       ]
+    },
+    {
+      "mode": "chat",
+      "scenario_kind": "topic_depth",
+      "student_message": "I can clap the rhythm slowly but speed up when playing. Give me one short practice routine.",
+      "course_references_by_grade": {
+        "9": "Concert Band"
+      },
+      "expected_behavior": "Answer the new task while using relevant saved profile or earlier context.",
+      "number": 6,
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "same_session_depth",
+          "student_message": "What should I do when I get it right twice at the slower tempo?",
+          "course_references_by_grade": {
+            "9": "Concert Band"
+          },
+          "expected_behavior": "Use the just-discussed setup and answer the detail without restarting the whole task."
+        },
+        {
+          "mode": "chat",
+          "scenario_kind": "same_session_multi_topic",
+          "student_message": "How do I know when to raise the metronome speed? Separately, what should I record about the seedlings in each window?",
+          "course_references_by_grade": {
+            "9": "Concert Band"
+          },
+          "expected_behavior": "Use the practice routine and the earlier plant comparison independently."
+        }
+      ]
     }
   ]
 }

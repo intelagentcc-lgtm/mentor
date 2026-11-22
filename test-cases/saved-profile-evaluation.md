@@ -1,4 +1,8 @@
-# Saved-profile evaluation
+# Earlier saved-profile evaluation
+
+This evaluation covers the saved-profile and context-label run at commit
+`2a37759`. See the [session-depth evaluation](session-depth-evaluation.md) for
+the latest cases and transcripts.
 
 This run tests whether Mentor can use a student profile without the student
 repeating it. The suite covers 12 fictional students, 64 sessions, and 76
@@ -26,15 +30,15 @@ the context labels. These counts describe the earlier full-suite run.
 All 76 student prompts match the fixtures without the repeated coursework
 blocks. Mentor gave 66 substantive replies and 10 fallbacks.
 
-- [Avery](responses/09-01.md) asked for a project based on classes and grades
+- Avery (`09-01`) asked for a project based on classes and grades
   without listing them. Mentor brought in Geometry and Introduction to
   Engineering and suggested a robotic arm. It also attributed programming
   knowledge to a course when the profile reported it separately as experience.
-- [Jordan](responses/09-02.md) received illustration and journalism ideas tied
+- Jordan (`09-02`) received illustration and journalism ideas tied
   to Digital Art even though the question did not name the course.
-- [Alex](responses/11-01.md) received the catalog prerequisites with a citation
+- Alex (`11-01`) received the catalog prerequisites with a citation
   and a connection to saved circuit and CAD experience.
-- [Riley](responses/10-01.md) still received a generic follow-up on the catalog
+- Riley (`10-01`) still received a generic follow-up on the catalog
   question. A saved profile supplies context, and individual answers can still
   miss the requested detail.
 

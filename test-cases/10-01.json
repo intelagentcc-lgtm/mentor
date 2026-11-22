@@ -115,6 +115,39 @@
         3,
         4
       ]
+    },
+    {
+      "mode": "chat",
+      "scenario_kind": "topic_depth",
+      "student_message": "Help me decide which inputs to test with a Python loop that prints each number in range(n).",
+      "course_references_by_grade": {
+        "9": "Computing Foundations",
+        "10": "Intro to Computer Science"
+      },
+      "expected_behavior": "Answer the new task while using relevant saved profile or earlier context.",
+      "number": 7,
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "same_session_depth",
+          "student_message": "What exactly should appear for n equal to 1, and how can I check it?",
+          "course_references_by_grade": {
+            "9": "Computing Foundations",
+            "10": "Intro to Computer Science"
+          },
+          "expected_behavior": "Use the just-discussed setup and answer the detail without restarting the whole task."
+        },
+        {
+          "mode": "chat",
+          "scenario_kind": "same_session_multi_topic",
+          "student_message": "What should print with n equal to 0? Separately, how could I use light from one window to improve my object photos?",
+          "course_references_by_grade": {
+            "9": "Computing Foundations",
+            "10": "Intro to Computer Science"
+          },
+          "expected_behavior": "Use the established Python range example and the earlier home camera project without mixing them."
+        }
+      ]
     }
   ],
   "course_catalog": "Software Development II\nPrerequisite: Introduction to Computer Science.\nDescription: Build and test programs with functions and collections.\nDigital Photography\nPrerequisite: None."

@@ -103,6 +103,42 @@
         1,
         3
       ]
+    },
+    {
+      "mode": "chat",
+      "scenario_kind": "topic_depth",
+      "student_message": "Help me plan a 30-second video around one sports statistic.",
+      "course_references_by_grade": {
+        "9": "Computer Applications",
+        "10": "Video Production",
+        "11": "Digital Media"
+      },
+      "expected_behavior": "Answer the new task while using relevant saved profile or earlier context.",
+      "number": 6,
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "same_session_depth",
+          "student_message": "Where should the statistic appear, and how can I make it readable on screen?",
+          "course_references_by_grade": {
+            "9": "Computer Applications",
+            "10": "Video Production",
+            "11": "Digital Media"
+          },
+          "expected_behavior": "Use the just-discussed setup and answer the detail without restarting the whole task."
+        },
+        {
+          "mode": "chat",
+          "scenario_kind": "same_session_multi_topic",
+          "student_message": "How can I show the average without hiding the footage? Separately, what's a simple way to sketch the front of a building?",
+          "course_references_by_grade": {
+            "9": "Computer Applications",
+            "10": "Video Production",
+            "11": "Digital Media"
+          },
+          "expected_behavior": "Carry forward the short video format and answer the building-sketch question separately."
+        }
+      ]
     }
   ]
 }

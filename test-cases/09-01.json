@@ -101,6 +101,66 @@
         3,
         4
       ]
+    },
+    {
+      "mode": "chat",
+      "scenario_kind": "topic_depth",
+      "student_message": "Help me compare a flat cardboard strip and a folded one fairly.",
+      "course_references_by_grade": {
+        "9": "Geometry"
+      },
+      "expected_behavior": "Answer the new task while using relevant saved profile or earlier context.",
+      "number": 7,
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "same_session_depth",
+          "student_message": "Where exactly should the pennies go, and what should I write down for each trial?",
+          "course_references_by_grade": {
+            "9": "Geometry"
+          },
+          "expected_behavior": "Use the just-discussed setup and answer the detail without restarting the whole task."
+        },
+        {
+          "mode": "chat",
+          "scenario_kind": "same_session_multi_topic",
+          "student_message": "How do I compare three load trials for the folded strip? Separately, what should I note when the Moon is behind clouds?",
+          "course_references_by_grade": {
+            "9": "Geometry"
+          },
+          "expected_behavior": "Carry the fair-test setup forward and separately explain how to mark an obscured Moon observation."
+        }
+      ]
+    },
+    {
+      "mode": "chat",
+      "scenario_kind": "topic_switch",
+      "student_message": "How could I explain my recycling poster in a one-minute talk?",
+      "course_references_by_grade": {
+        "9": "Geometry"
+      },
+      "expected_behavior": "Return to the poster topic after bridge work and suggest a short talk structure.",
+      "number": 8
+    },
+    {
+      "mode": "chat",
+      "scenario_kind": "implicit_return",
+      "student_message": "The sky cleared for only a few minutes. Is one sketch enough for tonight?",
+      "course_references_by_grade": {
+        "9": "Geometry"
+      },
+      "expected_behavior": "Infer the earlier Moon log and distinguish a brief observation from a missing one.",
+      "number": 9
+    },
+    {
+      "mode": "chat",
+      "scenario_kind": "late_multi_topic",
+      "student_message": "For my three-color poster, how can I make the headline readable from the doorway? Separately, should the next bridge test use exactly the same span?",
+      "course_references_by_grade": {
+        "9": "Geometry"
+      },
+      "expected_behavior": "Retrieve the saved poster and bridge discussions across earlier sessions and answer both.",
+      "number": 10
     }
   ]
 }

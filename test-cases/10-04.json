@@ -104,6 +104,39 @@
         2,
         3
       ]
+    },
+    {
+      "mode": "chat",
+      "scenario_kind": "topic_depth",
+      "student_message": "Show me how to scale a half-cup ingredient from a recipe for 8 people to 12.",
+      "course_references_by_grade": {
+        "9": "Algebra I",
+        "10": "Culinary Foundations"
+      },
+      "expected_behavior": "Answer the new task while using relevant saved profile or earlier context.",
+      "number": 6,
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "same_session_depth",
+          "student_message": "How can I check that the scaled ingredient is a reasonable amount?",
+          "course_references_by_grade": {
+            "9": "Algebra I",
+            "10": "Culinary Foundations"
+          },
+          "expected_behavior": "Use the just-discussed setup and answer the detail without restarting the whole task."
+        },
+        {
+          "mode": "chat",
+          "scenario_kind": "same_session_multi_topic",
+          "student_message": "What does the half-cup ingredient become for 12? Separately, what measurements belong on a small room-layout sketch?",
+          "course_references_by_grade": {
+            "9": "Algebra I",
+            "10": "Culinary Foundations"
+          },
+          "expected_behavior": "Calculate 3/4 cup with the saved ratio and give a separate room-layout answer."
+        }
+      ]
     }
   ]
 }

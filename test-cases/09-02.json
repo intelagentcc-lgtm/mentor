@@ -76,6 +76,36 @@
       "expected_recall_sessions": [
         2
       ]
+    },
+    {
+      "mode": "chat",
+      "scenario_kind": "topic_depth",
+      "student_message": "Help me tighten an article lead that starts with a scene at a school art show.",
+      "course_references_by_grade": {
+        "9": "English 9"
+      },
+      "expected_behavior": "Answer the new task while using relevant saved profile or earlier context.",
+      "number": 6,
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "same_session_depth",
+          "student_message": "How can I tell if the first sentence is doing too much?",
+          "course_references_by_grade": {
+            "9": "English 9"
+          },
+          "expected_behavior": "Use the just-discussed setup and answer the detail without restarting the whole task."
+        },
+        {
+          "mode": "chat",
+          "scenario_kind": "same_session_multi_topic",
+          "student_message": "What detail should I cut from my opening? Separately, how can I make the background of my stage sketch look farther away?",
+          "course_references_by_grade": {
+            "9": "English 9"
+          },
+          "expected_behavior": "Give one editorial criterion and a separate visual-depth technique."
+        }
+      ]
     }
   ]
 }

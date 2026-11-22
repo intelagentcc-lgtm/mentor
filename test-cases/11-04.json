@@ -129,6 +129,42 @@
         3,
         4
       ]
+    },
+    {
+      "mode": "chat",
+      "scenario_kind": "topic_depth",
+      "student_message": "Help me use folded paper to show a younger learner the difference between halves and quarters.",
+      "course_references_by_grade": {
+        "9": "Algebra I",
+        "10": "Child Development",
+        "11": "Early Childhood Education"
+      },
+      "expected_behavior": "Answer the new task while using relevant saved profile or earlier context.",
+      "number": 7,
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "same_session_depth",
+          "student_message": "What should I ask if they count four pieces but still call each a half?",
+          "course_references_by_grade": {
+            "9": "Algebra I",
+            "10": "Child Development",
+            "11": "Early Childhood Education"
+          },
+          "expected_behavior": "Use the just-discussed setup and answer the detail without restarting the whole task."
+        },
+        {
+          "mode": "chat",
+          "scenario_kind": "same_session_multi_topic",
+          "student_message": "What question helps them check how many quarters make a whole? Separately, what could I change in the paper reading game to make it easier?",
+          "course_references_by_grade": {
+            "9": "Algebra I",
+            "10": "Child Development",
+            "11": "Early Childhood Education"
+          },
+          "expected_behavior": "Build on the paper lesson and keep the reading game as a second task."
+        }
+      ]
     }
   ]
 }

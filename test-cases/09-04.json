@@ -76,6 +76,36 @@
       "expected_recall_sessions": [
         3
       ]
+    },
+    {
+      "mode": "chat",
+      "scenario_kind": "topic_depth",
+      "student_message": "I want the main path to stand out on my garden drawing. What can I change?",
+      "course_references_by_grade": {
+        "9": "Visual Arts"
+      },
+      "expected_behavior": "Answer the new task while using relevant saved profile or earlier context.",
+      "number": 6,
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "same_session_depth",
+          "student_message": "Can I test that choice before I color the whole drawing?",
+          "course_references_by_grade": {
+            "9": "Visual Arts"
+          },
+          "expected_behavior": "Use the just-discussed setup and answer the detail without restarting the whole task."
+        },
+        {
+          "mode": "chat",
+          "scenario_kind": "same_session_multi_topic",
+          "student_message": "How should I test whether the garden path stands out? Separately, how many drawings would work for a short flipbook?",
+          "course_references_by_grade": {
+            "9": "Visual Arts"
+          },
+          "expected_behavior": "Recommend a quick visual check and a distinct beginner animation step."
+        }
+      ]
     }
   ],
   "class_material": "Garden Design Assignment\nDraw the garden to scale.\nLabel at least four different plants.\nInclude a key and show the main path."

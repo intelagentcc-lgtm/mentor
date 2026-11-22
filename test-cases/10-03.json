@@ -89,6 +89,39 @@
       "expected_recall_sessions": [
         3
       ]
+    },
+    {
+      "mode": "chat",
+      "scenario_kind": "topic_depth",
+      "student_message": "Help me set up a fair photo comparison between window light and a desk lamp.",
+      "course_references_by_grade": {
+        "9": "Visual Arts",
+        "10": "Photography"
+      },
+      "expected_behavior": "Answer the new task while using relevant saved profile or earlier context.",
+      "number": 6,
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "same_session_depth",
+          "student_message": "What exactly should I keep fixed when I move from one lighting setup to the other?",
+          "course_references_by_grade": {
+            "9": "Visual Arts",
+            "10": "Photography"
+          },
+          "expected_behavior": "Use the just-discussed setup and answer the detail without restarting the whole task."
+        },
+        {
+          "mode": "chat",
+          "scenario_kind": "same_session_multi_topic",
+          "student_message": "What should I record next to each photo? Separately, what should I write down when the Moon is hard to see from my window?",
+          "course_references_by_grade": {
+            "9": "Visual Arts",
+            "10": "Photography"
+          },
+          "expected_behavior": "Preserve the lighting comparison controls and separately suggest an astronomy observation note."
+        }
+      ]
     }
   ]
 }

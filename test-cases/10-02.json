@@ -89,6 +89,39 @@
       "expected_recall_sessions": [
         2
       ]
+    },
+    {
+      "mode": "chat",
+      "scenario_kind": "topic_depth",
+      "student_message": "Help me outline a two-minute podcast comparing coverage of a local park decision.",
+      "course_references_by_grade": {
+        "9": "World Geography",
+        "10": "World History"
+      },
+      "expected_behavior": "Answer the new task while using relevant saved profile or earlier context.",
+      "number": 6,
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "same_session_depth",
+          "student_message": "How should I use a firsthand account in the middle section?",
+          "course_references_by_grade": {
+            "9": "World Geography",
+            "10": "World History"
+          },
+          "expected_behavior": "Use the just-discussed setup and answer the detail without restarting the whole task."
+        },
+        {
+          "mode": "chat",
+          "scenario_kind": "same_session_multi_topic",
+          "student_message": "How can I distinguish reporting from opinion in my podcast? Separately, what should I map to compare two routes through a park?",
+          "course_references_by_grade": {
+            "9": "World Geography",
+            "10": "World History"
+          },
+          "expected_behavior": "Keep the podcast source comparison and the urban planning map distinct."
+        }
+      ]
     }
   ],
   "class_material": "History Presentation Rubric\nUse at least three sources.\nAt least one source must be a primary source.\nAdd a bibliography on the last slide."

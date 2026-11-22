@@ -103,6 +103,42 @@
         1,
         3
       ]
+    },
+    {
+      "mode": "chat",
+      "scenario_kind": "topic_depth",
+      "student_message": "Help me choose an anonymized editing sample from a school publication.",
+      "course_references_by_grade": {
+        "9": "English 9",
+        "10": "Journalism",
+        "11": "AP English Language"
+      },
+      "expected_behavior": "Answer the new task while using relevant saved profile or earlier context.",
+      "number": 6,
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "same_session_depth",
+          "student_message": "If removing names is not enough, what else should I change before sharing it?",
+          "course_references_by_grade": {
+            "9": "English 9",
+            "10": "Journalism",
+            "11": "AP English Language"
+          },
+          "expected_behavior": "Use the just-discussed setup and answer the detail without restarting the whole task."
+        },
+        {
+          "mode": "chat",
+          "scenario_kind": "same_session_multi_topic",
+          "student_message": "How can I make the caption less identifiable? Separately, how often should I record observations in the plant project?",
+          "course_references_by_grade": {
+            "9": "English 9",
+            "10": "Journalism",
+            "11": "AP English Language"
+          },
+          "expected_behavior": "Keep privacy advice separate from the plant observation schedule."
+        }
+      ]
     }
   ],
   "class_material": "Persuasive Essay Rubric\nState a clear claim in the introduction.\nPresent a fair counterargument and respond to it with evidence.\nUse examples from the assigned readings."

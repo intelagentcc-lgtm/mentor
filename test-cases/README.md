@@ -1,9 +1,12 @@
 # Mentor student test cases
 
-The suite contains 12 fictional students, four per grade, and 64 sessions with
-76 student prompts. Each student explores a different interest within the first
+The suite contains 12 fictional students, four per grade, and 79 sessions with
+115 student prompts. Each student explores a different interest within the first
 session, then starts another interest on a later visit. Two prompts per student
 return to earlier work through clues, without naming a prior session.
+Each case also has a session that goes deeper on one topic, then asks about
+two topics in the same message. Avery's case reaches session 10 and asks
+about two earlier projects.
 Each JSON file includes the student's courses and percentages grouped by
 grade, hobbies, experience, career interests,
 ordered prompts, and expected behavior. Grade 10 cases include grades 9–10,
@@ -17,7 +20,9 @@ The [earlier evaluation](evaluation.md) covers the single-year cases. The
 [topic-switch evaluation](topic-switch-evaluation.md) covers the previous run.
 The [implicit-recall evaluation](implicit-recall-evaluation.md) covers the
 earlier prompts that repeated the coursework. The
-[saved-profile evaluation](saved-profile-evaluation.md) covers the current run.
+[saved-profile evaluation](saved-profile-evaluation.md) covers the earlier
+saved-profile run. The [session-depth evaluation](session-depth-evaluation.md)
+covers the expanded suite.
 
 | Grade | Student | Career interests | Case | Conversation |
 | --- | --- | --- | --- | --- |
@@ -47,7 +52,5 @@ browser storage.
 The [responses](responses/) folder holds the expanded conversations. The
 recording harness used the app's chat handler and browser storage logic with a
 simulated browser interface. Model requests used Qwen 2.5 3B through local
-Ollama. The transcripts include fallback replies where the app returned them.
-Avery's transcript was rerun after the bridge question was rewritten as a
-plain measurement question. It also shows the new context labels underneath
-Mentor's replies.
+Ollama. The transcripts include fallback replies where the app returned them
+and show context labels when the app displayed them.

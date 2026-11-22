@@ -13,7 +13,7 @@ Mentor is a browser-based study and exploration assistant for high school studen
 | **See a worked example** | Walk through a practice problem or a similar example for a graded assignment, with steps and checks. |
 | **Practice with a quiz** | Get one question at a time, submit an attempt, and get feedback and a next question. **New quiz** resets the active question, which is held in the current page session. |
 | **Ask about class materials** | Ask questions about an imported or pasted assignment, rubric, or study guide. Citations point to line ranges in the supplied text. |
-| **Explore courses and careers** | Explore courses, clubs, careers, and projects based on interests and experience. A supplied school catalog supports cited answers about local offerings and prerequisites. |
+| **Explore courses and careers** | Get a direct answer, then two or three prioritized related areas based on saved courses, interests, and experience, with a small step to try the strongest option. Ordinary chat can also offer these suggestions when the student signals exploration. A supplied school catalog supports cited answers about local offerings and prerequisites. |
 
 ## Profile, planner, and materials
 
@@ -25,6 +25,7 @@ Mentor is a browser-based study and exploration assistant for high school studen
 ## Conversation memory
 
 - Mentor stores screened exchanges and an editable summary in browser storage. It uses clues from the latest message, saved questions, and earlier replies to retrieve up to three related exchanges, even after intervening topics or a reload.
+- Follow-up questions can build on a step from the current session. When a message asks several questions, Mentor looks for relevant past exchanges for each question and is instructed to answer them in order. Context labels distinguish **This session** from an **Earlier exchange**.
 - **Context used** appears below a reply when the reviewed answer identifies a saved detail it relied on. **Context checked** lists the available profile, earlier conversations, or weekly plan when the model supplies no specific reference. Class-material and catalog citations still point to their source text.
 - Submitted questions are grouped by page session and timestamped. Fallbacks are recorded too. For screened messages or requests that could not be screened, Mentor records the outcome without the original question. These entries are excluded from topic recall.
 - The current question guides the reply when interests change. A textbook or rubric follow-up can recover an earlier exchange and consult the supplied material again.
