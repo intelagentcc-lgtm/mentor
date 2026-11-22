@@ -52,7 +52,19 @@
       "course_references_by_grade": {
         "9": "Algebra I",
         "10": "Culinary Foundations"
-      }
+      },
+      "follow_ups": [
+        {
+          "mode": "hint",
+          "scenario_kind": "session_follow_up",
+          "student_message": "Is the new number of servings supposed to go on top? Please don't calculate it.",
+          "course_references_by_grade": {
+            "9": "Algebra I",
+            "10": "Culinary Foundations"
+          },
+          "expected_behavior": "Give a ratio setup hint without revealing the factor."
+        }
+      ]
     },
     {
       "number": 3,
@@ -77,7 +89,19 @@
         "9": "Algebra I",
         "10": "Culinary Foundations"
       },
-      "scenario_kind": "implicit_return"
+      "scenario_kind": "implicit_return",
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "session_follow_up",
+          "student_message": "What is a smaller goal I can finish in one practice round?",
+          "course_references_by_grade": {
+            "9": "Algebra I",
+            "10": "Culinary Foundations"
+          },
+          "expected_behavior": "Give one manageable step related to scaling fractional amounts."
+        }
+      ]
     },
     {
       "number": 4,
@@ -88,7 +112,19 @@
         "9": "English 9",
         "10": "English 10"
       },
-      "expected_behavior": "Address visual storytelling as the active interest and suggest a manageable starting project."
+      "expected_behavior": "Address visual storytelling as the active interest and suggest a manageable starting project.",
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "session_follow_up",
+          "student_message": "What could I show in the first panel to make the setting clear?",
+          "course_references_by_grade": {
+            "9": "English 9",
+            "10": "English 10"
+          },
+          "expected_behavior": "Give one specific visual storytelling technique."
+        }
+      ]
     },
     {
       "number": 5,
@@ -103,6 +139,18 @@
       "expected_recall_sessions": [
         2,
         3
+      ],
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "session_follow_up",
+          "student_message": "How can I check that the new amount is larger than half a cup but still under one cup?",
+          "course_references_by_grade": {
+            "9": "Algebra I",
+            "10": "Culinary Foundations"
+          },
+          "expected_behavior": "Explain a quick bounds or number-line check using the existing scaling context."
+        }
       ]
     },
     {

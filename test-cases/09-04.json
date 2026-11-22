@@ -43,7 +43,18 @@
       "course_references_by_grade": {
         "9": "Algebra I"
       },
-      "scenario_kind": "implicit_return"
+      "scenario_kind": "implicit_return",
+      "follow_ups": [
+        {
+          "mode": "hint",
+          "scenario_kind": "session_follow_up",
+          "student_message": "Should my result be in feet or square feet? Please leave the calculation to me.",
+          "course_references_by_grade": {
+            "9": "Algebra I"
+          },
+          "expected_behavior": "Explain that area uses square feet without revealing the numerical answer."
+        }
+      ]
     },
     {
       "number": 3,
@@ -52,7 +63,18 @@
       "expected_behavior": "Return four different plants and cite the rubric. Explicitly connect the response to Visual Arts (grade 9). Use stated marks only if useful. Keep the course connection separate from the cited rubric requirement.",
       "course_references_by_grade": {
         "9": "Visual Arts"
-      }
+      },
+      "follow_ups": [
+        {
+          "mode": "materials",
+          "scenario_kind": "session_follow_up",
+          "student_message": "Does the rubric also say I need a key?",
+          "course_references_by_grade": {
+            "9": "Visual Arts"
+          },
+          "expected_behavior": "Answer from the supplied rubric and cite the relevant passage."
+        }
+      ]
     },
     {
       "number": 4,
@@ -62,7 +84,18 @@
       "course_references_by_grade": {
         "9": "English 9"
       },
-      "expected_behavior": "Address creative writing as the active interest and suggest a manageable starting project."
+      "expected_behavior": "Address creative writing as the active interest and suggest a manageable starting project.",
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "session_follow_up",
+          "student_message": "How can I describe the place without using its real name?",
+          "course_references_by_grade": {
+            "9": "English 9"
+          },
+          "expected_behavior": "Suggest concrete sensory detail or fictionalized wording."
+        }
+      ]
     },
     {
       "number": 5,
@@ -75,6 +108,17 @@
       "expected_behavior": "Infer the garden design assignment from the labels, key, and path. Suggest one simple visual check without inventing a rubric requirement.",
       "expected_recall_sessions": [
         3
+      ],
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "session_follow_up",
+          "student_message": "What line style could make the path stand out even in black and white?",
+          "course_references_by_grade": {
+            "9": "Visual Arts"
+          },
+          "expected_behavior": "Give a quick contrast or line-weight technique."
+        }
       ]
     },
     {

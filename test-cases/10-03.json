@@ -52,7 +52,19 @@
       "course_references_by_grade": {
         "9": "Algebra I",
         "10": "Geometry"
-      }
+      },
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "session_follow_up",
+          "student_message": "How can I check the new height without measuring the print yet?",
+          "course_references_by_grade": {
+            "9": "Algebra I",
+            "10": "Geometry"
+          },
+          "expected_behavior": "Use the scale factor or original aspect ratio to verify the height."
+        }
+      ]
     },
     {
       "number": 3,
@@ -63,7 +75,19 @@
         "9": "Visual Arts",
         "10": "Photography"
       },
-      "scenario_kind": "implicit_return"
+      "scenario_kind": "implicit_return",
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "session_follow_up",
+          "student_message": "What should stay in the same place while I change the light?",
+          "course_references_by_grade": {
+            "9": "Visual Arts",
+            "10": "Photography"
+          },
+          "expected_behavior": "Identify the camera, subject, and framing as useful controls."
+        }
+      ]
     },
     {
       "number": 4,
@@ -74,7 +98,19 @@
         "9": "Biology",
         "10": "Chemistry"
       },
-      "expected_behavior": "Address astronomy as the active interest and suggest a manageable starting project."
+      "expected_behavior": "Address astronomy as the active interest and suggest a manageable starting project.",
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "session_follow_up",
+          "student_message": "What time and sky conditions should I write in my log?",
+          "course_references_by_grade": {
+            "9": "Biology",
+            "10": "Chemistry"
+          },
+          "expected_behavior": "Suggest simple observation metadata for the window project."
+        }
+      ]
     },
     {
       "number": 5,
@@ -88,6 +124,18 @@
       "expected_behavior": "Infer the two-lighting photo experiment. Recommend recording settings and holding framing and product placement constant.",
       "expected_recall_sessions": [
         3
+      ],
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "session_follow_up",
+          "student_message": "Would a table with distance, angle, and camera settings be enough?",
+          "course_references_by_grade": {
+            "9": "Visual Arts",
+            "10": "Photography"
+          },
+          "expected_behavior": "Give a useful check or addition for the lighting comparison record."
+        }
       ]
     },
     {

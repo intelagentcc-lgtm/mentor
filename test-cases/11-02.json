@@ -62,7 +62,20 @@
         "9": "English 9",
         "10": "English 10",
         "11": "AP English Language"
-      }
+      },
+      "follow_ups": [
+        {
+          "mode": "materials",
+          "scenario_kind": "session_follow_up",
+          "student_message": "Should I respond to the counterargument with evidence from the readings?",
+          "course_references_by_grade": {
+            "9": "English 9",
+            "10": "English 10",
+            "11": "AP English Language"
+          },
+          "expected_behavior": "Answer from the actual essay rubric and cite the passage."
+        }
+      ]
     },
     {
       "number": 3,
@@ -74,7 +87,20 @@
         "10": "Journalism",
         "11": "AP English Language"
       },
-      "scenario_kind": "implicit_return"
+      "scenario_kind": "implicit_return",
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "session_follow_up",
+          "student_message": "What could I include to show my edits if I cannot share the original text?",
+          "course_references_by_grade": {
+            "9": "English 9",
+            "10": "Journalism",
+            "11": "AP English Language"
+          },
+          "expected_behavior": "Suggest a privacy-preserving substitute such as a recreated sample or change log."
+        }
+      ]
     },
     {
       "number": 4,
@@ -86,7 +112,20 @@
         "10": "Biology",
         "11": "Environmental Science"
       },
-      "expected_behavior": "Address gardening as the active interest and suggest a manageable starting project."
+      "expected_behavior": "Address gardening as the active interest and suggest a manageable starting project.",
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "session_follow_up",
+          "student_message": "How can I label the herbs so I can compare them later?",
+          "course_references_by_grade": {
+            "9": "Earth Science",
+            "10": "Biology",
+            "11": "Environmental Science"
+          },
+          "expected_behavior": "Suggest consistent labels for tracking the planter."
+        }
+      ]
     },
     {
       "number": 5,
@@ -102,6 +141,19 @@
       "expected_recall_sessions": [
         1,
         3
+      ],
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "session_follow_up",
+          "student_message": "What details besides the date might let someone recognize the event?",
+          "course_references_by_grade": {
+            "9": "English 9",
+            "10": "Journalism",
+            "11": "AP English Language"
+          },
+          "expected_behavior": "Identify indirect identifiers without inventing details about the actual event."
+        }
       ]
     },
     {

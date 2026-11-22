@@ -1,8 +1,9 @@
 # Mentor student test cases
 
 The suite contains 12 fictional students, four per grade, and 79 sessions with
-115 student prompts. Each student explores a different interest within the first
-session, then starts another interest on a later visit. Two prompts per student
+170 student prompts. Every session has an opening exchange and at least one
+follow-up in the same session. Each student explores a different interest in
+the first session, then starts another interest on a later visit. Two prompts per student
 return to earlier work through clues, without naming a prior session.
 Each case also has a session that goes deeper on one topic, then asks about
 two topics in the same message. Avery's case reaches session 10 and asks
@@ -22,7 +23,7 @@ The [implicit-recall evaluation](implicit-recall-evaluation.md) covers the
 earlier prompts that repeated the coursework. The
 [saved-profile evaluation](saved-profile-evaluation.md) covers the earlier
 saved-profile run. The [session-depth evaluation](session-depth-evaluation.md)
-covers the expanded suite.
+covers the 115-prompt run that preceded this follow-up extension.
 
 | Grade | Student | Career interests | Case | Conversation |
 | --- | --- | --- | --- | --- |
@@ -49,8 +50,9 @@ the session that uses it. Submit any `follow_ups` in the same tab after the
 opening prompt. Reload the page between sessions while keeping the student's
 browser storage.
 
-The [responses](responses/) folder holds the expanded conversations. The
-recording harness used the app's chat handler and browser storage logic with a
-simulated browser interface. Model requests used Qwen 2.5 3B through local
-Ollama. The transcripts include fallback replies where the app returned them
-and show context labels when the app displayed them.
+The [responses](responses/) folder holds the expanded conversations. Existing
+replies are preserved. For each added follow-up, the harness restored the
+saved fictional profile and preceding recorded exchanges, including the
+opening exchange under the same session. The harness used the app's chat
+handler and Qwen 2.5 3B through local Ollama. The transcripts show fallbacks
+and context labels where the app displayed them.

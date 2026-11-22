@@ -52,7 +52,19 @@
       "course_references_by_grade": {
         "9": "World Geography",
         "10": "World History"
-      }
+      },
+      "follow_ups": [
+        {
+          "mode": "materials",
+          "scenario_kind": "session_follow_up",
+          "student_message": "Would two primary sources and one textbook chapter satisfy both minimums?",
+          "course_references_by_grade": {
+            "9": "World Geography",
+            "10": "World History"
+          },
+          "expected_behavior": "Correctly apply both minimums and cite the rubric."
+        }
+      ]
     },
     {
       "number": 3,
@@ -63,7 +75,19 @@
         "9": "World Geography",
         "10": "World History"
       },
-      "scenario_kind": "implicit_return"
+      "scenario_kind": "implicit_return",
+      "follow_ups": [
+        {
+          "mode": "hint",
+          "scenario_kind": "session_follow_up",
+          "student_message": "Should I compare when each source was written or what it claims first?",
+          "course_references_by_grade": {
+            "9": "World Geography",
+            "10": "World History"
+          },
+          "expected_behavior": "Offer a useful comparison order and rationale."
+        }
+      ]
     },
     {
       "number": 4,
@@ -74,7 +98,19 @@
         "9": "Earth Science",
         "10": "Biology"
       },
-      "expected_behavior": "Address botany as the active interest and suggest a manageable starting project."
+      "expected_behavior": "Address botany as the active interest and suggest a manageable starting project.",
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "session_follow_up",
+          "student_message": "What should I keep the same between the two plants?",
+          "course_references_by_grade": {
+            "9": "Earth Science",
+            "10": "Biology"
+          },
+          "expected_behavior": "Identify controls such as water, soil, and measurement schedule where applicable."
+        }
+      ]
     },
     {
       "number": 5,
@@ -88,6 +124,18 @@
       "expected_behavior": "Infer the history presentation rubric. Distinguish the three-source total and at least one primary source. State any assumption about the accounts.",
       "expected_recall_sessions": [
         2
+      ],
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "session_follow_up",
+          "student_message": "How can I tell whether the chapter counts as a separate source?",
+          "course_references_by_grade": {
+            "9": "World Geography",
+            "10": "World History"
+          },
+          "expected_behavior": "Explain distinct source attribution and consult the supplied rubric if relevant."
+        }
       ]
     },
     {

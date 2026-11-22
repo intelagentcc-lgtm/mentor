@@ -63,7 +63,20 @@
         "9": "English 9",
         "10": "Child Development",
         "11": "Early Childhood Education"
-      }
+      },
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "session_follow_up",
+          "student_message": "How could I make the rules short enough for a new reader to follow?",
+          "course_references_by_grade": {
+            "9": "English 9",
+            "10": "Child Development",
+            "11": "Early Childhood Education"
+          },
+          "expected_behavior": "Suggest clear brief directions with an example turn or pictures."
+        }
+      ]
     },
     {
       "number": 3,
@@ -74,7 +87,20 @@
         "9": "Algebra I",
         "10": "Child Development",
         "11": "Early Childhood Education"
-      }
+      },
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "session_follow_up",
+          "student_message": "What would I ask at the end of the first session to check understanding?",
+          "course_references_by_grade": {
+            "9": "Algebra I",
+            "10": "Child Development",
+            "11": "Early Childhood Education"
+          },
+          "expected_behavior": "Give a concrete question or demonstration tied to the teaching plan."
+        }
+      ]
     },
     {
       "number": 4,
@@ -100,7 +126,20 @@
         "10": "Child Development",
         "11": "Early Childhood Education"
       },
-      "scenario_kind": "implicit_return"
+      "scenario_kind": "implicit_return",
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "session_follow_up",
+          "student_message": "Could I fold each half again, and what should I ask them to count?",
+          "course_references_by_grade": {
+            "9": "Algebra I",
+            "10": "Child Development",
+            "11": "Early Childhood Education"
+          },
+          "expected_behavior": "Explain four equal pieces and prompt the learner to count them."
+        }
+      ]
     },
     {
       "number": 5,
@@ -112,7 +151,20 @@
         "10": "Child Development",
         "11": "Early Childhood Education"
       },
-      "expected_behavior": "Address photography as the active interest and suggest a manageable starting project."
+      "expected_behavior": "Address photography as the active interest and suggest a manageable starting project.",
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "session_follow_up",
+          "student_message": "Should the objects stay in the same spot relative to the window?",
+          "course_references_by_grade": {
+            "9": "Visual Arts",
+            "10": "Child Development",
+            "11": "Early Childhood Education"
+          },
+          "expected_behavior": "Explain how consistent placement can make the three images comparable."
+        }
+      ]
     },
     {
       "number": 6,
@@ -128,6 +180,19 @@
       "expected_recall_sessions": [
         3,
         4
+      ],
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "session_follow_up",
+          "student_message": "How could I show that two of the smaller pieces make one half?",
+          "course_references_by_grade": {
+            "9": "Algebra I",
+            "10": "Child Development",
+            "11": "Early Childhood Education"
+          },
+          "expected_behavior": "Connect two quarters to one half using the folded square."
+        }
       ]
     },
     {

@@ -56,7 +56,18 @@
       "expected_behavior": "Respond to the difficult rhythm and suggest a manageable adjustment. Explicitly connect the response to Concert Band (grade 9). Use stated marks only if useful.",
       "course_references_by_grade": {
         "9": "Concert Band"
-      }
+      },
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "session_follow_up",
+          "student_message": "Should I count out loud before trying to play the tricky part again?",
+          "course_references_by_grade": {
+            "9": "Concert Band"
+          },
+          "expected_behavior": "Connect a counting or clapping step to controlled playing."
+        }
+      ]
     },
     {
       "number": 3,
@@ -66,7 +77,18 @@
       "course_references_by_grade": {
         "9": "Concert Band"
       },
-      "scenario_kind": "implicit_return"
+      "scenario_kind": "implicit_return",
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "session_follow_up",
+          "student_message": "If the quarter notes come first, on which counts do the last four notes begin?",
+          "course_references_by_grade": {
+            "9": "Concert Band"
+          },
+          "expected_behavior": "Give correct eighth-note onsets and keep the same measure."
+        }
+      ]
     },
     {
       "number": 4,
@@ -76,7 +98,18 @@
       "course_references_by_grade": {
         "9": "Biology"
       },
-      "expected_behavior": "Address gardening as the active interest and suggest a manageable starting project."
+      "expected_behavior": "Address gardening as the active interest and suggest a manageable starting project.",
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "session_follow_up",
+          "student_message": "Should the pots get the same amount of water even though the windows are different?",
+          "course_references_by_grade": {
+            "9": "Biology"
+          },
+          "expected_behavior": "Explain keeping water consistent for a fair comparison."
+        }
+      ]
     },
     {
       "number": 5,
@@ -91,6 +124,17 @@
         1,
         2,
         3
+      ],
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "session_follow_up",
+          "student_message": "If I rush on the first try, what should I change on the very next attempt?",
+          "course_references_by_grade": {
+            "9": "Concert Band"
+          },
+          "expected_behavior": "Suggest a smaller or slower attempt without restarting the routine."
+        }
       ]
     },
     {

@@ -42,7 +42,18 @@
       "expected_behavior": "Suggest two short blocks with a concrete bridge test. Explicitly connect the response to Geometry (grade 9). Use stated marks only if useful.",
       "course_references_by_grade": {
         "9": "Geometry"
-      }
+      },
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "session_follow_up",
+          "student_message": "If the two strips are different shapes, what should I keep fixed while I test them?",
+          "course_references_by_grade": {
+            "9": "Geometry"
+          },
+          "expected_behavior": "Identify controlled variables such as span, cardboard, and load placement."
+        }
+      ]
     },
     {
       "number": 3,
@@ -65,7 +76,18 @@
       "expected_behavior": "Use the saved partial progress and recommend recording the load. Explicitly connect the response to Introduction to Engineering (grade 9). Use stated marks only if useful.",
       "course_references_by_grade": {
         "9": "Introduction to Engineering"
-      }
+      },
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "session_follow_up",
+          "student_message": "What three columns should I put in my notebook before I start?",
+          "course_references_by_grade": {
+            "9": "Introduction to Engineering"
+          },
+          "expected_behavior": "Suggest a compact table with trial, load, and observations or result."
+        }
+      ]
     },
     {
       "number": 4,
@@ -75,7 +97,18 @@
       "course_references_by_grade": {
         "9": "Geometry"
       },
-      "scenario_kind": "implicit_return"
+      "scenario_kind": "implicit_return",
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "session_follow_up",
+          "student_message": "Should I record the first sag or when it can no longer hold another penny?",
+          "course_references_by_grade": {
+            "9": "Geometry"
+          },
+          "expected_behavior": "Distinguish the two measurements and recommend defining a consistent endpoint."
+        }
+      ]
     },
     {
       "number": 5,
@@ -85,7 +118,18 @@
       "course_references_by_grade": {
         "9": "Introduction to Engineering"
       },
-      "expected_behavior": "Address graphic design as the active interest and suggest a manageable starting project."
+      "expected_behavior": "Address graphic design as the active interest and suggest a manageable starting project.",
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "session_follow_up",
+          "student_message": "What could my three colors stand for if I want the poster readable from across the room?",
+          "course_references_by_grade": {
+            "9": "Introduction to Engineering"
+          },
+          "expected_behavior": "Assign clear meanings or contrast roles to the colors."
+        }
+      ]
     },
     {
       "number": 6,
@@ -100,6 +144,17 @@
         2,
         3,
         4
+      ],
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "session_follow_up",
+          "student_message": "How could I mark the middle so I put the pennies in the same spot every time?",
+          "course_references_by_grade": {
+            "9": "Geometry"
+          },
+          "expected_behavior": "Suggest a simple centering method and a fixed load position."
+        }
       ]
     },
     {
@@ -140,7 +195,18 @@
         "9": "Geometry"
       },
       "expected_behavior": "Return to the poster topic after bridge work and suggest a short talk structure.",
-      "number": 8
+      "number": 8,
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "session_follow_up",
+          "student_message": "What is one sentence I could say at the end so people know what to do?",
+          "course_references_by_grade": {
+            "9": "Geometry"
+          },
+          "expected_behavior": "Give a short recycling call to action suitable for the talk."
+        }
+      ]
     },
     {
       "mode": "chat",
@@ -150,7 +216,18 @@
         "9": "Geometry"
       },
       "expected_behavior": "Infer the earlier Moon log and distinguish a brief observation from a missing one.",
-      "number": 9
+      "number": 9,
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "session_follow_up",
+          "student_message": "Should I leave the rest blank or write down why I stopped looking?",
+          "course_references_by_grade": {
+            "9": "Geometry"
+          },
+          "expected_behavior": "Recommend noting clouds, time, and that the observation was brief."
+        }
+      ]
     },
     {
       "mode": "chat",
@@ -160,7 +237,18 @@
         "9": "Geometry"
       },
       "expected_behavior": "Retrieve the saved poster and bridge discussions across earlier sessions and answer both.",
-      "number": 10
+      "number": 10,
+      "follow_ups": [
+        {
+          "mode": "chat",
+          "scenario_kind": "session_follow_up",
+          "student_message": "How could I check the headline from the doorway, and what should I measure between the bridge supports?",
+          "course_references_by_grade": {
+            "9": "Geometry"
+          },
+          "expected_behavior": "Give a readability check and define bridge span without mixing them."
+        }
+      ]
     }
   ]
 }
