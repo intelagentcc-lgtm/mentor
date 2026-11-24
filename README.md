@@ -1,6 +1,6 @@
 # Mentor
 
-A responsive high school student mentor powered by a local open-weight language model.
+A high school mentorship app with a guided Studio demo and an Ollama-powered local workspace.
 
 See the [feature guide](FEATURES.md) for the full list of supported capabilities.
 
@@ -59,12 +59,27 @@ to remove both the summary and saved exchanges.
    python3 -m http.server 4173 --bind 127.0.0.1
    ```
 
-4. Visit [http://localhost:4173](http://localhost:4173). The page shows whether
-   Ollama and the model are available.
+4. Visit [http://localhost:4173](http://localhost:4173) for the Studio demo. Switch
+   between Maya and Alex to explore the guided workflows without Ollama.
+5. Select **Open local AI mentor** or visit [the local AI workspace](http://localhost:4173/local-ai.html)
+   for Ollama chat. Its header shows whether Ollama and the model are available.
 
 The browser connects directly to Ollama's local API at `localhost:11434`. If your
 Ollama installation blocks the page's origin, allow `http://localhost:4173` in its
 `OLLAMA_ORIGINS` setting and restart Ollama.
+
+## Studio demo
+
+The Studio demo provides guided questions, project ideas and reflections, an
+admissions plan draft you can approve, and progress tracking. Its fictional
+student profiles and browser-saved data are separate from the Ollama workspace.
+
+## Local AI workspace
+
+- **Mentor** opens the active conversation and connects to Ollama.
+- **My projects** lets you choose a conversation, save work and a next action, and reopen the thread.
+- **College plan** holds your weekly plan and starts progress check-ins.
+- **My profile** holds your student profile, school materials, and mentoring memory.
 
 ## Mentoring modes
 
@@ -76,13 +91,13 @@ Ollama installation blocks the page's origin, allow `http://localhost:4173` in i
   different kinds of practice. Quiz mode gives one question at a time, reviews
   your answer, and suggests what to practice next. The active question stays
   available until you reload the page or start a new topic in quiz mode.
-- **Ask about class materials** searches the text you paste or import in the
-  sidebar for relevant passages. References such as `[S1]` point to line
-  numbers in the text shown in the sidebar. Import UTF-8 TXT, CSV, or Markdown,
+- **Ask about class materials** searches the text you paste or import under
+  **My profile** for relevant passages. References such as `[S1]` point to line
+  numbers in the text shown under **My profile**. Import UTF-8 TXT, CSV, or Markdown,
   up to 24,000 characters per field. Use **Save materials** to keep them across
   reloads.
 - **Explore courses and careers** uses your interests and experience to suggest
-  courses, clubs, careers, and projects. Add your school's catalog in the sidebar
+  courses, clubs, careers, and projects. Add your school's catalog under **My profile**
   for local offerings and prerequisites with line references.
 - **Mentoring memory** lets you read, edit, and download the summary. Pausing
   stops Mentor from using or updating the summary and recent exchanges during

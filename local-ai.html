@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#142c25" />
+    <title>College Mentor · Local AI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <aside class="studio-sidebar">
+        <div class="studio-brand"><span aria-hidden="true">✦</span> College Mentor</div>
+        <nav aria-label="Workspace">
+          <button type="button" data-view="mentor" aria-current="page">Mentor</button>
+          <button type="button" data-view="projects">My projects</button>
+          <button type="button" data-view="college-plan">College plan</button>
+          <button type="button" data-view="profile">My profile</button>
+          <a href="./">Studio demo</a>
+        </nav>
+      </aside>
+      <div class="studio-content">
+        <div class="studio-top">High school mentorship <span>Local workspace</span></div>
+        <section id="profile" aria-labelledby="profile-heading" hidden>
+          <h1 id="profile-heading" tabindex="-1">My profile</h1>
+        <details class="workspace-section" open>
+          <summary>Student profile</summary>
+          <form id="profile-form" class="profile-form">
+            <div class="field-row">
+              <label for="student-name">Name</label>
+              <input id="student-name" name="name" type="text" maxlength="40" placeholder="Optional" />
+            </div>
+
+            <div class="field-row">
+              <label for="grade">Grade</label>
+              <select id="grade" name="grade">
+                <option value="">Select grade</option>
+                <option value="9">Grade 9</option>
+                <option value="10">Grade 10</option>
+                <option value="11">Grade 11</option>
+                <option value="12">Grade 12</option>
+              </select>
+            </div>
+
+            <div class="field-row">
+              <label for="grade-reports">Recent grades</label>
+              <textarea id="grade-reports" name="gradeReports" rows="3" maxlength="1000" placeholder="Optional: Math 82%, English B+, Biology A-"></textarea>
+            </div>
+
+            <div class="field-row">
+              <label for="courses">Courses</label>
+              <textarea id="courses" rows="2" maxlength="500" placeholder="Examples: Algebra II, Biology, English 10"></textarea>
+            </div>
+
+            <fieldset>
+              <legend>Subjects</legend>
+              <div id="subjects" class="subject-grid">
+                <label class="check-pill"><input type="checkbox" value="Math" /> Math</label>
+                <label class="check-pill"><input type="checkbox" value="Science" /> Science</label>
+                <label class="check-pill"><input type="checkbox" value="English" /> English</label>
+                <label class="check-pill"><input type="checkbox" value="History" /> History</label>
+                <label class="check-pill"><input type="checkbox" value="Arts" /> Arts</label>
+                <label class="check-pill"><input type="checkbox" value="Computer Science" /> Computer Science</label>
+              </div>
+            </fieldset>
+
+            <div class="field-row">
+              <label for="interests">Interests & goals</label>
+              <textarea id="interests" name="interests" rows="4" maxlength="500" placeholder="Examples: robotics, music, becoming an engineer"></textarea>
+            </div>
+
+            <div class="field-row">
+              <label for="experience">Experience and skill levels</label>
+              <textarea id="experience" rows="2" maxlength="500" placeholder="Examples: beginner in Python, two years of piano"></textarea>
+            </div>
+
+            <div class="field-row">
+              <label for="profile-upload">Course, grade, or interest notes</label>
+              <input id="profile-upload" type="file" accept=".txt,.csv,.md" />
+              <label class="sr-only" for="profile-notes">Uploaded notes</label>
+              <textarea id="profile-notes" rows="3" maxlength="1500" placeholder="Paste notes or load a TXT, CSV, or Markdown file"></textarea>
+              <p id="upload-status" class="save-status" role="status"></p>
+            </div>
+
+            <div class="field-row">
+              <label for="preferred-colleges">Preferred colleges</label>
+              <textarea id="preferred-colleges" rows="2" maxlength="500"></textarea>
+              <label for="constraints">Time and resource constraints</label>
+              <textarea id="constraints" rows="2" maxlength="500"></textarea>
+            </div>
+            <button class="save-button" type="submit">Save my profile</button>
+            <p id="save-status" class="save-status" role="status"></p>
+          </form>
+        </details>
+
+        <details class="workspace-section">
+          <summary>Class materials and catalog</summary>
+          <form id="materials-form" class="profile-form">
+            <div class="field-row">
+              <label for="class-material">Assignment, rubric, or study guide</label>
+              <textarea id="class-material" rows="4" maxlength="24000"></textarea>
+              <label for="class-file">Import class material (TXT, CSV, MD)</label>
+              <input id="class-file" type="file" accept=".txt,.csv,.md" />
+            </div>
+            <div class="field-row">
+              <label for="course-catalog">School course catalog</label>
+              <textarea id="course-catalog" rows="4" maxlength="24000"></textarea>
+              <label for="catalog-file">Import catalog (TXT, CSV, MD)</label>
+              <input id="catalog-file" type="file" accept=".txt,.csv,.md" />
+            </div>
+            <button class="save-button" type="submit">Save materials</button>
+            <p id="materials-status" class="workspace-status" role="status"></p>
+          </form>
+        </details>
+
+        <details class="workspace-section">
+          <summary>Mentoring memory</summary>
+          <form id="memory-form" class="profile-form">
+            <label class="memory-toggle"><input id="memory-paused" type="checkbox" /> Pause chat memory</label>
+            <p class="workspace-status">Mentor saves screened exchanges on this device and looks for related discussions when you ask a question. Pausing stops Mentor from using or updating saved chat memory.</p>
+            <div class="field-row">
+              <label for="memory-notes">Summary used in future chats</label>
+              <textarea id="memory-notes" rows="5" maxlength="900"></textarea>
+            </div>
+            <div class="workspace-buttons">
+              <button type="submit">Save edits</button>
+              <button id="delete-summary" type="button" disabled>Delete chat memory</button>
+              <button id="export-summary" type="button" disabled>Download summary</button>
+            </div>
+            <p id="memory-status" class="workspace-status" role="status"></p>
+          </form>
+        </details>
+        </section>
+        <section id="college-plan" aria-labelledby="plan-heading" hidden>
+          <h1 id="plan-heading" tabindex="-1">My college plan</h1>
+          <p>Set weekly goals and check in on your progress with Mentor.</p>
+        <details class="workspace-section" open>
+          <summary>Weekly plan</summary>
+          <form id="plan-form" class="profile-form">
+            <div class="field-row">
+              <label for="plan-week">Week of</label>
+              <input id="plan-week" type="date" required />
+              <label for="plan-goal">Goal</label>
+              <input id="plan-goal" maxlength="160" required placeholder="Prepare for my Algebra II quiz" />
+            </div>
+            <fieldset class="plan-actions">
+              <legend>Actions</legend>
+              <div><input type="checkbox" aria-label="Mark action 1 complete" /><input aria-label="Action 1" maxlength="140" /></div>
+              <div><input type="checkbox" aria-label="Mark action 2 complete" /><input aria-label="Action 2" maxlength="140" /></div>
+              <div><input type="checkbox" aria-label="Mark action 3 complete" /><input aria-label="Action 3" maxlength="140" /></div>
+            </fieldset>
+            <button class="save-button" type="submit">Save weekly plan</button>
+            <button id="start-checkin" class="secondary-button" type="button" disabled>Start a check-in</button>
+            <p id="plan-status" class="workspace-status" role="status"></p>
+          </form>
+        </details>
+
+        </section>
+        <section id="mentor" aria-labelledby="mentor-heading">
+          <header class="studio-hero">
+            <h1 id="mentor-heading" tabindex="-1">Your college mentor</h1>
+            <p>Explore interests, plan your schoolwork, and take your next step.</p>
+          </header>
+          <div class="studio-grid">
+            <section class="chat-panel" aria-label="Chat with Mentor">
+              <header class="chat-header">
+                <div class="mentor-avatar" aria-hidden="true">M</div>
+                <div>
+                  <h2>Mentor</h2>
+                  <p id="model-status"><span class="status-dot checking"></span>Checking local model…</p>
+                </div>
+                <label class="model-picker" for="model-select">
+                  <span>Local model</span>
+                  <select id="model-select">
+                    <option value="qwen2.5:3b">Qwen 2.5 · 3B (default)</option>
+                    <option value="qwen2.5:1.5b">Qwen 2.5 · 1.5B (lighter)</option>
+                  </select>
+                </label>
+              </header>
+
+              <div id="messages" class="messages" aria-live="polite">
+                <div class="message mentor-message">
+                  <div class="message-avatar" aria-hidden="true">M</div>
+                  <div class="message-content">
+                    <p>Hi! I'm your mentor. Tell me what you're working on, feeling unsure about, or hoping to achieve.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="prompt-area">
+                <div class="mode-picker">
+                  <label for="chat-mode">Mentoring mode</label>
+                  <select id="chat-mode">
+                    <option value="chat">Ask Mentor</option>
+                    <option value="plan">Plan my week</option>
+                    <option value="checkin">Weekly check-in</option>
+                    <option value="hint">Get a hint</option>
+                    <option value="example">See a worked example</option>
+                    <option value="quiz">Practice with a quiz</option>
+                    <option value="materials">Ask about class materials</option>
+                    <option value="explore">Explore courses and careers</option>
+                  </select>
+                  <button id="new-quiz" class="secondary-button" type="button" hidden>New quiz</button>
+                </div>
+                <form id="chat-form" class="chat-form">
+                  <label class="sr-only" for="chat-input">Ask your mentor</label>
+                  <textarea id="chat-input" rows="1" maxlength="1000" placeholder="Ask your mentor..." required></textarea>
+                  <button id="send-button" type="submit" aria-label="Send message">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20V4l18 8-18 8Zm2-3.2 10.9-4.8L5 7.2v3.2l6 1.6-6 1.6v3.2Z"/></svg>
+                  </button>
+                </form>
+              </div>
+            </section>
+            <section class="studio-card studio-project-preview" aria-labelledby="active-heading">
+              <h2 id="active-heading">Project conversations</h2>
+              <p id="active-project">Pick up where you left off.</p>
+              <button type="button" data-view="projects" class="secondary-button">Browse projects</button>
+            </section>
+          </div>
+        </section>
+        <section id="projects" aria-labelledby="projects-heading" hidden>
+          <h1 id="projects-heading" tabindex="-1">My projects</h1>
+          <p>Save work and next steps, then pick up the conversation with Mentor.</p>
+          <div class="studio-card">
+            <form id="project-create" class="mode-picker">
+              <label for="project-title">New project name</label>
+              <input id="project-title" maxlength="80" required />
+              <button class="secondary-button" type="submit">Create project</button>
+            </form>
+            <div class="mode-picker">
+              <label for="project-select">Conversation</label>
+              <select id="project-select"><option value="">General mentoring</option></select>
+            </div>
+            <form id="project-work" class="field-row" hidden>
+              <label for="project-notes">Project work and progress</label>
+              <textarea id="project-notes" rows="2" maxlength="2000"></textarea>
+              <label for="project-next">Next action</label>
+              <input id="project-next" maxlength="240" />
+              <button class="secondary-button" type="submit">Save project work</button>
+            </form>
+            <p id="project-status" role="status"></p>
+          </div>
+
+          <button id="open-project" class="save-button studio-action" type="button">Open conversation</button>
+        </section>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
