@@ -66,7 +66,21 @@
         </section>
         <section id="college-plan" aria-labelledby="plan-heading" hidden>
           <h1 id="plan-heading" tabindex="-1">My college plan</h1>
-          <p>Set weekly goals and check in on your progress with Mentor.</p>
+          <p>Follow your college preparation roadmap, track milestones, and review recommended changes with Mentor.</p>
+          <section class="studio-card" aria-labelledby="roadmap-heading">
+            <h2 id="roadmap-heading">College roadmap</h2>
+            <p id="roadmap-targets"></p>
+            <div id="roadmap-progress"></div>
+            <button id="review-roadmap" class="secondary-button" type="button">Plan with Mentor</button>
+            <section id="roadmap-review" hidden aria-labelledby="roadmap-review-heading">
+              <h3 id="roadmap-review-heading">Review proposed changes</h3>
+              <p>Applying this proposal replaces your upcoming milestones. Completed milestones stay on your roadmap.</p>
+              <div id="roadmap-proposal"></div>
+              <button id="apply-roadmap" class="save-button" type="button">Apply changes</button>
+              <button id="dismiss-roadmap" class="secondary-button" type="button">Dismiss proposal</button>
+            </section>
+            <p id="roadmap-status" role="status"></p>
+          </section>
         <details class="workspace-section" open>
           <summary>Weekly plan</summary>
           <form id="plan-form" class="profile-form">
@@ -126,6 +140,7 @@
                   <select id="chat-mode">
                     <option value="chat">Ask Mentor</option>
                     <option value="plan">Plan my week</option>
+                    <option value="roadmap">Plan for college</option>
                     <option value="checkin">Weekly check-in</option>
                     <option value="hint">Get a hint</option>
                     <option value="example">See a worked example</option>
