@@ -6,6 +6,7 @@
     <meta name="theme-color" content="#142c25" />
     <title>College Mentor · Local AI</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="profile.css" />
   </head>
   <body>
     <main class="app-shell">
@@ -23,75 +24,7 @@
         <div class="studio-top">High school mentorship <span>Local workspace</span></div>
         <section id="profile" aria-labelledby="profile-heading" hidden>
           <h1 id="profile-heading" tabindex="-1">My profile</h1>
-        <details class="workspace-section" open>
-          <summary>Student profile</summary>
-          <form id="profile-form" class="profile-form">
-            <div class="field-row">
-              <label for="student-name">Name</label>
-              <input id="student-name" name="name" type="text" maxlength="40" placeholder="Optional" />
-            </div>
-
-            <div class="field-row">
-              <label for="grade">Grade</label>
-              <select id="grade" name="grade">
-                <option value="">Select grade</option>
-                <option value="9">Grade 9</option>
-                <option value="10">Grade 10</option>
-                <option value="11">Grade 11</option>
-                <option value="12">Grade 12</option>
-              </select>
-            </div>
-
-            <div class="field-row">
-              <label for="grade-reports">Recent grades</label>
-              <textarea id="grade-reports" name="gradeReports" rows="3" maxlength="1000" placeholder="Optional: Math 82%, English B+, Biology A-"></textarea>
-            </div>
-
-            <div class="field-row">
-              <label for="courses">Courses</label>
-              <textarea id="courses" rows="2" maxlength="500" placeholder="Examples: Algebra II, Biology, English 10"></textarea>
-            </div>
-
-            <fieldset>
-              <legend>Subjects</legend>
-              <div id="subjects" class="subject-grid">
-                <label class="check-pill"><input type="checkbox" value="Math" /> Math</label>
-                <label class="check-pill"><input type="checkbox" value="Science" /> Science</label>
-                <label class="check-pill"><input type="checkbox" value="English" /> English</label>
-                <label class="check-pill"><input type="checkbox" value="History" /> History</label>
-                <label class="check-pill"><input type="checkbox" value="Arts" /> Arts</label>
-                <label class="check-pill"><input type="checkbox" value="Computer Science" /> Computer Science</label>
-              </div>
-            </fieldset>
-
-            <div class="field-row">
-              <label for="interests">Interests & goals</label>
-              <textarea id="interests" name="interests" rows="4" maxlength="500" placeholder="Examples: robotics, music, becoming an engineer"></textarea>
-            </div>
-
-            <div class="field-row">
-              <label for="experience">Experience and skill levels</label>
-              <textarea id="experience" rows="2" maxlength="500" placeholder="Examples: beginner in Python, two years of piano"></textarea>
-            </div>
-
-            <div class="field-row">
-              <label for="profile-upload">Course, grade, or interest notes</label>
-              <input id="profile-upload" type="file" accept=".txt,.csv,.md" />
-              <label class="sr-only" for="profile-notes">Uploaded notes</label>
-              <textarea id="profile-notes" rows="3" maxlength="1500" placeholder="Paste notes or load a TXT, CSV, or Markdown file"></textarea>
-              <p id="upload-status" class="save-status" role="status"></p>
-            </div>
-
-            <div class="field-row">
-              <label for="preferred-colleges">Preferred colleges</label>
-              <textarea id="preferred-colleges" rows="2" maxlength="500"></textarea>
-              <label for="constraints">Time and resource constraints</label>
-              <textarea id="constraints" rows="2" maxlength="500"></textarea>
-            </div>
-            <button class="save-button" type="submit">Save my profile</button>
-            <p id="save-status" class="save-status" role="status"></p>
-          </form>
-        </details>
+          <div id="student-profile-entries" class="profile-entries"></div>
 
         <details class="workspace-section">
           <summary>Class materials and catalog</summary>
@@ -245,6 +178,7 @@
         </section>
       </div>
     </main>
+    <script src="profile.js"></script>
     <script src="app.js"></script>
   </body>
 </html>

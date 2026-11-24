@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>College Mentor</title>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>College Mentor</title><link rel="stylesheet" href="profile.css">
 <style>
 *{box-sizing:border-box}body{margin:0;background:#f4f6f3;color:#182a25;font:16px/1.55 system-ui,sans-serif}button,input,select{font:inherit}button,select{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #b67424;outline-offset:3px}aside{position:fixed;inset:0 auto 0 0;width:235px;background:#142c25;color:#edf5e9;display:flex;flex-direction:column;padding:26px 18px}.brand{font: bold 24px Georgia;padding:6px 10px 34px}.brand span{color:#d0ed9b;margin-right:8px}nav{display:grid;gap:7px}nav button{background:transparent;color:#dce8de;text-align:left;border:0;padding:11px 13px;border-radius:9px}nav button[aria-current=true]{background:#2d493d;color:#e2f4be}nav button:hover{background:#334f42}.switch{margin-top:auto;padding:12px 6px}.switch label{display:block;margin-bottom:6px;color:#cfdfd0}.switch select{width:100%;background:#254236;color:white;border:1px solid #527263;border-radius:8px;padding:8px}main{margin-left:235px;padding:30px 38px 55px;max-width:1560px}.top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #dbe3dc;padding-bottom:16px;margin-bottom:25px}.eyebrow,.badge{font-size:13px;font-weight:700;letter-spacing:.04em}.badge{display:inline-block;color:#315442;background:#e8efe6;border-radius:20px;padding:4px 10px}.hero{background:#1b3d31;color:#fff;border-radius:20px;padding:35px;position:relative;overflow:hidden}.hero:after{content:'';position:absolute;width:440px;height:440px;border:1px solid #577b56;border-radius:50%;right:-230px;top:-120px;box-shadow:0 0 0 27px #284c39,0 0 0 28px #577b56,0 0 0 55px #284c39,0 0 0 56px #577b56;pointer-events:none}.hero>*{position:relative;z-index:1}.hero .eyebrow{color:#d9edae}.hero p{color:#e2ede1;max-width:590px}h1,h2,h3,p{margin:0 0 12px}h1,h2{font-family:Georgia,serif;line-height:1.15}h1{font-size:clamp(34px,5vw,53px);font-weight:500}h2{font-size:30px}h3{font-size:18px}.grid{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(260px,1fr);gap:19px;margin-top:20px}.card{background:white;border:1px solid #dfe6dd;border-radius:15px;padding:22px;margin-bottom:14px}.head{display:flex;justify-content:space-between;gap:12px;align-items:start}.muted{color:#50655a}.btn{display:inline-block;border:1px solid #cbd9ce;border-radius:8px;background:white;color:#214435;padding:8px 12px;text-decoration:none;font-weight:650}.btn:hover{background:#edf4e9}.primary{background:#225840;border-color:#225840;color:white}.primary:hover{background:#174331}.hero .primary{background:#dbefad;border-color:#dbefad;color:#203a2c}.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.line{border-top:1px solid #e5ebe5;padding:12px 0}.line:last-child{padding-bottom:0}.bubble{max-width:90%;background:#edf3eb;padding:11px 15px;margin:9px 0;border-radius:11px;white-space:pre-wrap}.student{margin-left:auto;background:#daf0c5}.conversation{max-height:440px;overflow:auto}.form{display:grid;gap:8px}.form input{border:1px solid #bdcec1;border-radius:8px;padding:8px;width:100%}.form label{font-weight:650}.facts{display:grid;gap:10px}.facts div{border-top:1px solid #e4eae3;padding-top:10px}.notice{background:#f4ebd9;color:#624819;padding:10px;border-radius:8px;margin-bottom:12px}.stage{display:grid;grid-template-columns:92px 1fr;gap:10px;padding:10px 0;border-top:1px solid #e4eae3}.stage b{color:#375947}.check{margin-top:8px}.sub{margin-bottom:20px}.log{padding-left:20px}.log li{margin-bottom:8px}
 @media(max-width:900px){main{padding:20px}aside{width:185px}.brand{font-size:21px}main{margin-left:185px}.grid{grid-template-columns:1fr}}
@@ -11,6 +11,7 @@
 </style></head><body>
 <aside><div class="brand"><span>✦</span>College Mentor</div><nav id="nav" aria-label="Workspace"></nav><a class="workspace-link" href="local-ai.html">Open local AI mentor</a><div class="switch"><label for="persona">Demo student</label><select id="persona"><option value="alex">Alex · Grade 10</option><option value="maya">Maya · Grade 9</option></select></div></aside>
 <main><div class="top"><strong>On-demand high school mentorship</strong><span class="badge">Interactive demo</span></div><div id="view"></div></main>
+<script src="profile.js"></script>
 <script>
 const students={
  maya:{name:'Maya',grade:9,goal:'Explore illustration and visual communication',grades:'English A−, Algebra I B, Biology B+',activities:'Sketches from photos at home',hours:2,target:'',school:'Ask about Art II and Geometry prerequisites',budget:'Free materials',projects:[{title:'Reference sketches',detail:'Drew household objects from photographs. Enjoyed figuring out shadows.',result:'',kind:'sketches'}]},
@@ -21,10 +22,20 @@ const safe=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt
 const storage='college-mentor-advising-v1';
 const oldStorage='college-mentor-demo-v1';
 const routes=['Mentor','My projects','College plan','My profile'];
+const studioProfileFields={
+ goal:'Careers and interests',
+ grades:'Classes and grades',
+ activities:'Extracurriculars and interests outside school',
+ school:'Course options and questions for your counselor',
+ hours:'Hours per week you can spend exploring',
+ budget:'Budget and access',
+ target:'Colleges you’re curious about',
+};
+const loadedProfiles=new Map();
 let key='maya',page='Mentor',activeProject=null,data={},previous={};
 try{data=JSON.parse(localStorage.getItem(storage))||{};previous=JSON.parse(localStorage.getItem(oldStorage))||{}}catch{}
 function state(){
- if(data[key])return data[key];
+ if(data[key]?.profile)return data[key];
  const {projects,...profile}=students[key];
  const prior=previous[key];
  if(prior?.verified){
@@ -34,9 +45,36 @@ function state(){
  }
  const work=structuredClone(projects);
  if(prior?.verified&&prior.profile.work&&prior.profile.work!==projects[0].detail)work.push({title:'Work from earlier profile',detail:prior.profile.work,result:'',kind:'custom'});
- return data[key]={profile,projects:work,messages:[],pending:null,plan:null,history:[],status:''};
+ return data[key]={projects:work,messages:[],pending:null,plan:null,history:[],status:'',...data[key],profile};
 }
-function save(){try{localStorage.setItem(storage,JSON.stringify(data))}catch{}}
+function save(){
+ try{
+  const records=Object.fromEntries(Object.entries(data).map(([id,record])=>{
+   if(!loadedProfiles.has(id))return [id,record];
+   const {profile,...rest}=record;
+   return [id,rest];
+  }));
+  localStorage.setItem(storage,JSON.stringify(records));
+ }catch{}
+}
+function studioProfile(){
+ const id=key,s=state();
+ return ProfileEntries.load(id,studioProfileFields,s.profile,grouped=>{
+  const read=field=>(grouped[field]||[]).join('; ');
+  const hours=(grouped.hours||[]).map(Number).filter(value=>value>0&&value<=40).at(-1);
+  Object.assign(s.profile,{
+   goal:read('goal')||'your interests', grades:read('grades')||'grades to be added',
+   activities:read('activities')||'an activity you choose',
+   school:read('school')||'Which courses fit my interests?',
+   hours:hours||1, budget:read('budget')||'materials you already have', target:read('target')
+  });
+  loadedProfiles.set(id,true);
+  save();
+  if(key!==id)return;
+  if(page==='My profile')$('profile-context').innerHTML=contextMarkup(s);
+  else if(document.activeElement?.tagName!=='INPUT')render();
+ });
+}
 function button(action,label,primary=false){return '<button type="button" class="btn '+(primary?'primary':'')+'" data-action="'+action+'">'+label+'</button>'}
 function field(name,label,value,type='text'){return '<label for="'+name+'">'+label+'</label><input id="'+name+'" name="'+name+'" type="'+type+'" '+(type==='number'?'min="1" max="40"':'maxlength="180"')+' required value="'+safe(value)+'">'}
 const questions={
@@ -216,13 +254,14 @@ function render(){
    proactive(s)+'<div class="card"><h2>Ask your mentor</h2>'+conversation(s.messages)+'<div class="actions">'+Object.entries(questions).map(([id,label])=>button('ask-'+id,label)).join('')+'</div><form id="chat" class="form" style="margin-top:14px"><label for="question">Your question</label><input id="question" name="question" maxlength="400" required placeholder="What should I do if I like art and science?"><div><button class="btn primary">Ask mentor</button></div></form><p class="muted" style="margin:12px 0 0">Guided demo responses use your saved context.</p></div>'+pendingMarkup(s);
   html='<section class="hero"><div class="eyebrow">YOUR HIGH SCHOOL MENTOR · GRADE '+p.grade+'</div><h1>'+(project?'Project mentorship':'Hi, '+safe(p.name)+'.')+'</h1><p>'+(project?'Continue where you left off.':'Get guidance on classes, projects, careers and college planning.')+'</p></section><div class="mentor-layout"><div>'+view+'</div>'+projectThreads(s)+'</div>';
  }
- if(page==='My profile')html=heading('My profile','Update what your mentor should consider when you ask for advice.')+'<div class="grid"><div class="card"><form id="profile" class="form">'+field('goal','What careers or interests are you exploring?',p.goal)+field('grades','Current classes and grades',p.grades)+field('activities','Extracurriculars and interests outside school',p.activities)+field('school','Course options or a question for your counselor',p.school)+field('hours','Hours per week you can spend exploring',p.hours,'number')+field('budget','Budget and access',p.budget)+'<label for="target">Colleges you’re curious about</label><input id="target" name="target" maxlength="180" value="'+safe(p.target)+'" placeholder="Leave blank if you’re still exploring"><div class="actions"><button class="btn primary">Save profile</button>'+button('go-Mentor','Back to mentor')+'</div></form></div>'+contextMarkup(s)+'</div>';
+ if(page==='My profile')html=heading('My profile','Add, review, or import entries that your mentor can use for advice.')+'<div class="grid"><div><div id="studio-profile-entries" class="profile-entries"></div><div class="actions">'+button('go-Mentor','Back to mentor')+'</div></div><div id="profile-context">'+contextMarkup(s)+'</div></div>';
  if(page==='My projects')html=heading('What I’ve worked on','Keep something you made, a lesson you learned, or a reason you changed direction. Your mentor can draw on this in later conversations.')+'<div class="grid"><div>'+s.projects.map((x,i)=>'<div class="card"><h2>'+safe(x.title)+'</h2><p>'+safe(x.detail)+'</p><form class="form" data-project="'+i+'"><label for="result-'+i+'">What did you make or learn?</label><input id="result-'+i+'" name="result" maxlength="180" required value="'+safe(x.result)+'" placeholder="Add a result, feedback or something you discovered"><div><button class="btn">Save what I learned</button></div></form><div class="actions">'+button('thread-'+i,'Open project conversation')+'</div></div>').join('')+'</div><div><div class="card"><h2>Add existing work</h2><form id="project" class="form">'+field('title','Project name','')+field('detail','What did you try?','')+'<div><button class="btn primary">Add project</button></div></form></div><div class="card"><h2>Explore a new project</h2>'+button('ask-project','Ask my mentor')+'</div></div></div>';
  if(page==='College plan'){
   const plan=s.plan;
   html=heading('My college plan','Connect your school choices and work outside class to the colleges and careers you want to explore.')+tracker(plan||draftPlan(s),!!plan)+'<div class="grid"><div><div class="card">'+(plan?'<div class="head"><h2>'+safe(plan.goal)+'</h2><span class="badge">Version '+(s.history.length+1)+'</span></div><p>'+(plan.target?safe(plan.target):'College interests still open')+'</p>'+plansMarkup(plan,true):'<h2>Start with a conversation</h2><p>Ask your mentor to draft a plan from your grades, activities, current interests and available time.</p>')+(plan?button('ask-plan','Review with my mentor',true):'')+'</div>'+(s.history.length?'<details class="card"><summary>Earlier plans and progress</summary>'+s.history.map(old=>'<div class="line"><b>'+safe(old.goal)+'</b><p>'+safe(Object.values(old.progress).join(' · ')||'No progress notes yet.')+'</p></div>').join('')+'</details>':'')+'</div><div><div class="card"><h2>Official college information</h2><p>Confirm requirements and deadlines for your entry year on each school’s official admissions site.</p>'+(p.target.includes('Stanford')?'<a class="btn" href="https://admission.stanford.edu/" target="_blank" rel="noopener">Stanford undergraduate admissions</a>':'')+'</div></div></div>';
  }
  $('view').innerHTML=(s.status?'<div role="status" class="notice">'+safe(s.status)+'</div>':'')+html;
+ if(page==='My profile')studioProfile().mount($('studio-profile-entries'));
  if($('conversation'))$('conversation').scrollTop=$('conversation').scrollHeight;
 }
 document.addEventListener('click',e=>{
@@ -255,12 +294,12 @@ document.addEventListener('submit',e=>{
  s.status='';
  if(form.id==='project-chat'&&values.question&&s.projects[activeProject])projectReply(s.projects[activeProject],values.question,s);
  else if(form.id==='chat'&&values.question)advise(classify(values.question),values.question);
- else if(form.id==='profile'){Object.assign(s.profile,values,{hours:Number(values.hours)});s.pending=null;s.status='Profile saved. Your mentor will use these details in your next conversation.'}
  else if(form.id==='project'&&values.title&&values.detail){s.projects.push({...values,result:'',kind:'custom'});s.pending=null;s.status='Project added to your mentor’s context.'}
  else if(form.dataset.project!==undefined&&values.result){s.projects[Number(form.dataset.project)].result=values.result;s.pending=null;s.status='Saved. Your mentor can use this in future advice.'}
  else if(form.dataset.progress){const id=form.dataset.progress;s.plan.progress[id]=values.note;s.plan.completed??={};s.plan.completed[id]=values.completed==='on';s.status='Progress saved.'}
  save();render();
 });
-$('persona').addEventListener('change',e=>{key=e.target.value;page='Mentor';activeProject=null;render();window.scrollTo(0,0)});
+$('persona').addEventListener('change',e=>{key=e.target.value;page='Mentor';activeProject=null;render();studioProfile();window.scrollTo(0,0)});
 render();
+studioProfile();
 </script></body></html>

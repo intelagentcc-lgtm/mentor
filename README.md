@@ -9,12 +9,7 @@ with 8 GB of unified memory. Choose **Qwen 2.5 1.5B** if you need quicker replie
 or more memory for other apps. Ollama lists the quantized downloads at
 [1.9 GB and 986 MB](https://ollama.com/library/qwen2.5/tags). Inference also
 uses memory for context and runtime. Drafting and review run sequentially
-with the same model on Ollama's loopback API. The optional profile includes
-grade level, courses, recent grades, subjects,
-interests, goals, and experience. Select **Save my profile** once to make this
-information available across chats and reloads. You can also import UTF-8 TXT,
-CSV, or Markdown notes up to 1,500 characters and review them before saving.
-Avoid adding identifying or sensitive information.
+with the same model on Ollama's loopback API. **My profile** supports multiple entries per field. Add an entry by hand or import a file, review the extracted text, and choose the field before saving.
 
 Mentor screens student requests before drafting. A separate review pass checks the
 draft and summary for age appropriateness, factual accuracy, calculations, and
@@ -31,9 +26,11 @@ drugs, alcohol, tobacco, vaping, gambling, and other inappropriate content.
 All generated replies, summaries, quiz questions, and plan actions pass through
 a local keyword filter and an Ollama review before display or saving.
 
-Mentor saves screened exchanges and a short editable summary
-in browser storage for the current site address, as space allows. It retrieves up to three
-related exchanges, even if other topics came up in between or the page was
+Mentor saves screened exchanges with their date and time in the local SQLite
+database and keeps a short editable summary in browser storage. Existing browser
+history is imported when you open the local AI workspace at the same address.
+Mentor reads your saved profile and retrieves up to three related exchanges,
+even if other topics came up in between or the page was
 reloaded. It looks for clues in the current wording and in past questions and
 replies, so a student can pick up an earlier task without naming the session.
 When several earlier topics fit, Mentor is instructed to ask a focused question.
@@ -56,7 +53,9 @@ to remove both the summary and saved exchanges.
 3. In this folder, start the app:
 
    ```sh
-   python3 -m http.server 4173 --bind 127.0.0.1
+   python3 -m venv .venv
+   .venv/bin/python -m pip install -r requirements.txt
+   .venv/bin/python server.py
    ```
 
 4. Visit [http://localhost:4173](http://localhost:4173) for the Studio demo. Switch
@@ -67,6 +66,22 @@ to remove both the summary and saved exchanges.
 The browser connects directly to Ollama's local API at `localhost:11434`. If your
 Ollama installation blocks the page's origin, allow `http://localhost:4173` in its
 `OLLAMA_ORIGINS` setting and restart Ollama.
+
+## Profile storage and imports
+
+- Use **My profile** to add, view, edit, or delete individual entries. A file import
+  extracts text into an editable preview. Each nonempty line becomes its own entry
+  in the selected field when saved. Check OCR results and spreadsheet values first.
+- Supported files include PDF, common image formats (including JPEG, PNG, and HEIC),
+  Excel (.xlsx, .xls), Word (.docx, .doc), and UTF-8 text (.txt, .md, .csv, .tsv).
+  PDF and image extraction uses local Apple frameworks through the Swift
+  command-line tools. Run `xcode-select --install` if those tools are missing.
+- The default database is `~/Library/Application Support/College Mentor/profiles.sqlite3`.
+  Existing browser profiles are imported once when you open the app at the same
+  address you used before. The Studio's Maya and Alex profiles stay separate from
+  the local AI profile. Plans and the editable chat summary use browser storage.
+- Profile editing and document imports require the local Python server. The static
+  GitHub Pages deployment can display the Studio demo and its example profiles.
 
 ## Studio demo
 

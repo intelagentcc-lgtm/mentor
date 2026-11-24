@@ -24,7 +24,7 @@ Mentor is a browser-based study and exploration assistant for high school studen
 
 ## Conversation memory
 
-- Mentor stores screened exchanges and an editable summary in browser storage. It uses clues from the latest message, saved questions, and earlier replies to retrieve up to three related exchanges, even after intervening topics or a reload.
+- Mentor stores screened exchanges and their timestamps in local SQLite and keeps the editable summary in browser storage. It reads the saved profile and retrieves up to three related exchanges, even after intervening topics or a reload.
 - Follow-up questions can build on a step from the current session. When a message asks several questions, Mentor looks for relevant past exchanges for each question and is instructed to answer them in order. Context labels distinguish **This session** from an **Earlier exchange**.
 - **Context used** appears below a reply when the reviewed answer identifies a saved detail it relied on. **Context checked** lists the available profile, earlier conversations, or weekly plan when the model supplies no specific reference. Class-material and catalog citations still point to their source text.
 - Submitted questions are grouped by page session and timestamped. Fallbacks are recorded too. For screened messages or requests that could not be screened, Mentor records the outcome without the original question. These entries are excluded from topic recall.
