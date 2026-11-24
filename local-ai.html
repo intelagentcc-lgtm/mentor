@@ -153,18 +153,22 @@
         </section>
         <section id="projects" aria-labelledby="projects-heading" hidden>
           <h1 id="projects-heading" tabindex="-1">My projects</h1>
-          <p>Save work and next steps, then pick up the conversation with Mentor.</p>
+          <p>Work with your mentor on specific goals, like exploring an interest, choosing courses, or developing a portfolio project. Each project saves your conversation history and progress so you can pick up where you left off.</p>
           <div class="studio-card">
             <form id="project-create" class="mode-picker">
               <label for="project-title">New project name</label>
               <input id="project-title" maxlength="80" required />
-              <button class="secondary-button" type="submit">Create project</button>
+              <label for="new-project-goal">Goal</label>
+              <input id="new-project-goal" maxlength="240" placeholder="e.g., Choose next year’s science courses" required />
+              <button class="secondary-button" type="submit">Create and open project</button>
             </form>
             <div class="mode-picker">
               <label for="project-select">Conversation</label>
               <select id="project-select"><option value="">General mentoring</option></select>
             </div>
             <form id="project-work" class="field-row" hidden>
+              <label for="project-goal">Project goal</label>
+              <input id="project-goal" maxlength="240" required />
               <label for="project-notes">Project work and progress</label>
               <textarea id="project-notes" rows="2" maxlength="2000"></textarea>
               <label for="project-next">Next action</label>
