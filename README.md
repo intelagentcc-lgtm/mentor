@@ -4,11 +4,11 @@ A high school mentorship app with a guided Studio demo and an Ollama-powered loc
 
 See the [feature guide](FEATURES.md) for the full list of supported capabilities.
 
-The app defaults to the open-weight **Qwen 2.5 3B** on this Apple M1 MacBook Air
-with 8 GB of unified memory. Choose **Qwen 2.5 1.5B** if you need quicker replies
-or more memory for other apps. Ollama lists the quantized downloads at
-[1.9 GB and 986 MB](https://ollama.com/library/qwen2.5/tags). Inference also
-uses memory for context and runtime. Drafting and review run sequentially
+The app defaults to **Qwen3-4B-Instruct-2507**, a
+[2.5 GB quantized download](https://ollama.com/library/qwen3/tags).
+**Qwen 2.5 1.5B** is a lighter option, and **Qwen 2.5 3B** remains available
+for research or evaluation under its [license](https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE).
+Inference also uses memory for context and runtime. Drafting and review run sequentially
 with the same model on Ollama's loopback API. **My profile** supports multiple entries per field. Add an entry by hand or import a file, review the extracted text, and choose the field before saving.
 
 Mentor screens student requests before drafting. A separate review pass checks the
@@ -43,7 +43,13 @@ to remove both the summary and saved exchanges.
 
 1. Install Ollama for macOS from [ollama.com/download](https://ollama.com/download)
    and open it.
-2. Download the recommended models:
+2. Download the default model:
+
+   ```sh
+   ollama pull qwen3:4b-instruct-2507-q4_K_M
+   ```
+
+   Download either of the other models if you plan to select it:
 
    ```sh
    ollama pull qwen2.5:3b

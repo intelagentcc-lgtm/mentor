@@ -10,6 +10,7 @@ const TOPIC_STOP_WORDS = new Set([
   "year course coursework grade grades session sessions previous topic topics talk discussed change switch switching thinking try know show using use learn learning practice explore exploring curious interested consider considering suggest beginner small project activity idea context mentor student",
 ].join(" ").split(" "));
 const LOCAL_MODELS = new Map([
+  ["qwen3:4b-instruct-2507-q4_K_M", "Qwen3-4B-Instruct-2507"],
   ["qwen2.5:3b", "Qwen 2.5 3B"],
   ["qwen2.5:1.5b", "Qwen 2.5 1.5B"],
 ]);

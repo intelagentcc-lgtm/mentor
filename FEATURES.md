@@ -33,7 +33,7 @@ Mentor is a browser-based study and exploration assistant for high school studen
 
 ## Review, references, and local operation
 
-- **Local models.** Choose Qwen 2.5 3B by default or the lighter Qwen 2.5 1.5B. The header shows whether the selected model is available. Drafting and review run through Ollama on the laptop.
+- **Local models.** Qwen3-4B-Instruct-2507 is the default. Qwen 2.5 3B and the lighter Qwen 2.5 1.5B are also selectable. The header shows whether the selected model is available. Drafting and review run through Ollama on the laptop.
 - **Safety and answer review.** Mentor screens requests and checks drafts, summaries, quiz questions, and proposed actions before displaying or saving them. The review checks age appropriateness, factual claims, calculations, and citations. Safety concerns can trigger a prompt to contact a trusted adult or emergency services. Model checks can still miss errors or inappropriate content.
 - **Study checks.** Some clear practice cases use fixed rules before review, including simple 4/4 rhythm counting, serving-ratio hints, zero-iteration Python loops, paper-folding fractions, and single-path circuits.
 - **Public reference fallback.** A failed draft can get one retry. For predefined public topics, Mentor can look up Wikipedia excerpts and cite them when used. Only the predefined topic label is sent for that lookup. Profile information, chat text, and uploads stay local. When Mentor cannot give a reviewed answer, it asks a follow-up question.
