@@ -1,0 +1,295 @@
+{
+  "id": "11-02",
+  "simulation": "Synthetic expected interaction. This case was not run against the Mentor UI or Ollama.",
+  "simulationDate": "2026-11-24",
+  "myProfile": {
+    "savedEntries": {
+      "name": "Student 2",
+      "grade": "11",
+      "courses": [
+        "Grade 9 | Algebra I | B",
+        "Grade 9 | Earth Science | A",
+        "Grade 9 | English 9 | B+",
+        "Grade 9 | Spanish I | A-",
+        "Grade 10 | Geometry | A",
+        "Grade 10 | Biology | B+",
+        "Grade 10 | English 10 | A-",
+        "Grade 10 | Spanish II | B",
+        "Grade 11 | Algebra II | B+",
+        "Grade 11 | Environmental Science | A-",
+        "Grade 11 | English 11 | B",
+        "Grade 11 | Statistics | A"
+      ],
+      "interests": [
+        "Environmental science"
+      ],
+      "preferredColleges": [
+        "UC Santa Cruz",
+        "Oregon State University"
+      ],
+      "constraints": [
+        "Two hours per week",
+        "Use available materials and school resources"
+      ]
+    },
+    "reopenedCourseHistoryByGrade": {
+      "9": [
+        "Algebra I",
+        "Earth Science",
+        "English 9",
+        "Spanish I"
+      ],
+      "10": [
+        "Geometry",
+        "Biology",
+        "English 10",
+        "Spanish II"
+      ],
+      "11": [
+        "Algebra II",
+        "Environmental Science",
+        "English 11",
+        "Statistics"
+      ]
+    },
+    "entriesAfterUpdate": {
+      "name": "Student 2",
+      "grade": "11",
+      "courses": [
+        "Grade 9 | Algebra I | B",
+        "Grade 9 | Earth Science | A",
+        "Grade 9 | English 9 | B+",
+        "Grade 9 | Spanish I | A-",
+        "Grade 10 | Geometry | A",
+        "Grade 10 | Biology | B+",
+        "Grade 10 | English 10 | A-",
+        "Grade 10 | Spanish II | B",
+        "Grade 11 | Algebra II | B+",
+        "Grade 11 | Environmental Science | A-",
+        "Grade 11 | English 11 | B",
+        "Grade 11 | Statistics | A-"
+      ],
+      "interests": [
+        "Environmental science"
+      ],
+      "preferredColleges": [
+        "UC Santa Cruz",
+        "Oregon State University"
+      ],
+      "constraints": [
+        "Two hours per week",
+        "Use available materials and school resources"
+      ],
+      "notes": [
+        "I want to keep working on Environmental program comparison during short sessions."
+      ]
+    }
+  },
+  "mentor": {
+    "student": "How can I connect Earth Science and Biology to college program research?",
+    "mentor": "Use your Earth Science observation skills and Biology knowledge to compare how target programs teach fieldwork and ecology. Record what each official program page actually confirms.",
+    "courseContextUsed": "Earth Science and Biology"
+  },
+  "myProjects": {
+    "saved": {
+      "title": "Environmental program comparison",
+      "goal": "Explore environmental science through environmental program comparison and identify a college preparation step.",
+      "progress": "Made a grid for fieldwork, ecology courses, and unanswered questions.",
+      "nextAction": "Fill in one confirmed item for each target college."
+    },
+    "historyAfterReopening": [
+      {
+        "student": "How should I start environmental program comparison?",
+        "mentor": "Start with a small first step. Fill in one confirmed item for each target college.",
+        "recordedAt": "2026-11-24T17:00:00Z"
+      },
+      {
+        "student": "Based on what I saved, what should I do next?",
+        "mentor": "You saved this progress: Made a grid for fieldwork, ecology courses, and unanswered questions. Next, fill in one confirmed item for each target college.",
+        "recordedAt": "2026-11-24T17:05:00Z"
+      }
+    ]
+  },
+  "myPlans": {
+    "initialProposal": {
+      "status": "pending review",
+      "approvedMilestones": [],
+      "proposedMilestones": [
+        {
+          "title": "Record project baseline",
+          "date": "2026-11-27",
+          "action": "Save the initial project observations and progress.",
+          "done": false
+        },
+        {
+          "title": "Complete the next project step",
+          "date": "2026-12-04",
+          "action": "Fill in one confirmed item for each target college.",
+          "done": false
+        },
+        {
+          "title": "Compare target college programs",
+          "date": "2026-12-11",
+          "action": "Compare one relevant program feature at UC Santa Cruz and Oregon State University using their official pages.",
+          "done": false
+        }
+      ]
+    },
+    "afterInitialApprovalAndProgress": {
+      "completed": 1,
+      "total": 3,
+      "recommendedNextStep": "Fill in one confirmed item for each target college.",
+      "milestones": [
+        {
+          "title": "Record project baseline",
+          "date": "2026-11-27",
+          "action": "Save the initial project observations and progress.",
+          "done": true
+        },
+        {
+          "title": "Complete the next project step",
+          "date": "2026-12-04",
+          "action": "Fill in one confirmed item for each target college.",
+          "done": false
+        },
+        {
+          "title": "Compare target college programs",
+          "date": "2026-12-11",
+          "action": "Compare one relevant program feature at UC Santa Cruz and Oregon State University using their official pages.",
+          "done": false
+        }
+      ]
+    },
+    "revisionReview": {
+      "student": "I am now more interested in ecology than policy.",
+      "status": "pending review",
+      "approvedMilestones": [
+        {
+          "title": "Record project baseline",
+          "date": "2026-11-27",
+          "action": "Save the initial project observations and progress.",
+          "done": true
+        },
+        {
+          "title": "Complete the next project step",
+          "date": "2026-12-04",
+          "action": "Fill in one confirmed item for each target college.",
+          "done": false
+        },
+        {
+          "title": "Compare target college programs",
+          "date": "2026-12-11",
+          "action": "Compare one relevant program feature at UC Santa Cruz and Oregon State University using their official pages.",
+          "done": false
+        }
+      ],
+      "proposedUpcomingMilestones": [
+        {
+          "title": "Complete the revised project step",
+          "date": "2026-12-06",
+          "action": "Prioritize ecology coursework and fieldwork in the comparison grid.",
+          "done": false
+        },
+        {
+          "title": "Compare target college programs",
+          "date": "2026-12-11",
+          "action": "Compare one relevant program feature at UC Santa Cruz and Oregon State University using their official pages.",
+          "done": false
+        }
+      ]
+    },
+    "afterRevisionApproval": {
+      "completed": 1,
+      "total": 3,
+      "recommendedNextStep": "Prioritize ecology coursework and fieldwork in the comparison grid.",
+      "milestones": [
+        {
+          "title": "Record project baseline",
+          "date": "2026-11-27",
+          "action": "Save the initial project observations and progress.",
+          "done": true
+        },
+        {
+          "title": "Complete the revised project step",
+          "date": "2026-12-06",
+          "action": "Prioritize ecology coursework and fieldwork in the comparison grid.",
+          "done": false
+        },
+        {
+          "title": "Compare target college programs",
+          "date": "2026-12-11",
+          "action": "Compare one relevant program feature at UC Santa Cruz and Oregon State University using their official pages.",
+          "done": false
+        }
+      ]
+    }
+  },
+  "sessions": [
+    {
+      "id": "session-1",
+      "exchanges": [
+        {
+          "id": "s1-1",
+          "recordedAt": "2026-11-24T17:00:00Z",
+          "student": "How can I connect Earth Science and Biology to college program research?",
+          "mentor": "Use your Earth Science observation skills and Biology knowledge to compare how target programs teach fieldwork and ecology. Record what each official program page actually confirms."
+        },
+        {
+          "id": "s1-2",
+          "recordedAt": "2026-11-24T17:05:00Z",
+          "student": "What makes a yearbook caption useful?",
+          "mentor": "Include an observable detail and the activity shown."
+        }
+      ]
+    },
+    {
+      "id": "session-2",
+      "profileUpdatesSaved": [
+        {
+          "field": "courses",
+          "operation": "replace",
+          "previousValue": "Grade 11 | Statistics | A",
+          "value": "Grade 11 | Statistics | A-"
+        },
+        {
+          "field": "notes",
+          "operation": "add",
+          "value": "I want to keep working on Environmental program comparison during short sessions."
+        }
+      ],
+      "exchanges": [
+        {
+          "id": "s2-1",
+          "recordedAt": "2026-11-25T17:00:00Z",
+          "student": "What should I work on next in my saved college roadmap?",
+          "mentor": "For your saved college roadmap, take the next step you approved. Prioritize ecology coursework and fieldwork in the comparison grid."
+        }
+      ]
+    },
+    {
+      "id": "session-3",
+      "exchanges": [
+        {
+          "id": "s3-1",
+          "recordedAt": "2026-11-26T17:00:00Z",
+          "student": "How can I use my updated Statistics grade to choose a next step for Environmental program comparison based on our earlier discussion about Earth Science and Biology? Separately, can we revisit the yearbook captions?",
+          "mentor": "1. Your current profile lists Statistics as A-. For Environmental program comparison, build on the earlier discussion. Use your Earth Science observation skills and Biology knowledge to compare how target programs teach fieldwork and ecology. Record what each official program page actually confirms.\n\n2. Keep the observable detail and name the activity without guessing what someone felt.",
+          "recalledExchanges": [
+            {
+              "id": "s1-1",
+              "appliesToQuestions": [
+                1
+              ]
+            },
+            {
+              "id": "s1-2",
+              "appliesToQuestions": [
+                2
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

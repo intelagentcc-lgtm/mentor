@@ -1,0 +1,106 @@
+{
+  "id": "09-04",
+  "grade": 9,
+  "scenario": "Grade 9 computing mentorship",
+  "courseHistoryByGrade": {
+    "9": [
+      "Algebra I",
+      "Biology",
+      "English 9",
+      "Introduction to Computing"
+    ]
+  },
+  "myProfile": {
+    "entries": {
+      "name": "Student 4",
+      "grade": "9",
+      "courses": [
+        "Grade 9 | Algebra I | B+",
+        "Grade 9 | Biology | A-",
+        "Grade 9 | English 9 | B",
+        "Grade 9 | Introduction to Computing | A"
+      ],
+      "interests": [
+        "Computing"
+      ],
+      "preferredColleges": [
+        "UC Irvine",
+        "University of Washington"
+      ],
+      "constraints": [
+        "Two hours per week",
+        "Use available materials and school resources"
+      ]
+    }
+  },
+  "mentor": {
+    "mode": "chat",
+    "question": "What could I make with the loops I learned in Introduction to Computing?",
+    "expectedCourseConnection": "Introduction to Computing"
+  },
+  "myProjects": {
+    "title": "Reading total calculator",
+    "goal": "Explore computing through reading total calculator and identify a college preparation step.",
+    "initialQuestion": "How should I start reading total calculator?",
+    "progressToSave": "Ran the calculator with the sample values 3, 4, and 5.",
+    "resumeQuestion": "Based on what I saved, what should I do next?"
+  },
+  "myPlans": {
+    "mode": "roadmap",
+    "request": "Propose a college roadmap using my project progress and target colleges.",
+    "change": "I have internet access only at school.",
+    "review": [
+      "Inspect the proposal before applying it.",
+      "Apply and complete the first milestone.",
+      "Review the revision and verify the approved plan stays unchanged until you apply it.",
+      "Apply the revision and verify the completed milestone is still present."
+    ]
+  },
+  "expected": [
+    "Use Introduction to Computing accurately and distinguish prior coursework from current classes.",
+    "Project conversation and saved progress are available after reopening.",
+    "The roadmap reflects target colleges and uses personal target dates.",
+    "Upcoming milestones change only after approval. Completed work remains."
+  ],
+  "sessions": [
+    {
+      "id": "session-1",
+      "profileUpdates": [],
+      "mentorQuestions": [
+        "What could I make with the loops I learned in Introduction to Computing?",
+        "How do I frame a photo for a school exhibit?"
+      ]
+    },
+    {
+      "id": "session-2",
+      "profileUpdates": [
+        {
+          "field": "courses",
+          "operation": "replace",
+          "previousValue": "Grade 9 | Introduction to Computing | A",
+          "value": "Grade 9 | Introduction to Computing | A-"
+        },
+        {
+          "field": "notes",
+          "operation": "add",
+          "value": "I want to keep working on Reading total calculator during short sessions."
+        }
+      ],
+      "mentorQuestions": [
+        "What should I work on next in my saved college roadmap?"
+      ]
+    },
+    {
+      "id": "session-3",
+      "profileUpdates": [],
+      "mentorQuestions": [
+        "How can I use my updated Introduction to Computing grade to choose a next step for Reading total calculator? Separately, how can I check the photo framing before I print?"
+      ],
+      "expected": [
+        "Use the updated course grade.",
+        "Recall both the project-related exchange and the photo framing exchange from session 1.",
+        "Answer both questions in order and keep each topic’s details with that question."
+      ]
+    }
+  ]
+}

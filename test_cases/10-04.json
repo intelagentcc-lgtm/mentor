@@ -1,0 +1,116 @@
+{
+  "id": "10-04",
+  "grade": 10,
+  "scenario": "Grade 10 computing mentorship",
+  "courseHistoryByGrade": {
+    "9": [
+      "Algebra I",
+      "Biology",
+      "English 9",
+      "Introduction to Computing"
+    ],
+    "10": [
+      "Geometry",
+      "Chemistry",
+      "English 10",
+      "Computer Science Principles"
+    ]
+  },
+  "myProfile": {
+    "entries": {
+      "name": "Student 4",
+      "grade": "10",
+      "courses": [
+        "Grade 9 | Algebra I | B+",
+        "Grade 9 | Biology | A-",
+        "Grade 9 | English 9 | B",
+        "Grade 9 | Introduction to Computing | A",
+        "Grade 10 | Geometry | A-",
+        "Grade 10 | Chemistry | B",
+        "Grade 10 | English 10 | A",
+        "Grade 10 | Computer Science Principles | B+"
+      ],
+      "interests": [
+        "Computing"
+      ],
+      "preferredColleges": [
+        "UC Irvine",
+        "University of Washington"
+      ],
+      "constraints": [
+        "Two hours per week",
+        "Use available materials and school resources"
+      ]
+    }
+  },
+  "mentor": {
+    "mode": "chat",
+    "question": "Can I use last year's loop practice for my current computing class?",
+    "expectedCourseConnection": "Introduction to Computing"
+  },
+  "myProjects": {
+    "title": "Activity log counter",
+    "goal": "Explore computing through activity log counter and identify a college preparation step.",
+    "initialQuestion": "How should I start activity log counter?",
+    "progressToSave": "Verified the count on a list of three activities.",
+    "resumeQuestion": "Based on what I saved, what should I do next?"
+  },
+  "myPlans": {
+    "mode": "roadmap",
+    "request": "Propose a college roadmap using my project progress and target colleges.",
+    "change": "I now want to use sample data only.",
+    "review": [
+      "Inspect the proposal before applying it.",
+      "Apply and complete the first milestone.",
+      "Review the revision and verify the approved plan stays unchanged until you apply it.",
+      "Apply the revision and verify the completed milestone is still present."
+    ]
+  },
+  "expected": [
+    "Use Introduction to Computing accurately and distinguish prior coursework from current classes.",
+    "Project conversation and saved progress are available after reopening.",
+    "The roadmap reflects target colleges and uses personal target dates.",
+    "Upcoming milestones change only after approval. Completed work remains."
+  ],
+  "sessions": [
+    {
+      "id": "session-1",
+      "profileUpdates": [],
+      "mentorQuestions": [
+        "Can I use last year's loop practice for my current computing class?",
+        "How do I frame a photo for a school exhibit?"
+      ]
+    },
+    {
+      "id": "session-2",
+      "profileUpdates": [
+        {
+          "field": "courses",
+          "operation": "replace",
+          "previousValue": "Grade 10 | Computer Science Principles | B+",
+          "value": "Grade 10 | Computer Science Principles | A"
+        },
+        {
+          "field": "notes",
+          "operation": "add",
+          "value": "I want to keep working on Activity log counter during short sessions."
+        }
+      ],
+      "mentorQuestions": [
+        "What should I work on next in my saved college roadmap?"
+      ]
+    },
+    {
+      "id": "session-3",
+      "profileUpdates": [],
+      "mentorQuestions": [
+        "How can I use my updated Computer Science Principles grade to choose a next step for Activity log counter? Separately, how can I check the photo framing before I print?"
+      ],
+      "expected": [
+        "Use the updated course grade.",
+        "Recall both the project-related exchange and the photo framing exchange from session 1.",
+        "Answer both questions in order and keep each topic’s details with that question."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,281 @@
+{
+  "id": "10-04",
+  "simulation": "Synthetic expected interaction. This case was not run against the Mentor UI or Ollama.",
+  "simulationDate": "2026-11-24",
+  "myProfile": {
+    "savedEntries": {
+      "name": "Student 4",
+      "grade": "10",
+      "courses": [
+        "Grade 9 | Algebra I | B+",
+        "Grade 9 | Biology | A-",
+        "Grade 9 | English 9 | B",
+        "Grade 9 | Introduction to Computing | A",
+        "Grade 10 | Geometry | A-",
+        "Grade 10 | Chemistry | B",
+        "Grade 10 | English 10 | A",
+        "Grade 10 | Computer Science Principles | B+"
+      ],
+      "interests": [
+        "Computing"
+      ],
+      "preferredColleges": [
+        "UC Irvine",
+        "University of Washington"
+      ],
+      "constraints": [
+        "Two hours per week",
+        "Use available materials and school resources"
+      ]
+    },
+    "reopenedCourseHistoryByGrade": {
+      "9": [
+        "Algebra I",
+        "Biology",
+        "English 9",
+        "Introduction to Computing"
+      ],
+      "10": [
+        "Geometry",
+        "Chemistry",
+        "English 10",
+        "Computer Science Principles"
+      ]
+    },
+    "entriesAfterUpdate": {
+      "name": "Student 4",
+      "grade": "10",
+      "courses": [
+        "Grade 9 | Algebra I | B+",
+        "Grade 9 | Biology | A-",
+        "Grade 9 | English 9 | B",
+        "Grade 9 | Introduction to Computing | A",
+        "Grade 10 | Geometry | A-",
+        "Grade 10 | Chemistry | B",
+        "Grade 10 | English 10 | A",
+        "Grade 10 | Computer Science Principles | A"
+      ],
+      "interests": [
+        "Computing"
+      ],
+      "preferredColleges": [
+        "UC Irvine",
+        "University of Washington"
+      ],
+      "constraints": [
+        "Two hours per week",
+        "Use available materials and school resources"
+      ],
+      "notes": [
+        "I want to keep working on Activity log counter during short sessions."
+      ]
+    }
+  },
+  "mentor": {
+    "student": "Can I use last year's loop practice for my current computing class?",
+    "mentor": "Reuse a loop from Introduction to Computing to count entries in an activity log. In Computer Science Principles, compare the result with a hand count and explain the test.",
+    "courseContextUsed": "Introduction to Computing"
+  },
+  "myProjects": {
+    "saved": {
+      "title": "Activity log counter",
+      "goal": "Explore computing through activity log counter and identify a college preparation step.",
+      "progress": "Verified the count on a list of three activities.",
+      "nextAction": "Add one zero-entry example and one repeated-entry example."
+    },
+    "historyAfterReopening": [
+      {
+        "student": "How should I start activity log counter?",
+        "mentor": "Start with a small first step. Add one zero-entry example and one repeated-entry example.",
+        "recordedAt": "2026-11-24T17:00:00Z"
+      },
+      {
+        "student": "Based on what I saved, what should I do next?",
+        "mentor": "You saved this progress: Verified the count on a list of three activities. Next, add one zero-entry example and one repeated-entry example.",
+        "recordedAt": "2026-11-24T17:05:00Z"
+      }
+    ]
+  },
+  "myPlans": {
+    "initialProposal": {
+      "status": "pending review",
+      "approvedMilestones": [],
+      "proposedMilestones": [
+        {
+          "title": "Record project baseline",
+          "date": "2026-11-27",
+          "action": "Save the initial project observations and progress.",
+          "done": false
+        },
+        {
+          "title": "Complete the next project step",
+          "date": "2026-12-04",
+          "action": "Add one zero-entry example and one repeated-entry example.",
+          "done": false
+        },
+        {
+          "title": "Compare target college programs",
+          "date": "2026-12-11",
+          "action": "Compare one relevant program feature at UC Irvine and University of Washington using their official pages.",
+          "done": false
+        }
+      ]
+    },
+    "afterInitialApprovalAndProgress": {
+      "completed": 1,
+      "total": 3,
+      "recommendedNextStep": "Add one zero-entry example and one repeated-entry example.",
+      "milestones": [
+        {
+          "title": "Record project baseline",
+          "date": "2026-11-27",
+          "action": "Save the initial project observations and progress.",
+          "done": true
+        },
+        {
+          "title": "Complete the next project step",
+          "date": "2026-12-04",
+          "action": "Add one zero-entry example and one repeated-entry example.",
+          "done": false
+        },
+        {
+          "title": "Compare target college programs",
+          "date": "2026-12-11",
+          "action": "Compare one relevant program feature at UC Irvine and University of Washington using their official pages.",
+          "done": false
+        }
+      ]
+    },
+    "revisionReview": {
+      "student": "I now want to use sample data only.",
+      "status": "pending review",
+      "approvedMilestones": [
+        {
+          "title": "Record project baseline",
+          "date": "2026-11-27",
+          "action": "Save the initial project observations and progress.",
+          "done": true
+        },
+        {
+          "title": "Complete the next project step",
+          "date": "2026-12-04",
+          "action": "Add one zero-entry example and one repeated-entry example.",
+          "done": false
+        },
+        {
+          "title": "Compare target college programs",
+          "date": "2026-12-11",
+          "action": "Compare one relevant program feature at UC Irvine and University of Washington using their official pages.",
+          "done": false
+        }
+      ],
+      "proposedUpcomingMilestones": [
+        {
+          "title": "Complete the revised project step",
+          "date": "2026-12-06",
+          "action": "Use a small invented activity list for every test.",
+          "done": false
+        },
+        {
+          "title": "Compare target college programs",
+          "date": "2026-12-11",
+          "action": "Compare one relevant program feature at UC Irvine and University of Washington using their official pages.",
+          "done": false
+        }
+      ]
+    },
+    "afterRevisionApproval": {
+      "completed": 1,
+      "total": 3,
+      "recommendedNextStep": "Use a small invented activity list for every test.",
+      "milestones": [
+        {
+          "title": "Record project baseline",
+          "date": "2026-11-27",
+          "action": "Save the initial project observations and progress.",
+          "done": true
+        },
+        {
+          "title": "Complete the revised project step",
+          "date": "2026-12-06",
+          "action": "Use a small invented activity list for every test.",
+          "done": false
+        },
+        {
+          "title": "Compare target college programs",
+          "date": "2026-12-11",
+          "action": "Compare one relevant program feature at UC Irvine and University of Washington using their official pages.",
+          "done": false
+        }
+      ]
+    }
+  },
+  "sessions": [
+    {
+      "id": "session-1",
+      "exchanges": [
+        {
+          "id": "s1-1",
+          "recordedAt": "2026-11-24T17:00:00Z",
+          "student": "Can I use last year's loop practice for my current computing class?",
+          "mentor": "Reuse a loop from Introduction to Computing to count entries in an activity log. In Computer Science Principles, compare the result with a hand count and explain the test."
+        },
+        {
+          "id": "s1-2",
+          "recordedAt": "2026-11-24T17:05:00Z",
+          "student": "How do I frame a photo for a school exhibit?",
+          "mentor": "Place the main subject off center and leave room around it."
+        }
+      ]
+    },
+    {
+      "id": "session-2",
+      "profileUpdatesSaved": [
+        {
+          "field": "courses",
+          "operation": "replace",
+          "previousValue": "Grade 10 | Computer Science Principles | B+",
+          "value": "Grade 10 | Computer Science Principles | A"
+        },
+        {
+          "field": "notes",
+          "operation": "add",
+          "value": "I want to keep working on Activity log counter during short sessions."
+        }
+      ],
+      "exchanges": [
+        {
+          "id": "s2-1",
+          "recordedAt": "2026-11-25T17:00:00Z",
+          "student": "What should I work on next in my saved college roadmap?",
+          "mentor": "For your saved college roadmap, take the next step you approved. Use a small invented activity list for every test."
+        }
+      ]
+    },
+    {
+      "id": "session-3",
+      "exchanges": [
+        {
+          "id": "s3-1",
+          "recordedAt": "2026-11-26T17:00:00Z",
+          "student": "How can I use my updated Computer Science Principles grade to choose a next step for Activity log counter? Separately, how can I check the photo framing before I print?",
+          "mentor": "1. Your current profile lists Computer Science Principles as A. For Activity log counter, build on the earlier discussion. Reuse a loop from Introduction to Computing to count entries in an activity log. In Computer Science Principles, compare the result with a hand count and explain the test.\n\n2. Use the earlier off-center framing and preview the print crop to check the space around the subject.",
+          "recalledExchanges": [
+            {
+              "id": "s1-1",
+              "appliesToQuestions": [
+                1
+              ]
+            },
+            {
+              "id": "s1-2",
+              "appliesToQuestions": [
+                2
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

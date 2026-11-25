@@ -1,0 +1,126 @@
+{
+  "id": "11-02",
+  "grade": 11,
+  "scenario": "Grade 11 environmental science mentorship",
+  "courseHistoryByGrade": {
+    "9": [
+      "Algebra I",
+      "Earth Science",
+      "English 9",
+      "Spanish I"
+    ],
+    "10": [
+      "Geometry",
+      "Biology",
+      "English 10",
+      "Spanish II"
+    ],
+    "11": [
+      "Algebra II",
+      "Environmental Science",
+      "English 11",
+      "Statistics"
+    ]
+  },
+  "myProfile": {
+    "entries": {
+      "name": "Student 2",
+      "grade": "11",
+      "courses": [
+        "Grade 9 | Algebra I | B",
+        "Grade 9 | Earth Science | A",
+        "Grade 9 | English 9 | B+",
+        "Grade 9 | Spanish I | A-",
+        "Grade 10 | Geometry | A",
+        "Grade 10 | Biology | B+",
+        "Grade 10 | English 10 | A-",
+        "Grade 10 | Spanish II | B",
+        "Grade 11 | Algebra II | B+",
+        "Grade 11 | Environmental Science | A-",
+        "Grade 11 | English 11 | B",
+        "Grade 11 | Statistics | A"
+      ],
+      "interests": [
+        "Environmental science"
+      ],
+      "preferredColleges": [
+        "UC Santa Cruz",
+        "Oregon State University"
+      ],
+      "constraints": [
+        "Two hours per week",
+        "Use available materials and school resources"
+      ]
+    }
+  },
+  "mentor": {
+    "mode": "chat",
+    "question": "How can I connect Earth Science and Biology to college program research?",
+    "expectedCourseConnection": "Earth Science and Biology"
+  },
+  "myProjects": {
+    "title": "Environmental program comparison",
+    "goal": "Explore environmental science through environmental program comparison and identify a college preparation step.",
+    "initialQuestion": "How should I start environmental program comparison?",
+    "progressToSave": "Made a grid for fieldwork, ecology courses, and unanswered questions.",
+    "resumeQuestion": "Based on what I saved, what should I do next?"
+  },
+  "myPlans": {
+    "mode": "roadmap",
+    "request": "Propose a college roadmap using my project progress and target colleges.",
+    "change": "I am now more interested in ecology than policy.",
+    "review": [
+      "Inspect the proposal before applying it.",
+      "Apply and complete the first milestone.",
+      "Review the revision and verify the approved plan stays unchanged until you apply it.",
+      "Apply the revision and verify the completed milestone is still present."
+    ]
+  },
+  "expected": [
+    "Use Earth Science and Biology accurately and distinguish prior coursework from current classes.",
+    "Project conversation and saved progress are available after reopening.",
+    "The roadmap reflects target colleges and uses personal target dates.",
+    "Upcoming milestones change only after approval. Completed work remains."
+  ],
+  "sessions": [
+    {
+      "id": "session-1",
+      "profileUpdates": [],
+      "mentorQuestions": [
+        "How can I connect Earth Science and Biology to college program research?",
+        "What makes a yearbook caption useful?"
+      ]
+    },
+    {
+      "id": "session-2",
+      "profileUpdates": [
+        {
+          "field": "courses",
+          "operation": "replace",
+          "previousValue": "Grade 11 | Statistics | A",
+          "value": "Grade 11 | Statistics | A-"
+        },
+        {
+          "field": "notes",
+          "operation": "add",
+          "value": "I want to keep working on Environmental program comparison during short sessions."
+        }
+      ],
+      "mentorQuestions": [
+        "What should I work on next in my saved college roadmap?"
+      ]
+    },
+    {
+      "id": "session-3",
+      "profileUpdates": [],
+      "mentorQuestions": [
+        "How can I use my updated Statistics grade to choose a next step for Environmental program comparison based on our earlier discussion about Earth Science and Biology? Separately, can we revisit the yearbook captions?"
+      ],
+      "expected": [
+        "Use the updated course grade.",
+        "Recall both the project-related exchange and the yearbook captions exchange from session 1.",
+        "Answer both questions in order and keep each topic’s details with that question."
+      ]
+    }
+  ]
+}

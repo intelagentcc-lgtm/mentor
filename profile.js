@@ -49,7 +49,8 @@ const ProfileEntries = (() => {
             <label for="entry-field">Profile field</label>
             <select id="entry-field" required></select>
             <label for="entry-value">Entry</label>
-            <textarea id="entry-value" rows="4" required></textarea>
+            <textarea id="entry-value" rows="4" required aria-describedby="course-entry-format"></textarea>
+            <p id="course-entry-format" hidden>For each class, enter the school grade level, course name, and subject grade. Format example: Grade 10 | Geometry | A-. Use In progress if it has no grade yet.</p>
             <div class="entry-import">
               <label for="entry-file">Import text from a file</label>
               <input id="entry-file" type="file" accept="${accept}" />
@@ -67,6 +68,9 @@ const ProfileEntries = (() => {
         const field = form.querySelector("select");
         const value = form.querySelector("textarea");
         const file = root.querySelector("#entry-file");
+        const courseFormat = root.querySelector("#course-entry-format");
+        const isCourseField = () => scope === "student" && field.value === "courses";
+        const syncCourseHint = () => { courseFormat.hidden = !isCourseField(); };
         const importControls = root.querySelector(".entry-import");
         const save = form.querySelector("[type=submit]");
         const cancel = root.querySelector(".entry-cancel");
@@ -80,6 +84,9 @@ const ProfileEntries = (() => {
           field.add(new Option(label, key));
         }
 
+        field.addEventListener("change", syncCourseHint);
+        syncCourseHint();
+
         function setBusy(state) {
           busy = state;
           form.querySelectorAll("input, select, textarea, button").forEach((control) => { control.disabled = state; });
@@ -90,6 +97,7 @@ const ProfileEntries = (() => {
           entryId = id;
           importing = false;
           if (label) field.value = label;
+          syncCourseHint();
           value.value = text;
           title.textContent = id ? "Edit profile entry" : "Add a profile entry";
           save.textContent = id ? "Save changes" : "Add entry";
@@ -185,7 +193,14 @@ const ProfileEntries = (() => {
             if (!values.length || values.length > 100 || values.some((text) => text.length > 4000)) {
               throw new Error("Enter 1–100 items, up to 4,000 characters per item. Review or split longer imports before saving.");
             }
-            const batch = values.map((text) => ({ field: field.value, value: text }));
+            const batch = values.map((text) => {
+              if (!isCourseField()) return { field: field.value, value: text };
+              const parts = text.split("|").map((part) => part.trim());
+              if (parts.length !== 3 || !/^Grade\s+(?:[1-9]|1[0-2])$/i.test(parts[0]) || !parts[1] || !parts[2]) {
+                throw new Error("Enter each class as Grade 10 | Geometry | A-. Use In progress when a grade is pending.");
+              }
+              return { field: field.value, value: parts.join(" | ") };
+            });
             const result = entryId
               ? await request(`${endpoint}&id=${entryId}`, json("PUT", batch[0]))
               : await request(endpoint, json("POST", { entries: batch }));

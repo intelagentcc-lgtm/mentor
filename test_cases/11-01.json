@@ -1,0 +1,126 @@
+{
+  "id": "11-01",
+  "grade": 11,
+  "scenario": "Grade 11 engineering mentorship",
+  "courseHistoryByGrade": {
+    "9": [
+      "Algebra I",
+      "Biology",
+      "English 9",
+      "World Geography"
+    ],
+    "10": [
+      "Geometry",
+      "Chemistry",
+      "English 10",
+      "World History"
+    ],
+    "11": [
+      "Algebra II",
+      "Physics",
+      "English 11",
+      "US History"
+    ]
+  },
+  "myProfile": {
+    "entries": {
+      "name": "Student 1",
+      "grade": "11",
+      "courses": [
+        "Grade 9 | Algebra I | A-",
+        "Grade 9 | Biology | B",
+        "Grade 9 | English 9 | A",
+        "Grade 9 | World Geography | B+",
+        "Grade 10 | Geometry | B",
+        "Grade 10 | Chemistry | A",
+        "Grade 10 | English 10 | B+",
+        "Grade 10 | World History | A-",
+        "Grade 11 | Algebra II | A",
+        "Grade 11 | Physics | B+",
+        "Grade 11 | English 11 | A-",
+        "Grade 11 | US History | B"
+      ],
+      "interests": [
+        "Engineering"
+      ],
+      "preferredColleges": [
+        "Cal Poly San Luis Obispo",
+        "UC Davis"
+      ],
+      "constraints": [
+        "Two hours per week",
+        "Use available materials and school resources"
+      ]
+    }
+  },
+  "mentor": {
+    "mode": "chat",
+    "question": "How can my earlier Algebra I and Geometry work help me prepare an engineering portfolio?",
+    "expectedCourseConnection": "Algebra I and Geometry"
+  },
+  "myProjects": {
+    "title": "Engineering design portfolio",
+    "goal": "Explore engineering through engineering design portfolio and identify a college preparation step.",
+    "initialQuestion": "How should I start engineering design portfolio?",
+    "progressToSave": "Saved a labeled diagram and two load-versus-deflection graphs.",
+    "resumeQuestion": "Based on what I saved, what should I do next?"
+  },
+  "myPlans": {
+    "mode": "roadmap",
+    "request": "Propose a college roadmap using my project progress and target colleges.",
+    "change": "I can spend only one hour before my counselor meeting.",
+    "review": [
+      "Inspect the proposal before applying it.",
+      "Apply and complete the first milestone.",
+      "Review the revision and verify the approved plan stays unchanged until you apply it.",
+      "Apply the revision and verify the completed milestone is still present."
+    ]
+  },
+  "expected": [
+    "Use Algebra I and Geometry accurately and distinguish prior coursework from current classes.",
+    "Project conversation and saved progress are available after reopening.",
+    "The roadmap reflects target colleges and uses personal target dates.",
+    "Upcoming milestones change only after approval. Completed work remains."
+  ],
+  "sessions": [
+    {
+      "id": "session-1",
+      "profileUpdates": [],
+      "mentorQuestions": [
+        "How can my earlier Algebra I and Geometry work help me prepare an engineering portfolio?",
+        "Can you give me a way to practice clarinet rhythm?"
+      ]
+    },
+    {
+      "id": "session-2",
+      "profileUpdates": [
+        {
+          "field": "courses",
+          "operation": "replace",
+          "previousValue": "Grade 11 | US History | B",
+          "value": "Grade 11 | US History | A"
+        },
+        {
+          "field": "notes",
+          "operation": "add",
+          "value": "I want to keep working on Engineering design portfolio during short sessions."
+        }
+      ],
+      "mentorQuestions": [
+        "What should I work on next in my saved college roadmap?"
+      ]
+    },
+    {
+      "id": "session-3",
+      "profileUpdates": [],
+      "mentorQuestions": [
+        "How can I use my updated US History grade to choose a next step for Engineering design portfolio? Separately, how should I check my clarinet rhythm?"
+      ],
+      "expected": [
+        "Use the updated course grade.",
+        "Recall both the project-related exchange and the clarinet rhythm exchange from session 1.",
+        "Answer both questions in order and keep each topic’s details with that question."
+      ]
+    }
+  ]
+}

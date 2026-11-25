@@ -1,0 +1,281 @@
+{
+  "id": "10-01",
+  "simulation": "Synthetic expected interaction. This case was not run against the Mentor UI or Ollama.",
+  "simulationDate": "2026-11-24",
+  "myProfile": {
+    "savedEntries": {
+      "name": "Student 1",
+      "grade": "10",
+      "courses": [
+        "Grade 9 | Algebra I | A-",
+        "Grade 9 | Biology | B",
+        "Grade 9 | English 9 | A",
+        "Grade 9 | World Geography | B+",
+        "Grade 10 | Geometry | B",
+        "Grade 10 | Chemistry | A",
+        "Grade 10 | English 10 | B+",
+        "Grade 10 | World History | A-"
+      ],
+      "interests": [
+        "Engineering"
+      ],
+      "preferredColleges": [
+        "Cal Poly San Luis Obispo",
+        "UC Davis"
+      ],
+      "constraints": [
+        "Two hours per week",
+        "Use available materials and school resources"
+      ]
+    },
+    "reopenedCourseHistoryByGrade": {
+      "9": [
+        "Algebra I",
+        "Biology",
+        "English 9",
+        "World Geography"
+      ],
+      "10": [
+        "Geometry",
+        "Chemistry",
+        "English 10",
+        "World History"
+      ]
+    },
+    "entriesAfterUpdate": {
+      "name": "Student 1",
+      "grade": "10",
+      "courses": [
+        "Grade 9 | Algebra I | A-",
+        "Grade 9 | Biology | B",
+        "Grade 9 | English 9 | A",
+        "Grade 9 | World Geography | B+",
+        "Grade 10 | Geometry | B",
+        "Grade 10 | Chemistry | A",
+        "Grade 10 | English 10 | B+",
+        "Grade 10 | World History | A"
+      ],
+      "interests": [
+        "Engineering"
+      ],
+      "preferredColleges": [
+        "Cal Poly San Luis Obispo",
+        "UC Davis"
+      ],
+      "constraints": [
+        "Two hours per week",
+        "Use available materials and school resources"
+      ],
+      "notes": [
+        "I want to keep working on Brace design comparison during short sessions."
+      ]
+    }
+  },
+  "mentor": {
+    "student": "How can I use last year's Algebra I in a design project now that I'm taking Geometry?",
+    "mentor": "Use Algebra I to graph load versus deflection and Geometry to compare two brace shapes at the same span.",
+    "courseContextUsed": "Algebra I"
+  },
+  "myProjects": {
+    "saved": {
+      "title": "Brace design comparison",
+      "goal": "Explore engineering through brace design comparison and identify a college preparation step.",
+      "progress": "Drew the two brace shapes and measured their spans.",
+      "nextAction": "Build and compare two paper braces."
+    },
+    "historyAfterReopening": [
+      {
+        "student": "How should I start brace design comparison?",
+        "mentor": "Start with a small first step. Build and compare two paper braces.",
+        "recordedAt": "2026-11-24T17:00:00Z"
+      },
+      {
+        "student": "Based on what I saved, what should I do next?",
+        "mentor": "You saved this progress: Drew the two brace shapes and measured their spans. Next, build and compare two paper braces.",
+        "recordedAt": "2026-11-24T17:05:00Z"
+      }
+    ]
+  },
+  "myPlans": {
+    "initialProposal": {
+      "status": "pending review",
+      "approvedMilestones": [],
+      "proposedMilestones": [
+        {
+          "title": "Record project baseline",
+          "date": "2026-11-27",
+          "action": "Save the initial project observations and progress.",
+          "done": false
+        },
+        {
+          "title": "Complete the next project step",
+          "date": "2026-12-04",
+          "action": "Build and compare two paper braces.",
+          "done": false
+        },
+        {
+          "title": "Compare target college programs",
+          "date": "2026-12-11",
+          "action": "Compare one relevant program feature at Cal Poly San Luis Obispo and UC Davis using their official pages.",
+          "done": false
+        }
+      ]
+    },
+    "afterInitialApprovalAndProgress": {
+      "completed": 1,
+      "total": 3,
+      "recommendedNextStep": "Build and compare two paper braces.",
+      "milestones": [
+        {
+          "title": "Record project baseline",
+          "date": "2026-11-27",
+          "action": "Save the initial project observations and progress.",
+          "done": true
+        },
+        {
+          "title": "Complete the next project step",
+          "date": "2026-12-04",
+          "action": "Build and compare two paper braces.",
+          "done": false
+        },
+        {
+          "title": "Compare target college programs",
+          "date": "2026-12-11",
+          "action": "Compare one relevant program feature at Cal Poly San Luis Obispo and UC Davis using their official pages.",
+          "done": false
+        }
+      ]
+    },
+    "revisionReview": {
+      "student": "I have paper but no cardboard.",
+      "status": "pending review",
+      "approvedMilestones": [
+        {
+          "title": "Record project baseline",
+          "date": "2026-11-27",
+          "action": "Save the initial project observations and progress.",
+          "done": true
+        },
+        {
+          "title": "Complete the next project step",
+          "date": "2026-12-04",
+          "action": "Build and compare two paper braces.",
+          "done": false
+        },
+        {
+          "title": "Compare target college programs",
+          "date": "2026-12-11",
+          "action": "Compare one relevant program feature at Cal Poly San Luis Obispo and UC Davis using their official pages.",
+          "done": false
+        }
+      ],
+      "proposedUpcomingMilestones": [
+        {
+          "title": "Complete the revised project step",
+          "date": "2026-12-06",
+          "action": "Use folded paper for both designs so the material stays consistent.",
+          "done": false
+        },
+        {
+          "title": "Compare target college programs",
+          "date": "2026-12-11",
+          "action": "Compare one relevant program feature at Cal Poly San Luis Obispo and UC Davis using their official pages.",
+          "done": false
+        }
+      ]
+    },
+    "afterRevisionApproval": {
+      "completed": 1,
+      "total": 3,
+      "recommendedNextStep": "Use folded paper for both designs so the material stays consistent.",
+      "milestones": [
+        {
+          "title": "Record project baseline",
+          "date": "2026-11-27",
+          "action": "Save the initial project observations and progress.",
+          "done": true
+        },
+        {
+          "title": "Complete the revised project step",
+          "date": "2026-12-06",
+          "action": "Use folded paper for both designs so the material stays consistent.",
+          "done": false
+        },
+        {
+          "title": "Compare target college programs",
+          "date": "2026-12-11",
+          "action": "Compare one relevant program feature at Cal Poly San Luis Obispo and UC Davis using their official pages.",
+          "done": false
+        }
+      ]
+    }
+  },
+  "sessions": [
+    {
+      "id": "session-1",
+      "exchanges": [
+        {
+          "id": "s1-1",
+          "recordedAt": "2026-11-24T17:00:00Z",
+          "student": "How can I use last year's Algebra I in a design project now that I'm taking Geometry?",
+          "mentor": "Use Algebra I to graph load versus deflection and Geometry to compare two brace shapes at the same span."
+        },
+        {
+          "id": "s1-2",
+          "recordedAt": "2026-11-24T17:05:00Z",
+          "student": "Can you give me a way to practice clarinet rhythm?",
+          "mentor": "Clap eighth notes using 1-and-2-and before playing."
+        }
+      ]
+    },
+    {
+      "id": "session-2",
+      "profileUpdatesSaved": [
+        {
+          "field": "courses",
+          "operation": "replace",
+          "previousValue": "Grade 10 | World History | A-",
+          "value": "Grade 10 | World History | A"
+        },
+        {
+          "field": "notes",
+          "operation": "add",
+          "value": "I want to keep working on Brace design comparison during short sessions."
+        }
+      ],
+      "exchanges": [
+        {
+          "id": "s2-1",
+          "recordedAt": "2026-11-25T17:00:00Z",
+          "student": "What should I work on next in my saved college roadmap?",
+          "mentor": "For your saved college roadmap, take the next step you approved. Use folded paper for both designs so the material stays consistent."
+        }
+      ]
+    },
+    {
+      "id": "session-3",
+      "exchanges": [
+        {
+          "id": "s3-1",
+          "recordedAt": "2026-11-26T17:00:00Z",
+          "student": "How can I use my updated World History grade to choose a next step for Brace design comparison? Separately, how should I check my clarinet rhythm?",
+          "mentor": "1. Your current profile lists World History as A. For Brace design comparison, build on the earlier discussion. Use Algebra I to graph load versus deflection and Geometry to compare two brace shapes at the same span.\n\n2. Clap 1-and-2-and evenly, then play the same rhythm at a slow tempo.",
+          "recalledExchanges": [
+            {
+              "id": "s1-1",
+              "appliesToQuestions": [
+                1
+              ]
+            },
+            {
+              "id": "s1-2",
+              "appliesToQuestions": [
+                2
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

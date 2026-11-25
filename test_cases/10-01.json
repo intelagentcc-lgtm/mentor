@@ -1,0 +1,116 @@
+{
+  "id": "10-01",
+  "grade": 10,
+  "scenario": "Grade 10 engineering mentorship",
+  "courseHistoryByGrade": {
+    "9": [
+      "Algebra I",
+      "Biology",
+      "English 9",
+      "World Geography"
+    ],
+    "10": [
+      "Geometry",
+      "Chemistry",
+      "English 10",
+      "World History"
+    ]
+  },
+  "myProfile": {
+    "entries": {
+      "name": "Student 1",
+      "grade": "10",
+      "courses": [
+        "Grade 9 | Algebra I | A-",
+        "Grade 9 | Biology | B",
+        "Grade 9 | English 9 | A",
+        "Grade 9 | World Geography | B+",
+        "Grade 10 | Geometry | B",
+        "Grade 10 | Chemistry | A",
+        "Grade 10 | English 10 | B+",
+        "Grade 10 | World History | A-"
+      ],
+      "interests": [
+        "Engineering"
+      ],
+      "preferredColleges": [
+        "Cal Poly San Luis Obispo",
+        "UC Davis"
+      ],
+      "constraints": [
+        "Two hours per week",
+        "Use available materials and school resources"
+      ]
+    }
+  },
+  "mentor": {
+    "mode": "chat",
+    "question": "How can I use last year's Algebra I in a design project now that I'm taking Geometry?",
+    "expectedCourseConnection": "Algebra I"
+  },
+  "myProjects": {
+    "title": "Brace design comparison",
+    "goal": "Explore engineering through brace design comparison and identify a college preparation step.",
+    "initialQuestion": "How should I start brace design comparison?",
+    "progressToSave": "Drew the two brace shapes and measured their spans.",
+    "resumeQuestion": "Based on what I saved, what should I do next?"
+  },
+  "myPlans": {
+    "mode": "roadmap",
+    "request": "Propose a college roadmap using my project progress and target colleges.",
+    "change": "I have paper but no cardboard.",
+    "review": [
+      "Inspect the proposal before applying it.",
+      "Apply and complete the first milestone.",
+      "Review the revision and verify the approved plan stays unchanged until you apply it.",
+      "Apply the revision and verify the completed milestone is still present."
+    ]
+  },
+  "expected": [
+    "Use Algebra I accurately and distinguish prior coursework from current classes.",
+    "Project conversation and saved progress are available after reopening.",
+    "The roadmap reflects target colleges and uses personal target dates.",
+    "Upcoming milestones change only after approval. Completed work remains."
+  ],
+  "sessions": [
+    {
+      "id": "session-1",
+      "profileUpdates": [],
+      "mentorQuestions": [
+        "How can I use last year's Algebra I in a design project now that I'm taking Geometry?",
+        "Can you give me a way to practice clarinet rhythm?"
+      ]
+    },
+    {
+      "id": "session-2",
+      "profileUpdates": [
+        {
+          "field": "courses",
+          "operation": "replace",
+          "previousValue": "Grade 10 | World History | A-",
+          "value": "Grade 10 | World History | A"
+        },
+        {
+          "field": "notes",
+          "operation": "add",
+          "value": "I want to keep working on Brace design comparison during short sessions."
+        }
+      ],
+      "mentorQuestions": [
+        "What should I work on next in my saved college roadmap?"
+      ]
+    },
+    {
+      "id": "session-3",
+      "profileUpdates": [],
+      "mentorQuestions": [
+        "How can I use my updated World History grade to choose a next step for Brace design comparison? Separately, how should I check my clarinet rhythm?"
+      ],
+      "expected": [
+        "Use the updated course grade.",
+        "Recall both the project-related exchange and the clarinet rhythm exchange from session 1.",
+        "Answer both questions in order and keep each topic’s details with that question."
+      ]
+    }
+  ]
+}

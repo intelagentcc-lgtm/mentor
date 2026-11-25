@@ -1,0 +1,295 @@
+{
+  "id": "11-03",
+  "simulation": "Synthetic expected interaction. This case was not run against the Mentor UI or Ollama.",
+  "simulationDate": "2026-11-24",
+  "myProfile": {
+    "savedEntries": {
+      "name": "Student 3",
+      "grade": "11",
+      "courses": [
+        "Grade 9 | Algebra I | A",
+        "Grade 9 | Integrated Science | B+",
+        "Grade 9 | English 9 | A-",
+        "Grade 9 | Foundations of Art | B",
+        "Grade 10 | Geometry | B+",
+        "Grade 10 | Biology | A-",
+        "Grade 10 | English 10 | B",
+        "Grade 10 | Digital Media | A",
+        "Grade 11 | Algebra II | A-",
+        "Grade 11 | Physics | B",
+        "Grade 11 | English 11 | A",
+        "Grade 11 | Graphic Design | B+"
+      ],
+      "interests": [
+        "Visual communication"
+      ],
+      "preferredColleges": [
+        "California College of the Arts",
+        "San Jose State University"
+      ],
+      "constraints": [
+        "Two hours per week",
+        "Use available materials and school resources"
+      ]
+    },
+    "reopenedCourseHistoryByGrade": {
+      "9": [
+        "Algebra I",
+        "Integrated Science",
+        "English 9",
+        "Foundations of Art"
+      ],
+      "10": [
+        "Geometry",
+        "Biology",
+        "English 10",
+        "Digital Media"
+      ],
+      "11": [
+        "Algebra II",
+        "Physics",
+        "English 11",
+        "Graphic Design"
+      ]
+    },
+    "entriesAfterUpdate": {
+      "name": "Student 3",
+      "grade": "11",
+      "courses": [
+        "Grade 9 | Algebra I | A",
+        "Grade 9 | Integrated Science | B+",
+        "Grade 9 | English 9 | A-",
+        "Grade 9 | Foundations of Art | B",
+        "Grade 10 | Geometry | B+",
+        "Grade 10 | Biology | A-",
+        "Grade 10 | English 10 | B",
+        "Grade 10 | Digital Media | A",
+        "Grade 11 | Algebra II | A-",
+        "Grade 11 | Physics | B",
+        "Grade 11 | English 11 | A",
+        "Grade 11 | Graphic Design | A"
+      ],
+      "interests": [
+        "Visual communication"
+      ],
+      "preferredColleges": [
+        "California College of the Arts",
+        "San Jose State University"
+      ],
+      "constraints": [
+        "Two hours per week",
+        "Use available materials and school resources"
+      ],
+      "notes": [
+        "I want to keep working on Three-piece design portfolio during short sessions."
+      ]
+    }
+  },
+  "mentor": {
+    "student": "Which work from art and Digital Media could help me start a design portfolio?",
+    "mentor": "Choose a project that shows choices from Foundations of Art and revisions from Digital Media. Pair the final piece with one earlier draft and explain what changed.",
+    "courseContextUsed": "Foundations of Art and Digital Media"
+  },
+  "myProjects": {
+    "saved": {
+      "title": "Three-piece design portfolio",
+      "goal": "Explore visual communication through three-piece design portfolio and identify a college preparation step.",
+      "progress": "Selected a poster with an early sketch and a revised digital version.",
+      "nextAction": "Write a short caption describing the design decision and feedback."
+    },
+    "historyAfterReopening": [
+      {
+        "student": "How should I start three-piece design portfolio?",
+        "mentor": "Start with a small first step. Write a short caption describing the design decision and feedback.",
+        "recordedAt": "2026-11-24T17:00:00Z"
+      },
+      {
+        "student": "Based on what I saved, what should I do next?",
+        "mentor": "You saved this progress: Selected a poster with an early sketch and a revised digital version. Next, write a short caption describing the design decision and feedback.",
+        "recordedAt": "2026-11-24T17:05:00Z"
+      }
+    ]
+  },
+  "myPlans": {
+    "initialProposal": {
+      "status": "pending review",
+      "approvedMilestones": [],
+      "proposedMilestones": [
+        {
+          "title": "Record project baseline",
+          "date": "2026-11-27",
+          "action": "Save the initial project observations and progress.",
+          "done": false
+        },
+        {
+          "title": "Complete the next project step",
+          "date": "2026-12-04",
+          "action": "Write a short caption describing the design decision and feedback.",
+          "done": false
+        },
+        {
+          "title": "Compare target college programs",
+          "date": "2026-12-11",
+          "action": "Compare one relevant program feature at California College of the Arts and San Jose State University using their official pages.",
+          "done": false
+        }
+      ]
+    },
+    "afterInitialApprovalAndProgress": {
+      "completed": 1,
+      "total": 3,
+      "recommendedNextStep": "Write a short caption describing the design decision and feedback.",
+      "milestones": [
+        {
+          "title": "Record project baseline",
+          "date": "2026-11-27",
+          "action": "Save the initial project observations and progress.",
+          "done": true
+        },
+        {
+          "title": "Complete the next project step",
+          "date": "2026-12-04",
+          "action": "Write a short caption describing the design decision and feedback.",
+          "done": false
+        },
+        {
+          "title": "Compare target college programs",
+          "date": "2026-12-11",
+          "action": "Compare one relevant program feature at California College of the Arts and San Jose State University using their official pages.",
+          "done": false
+        }
+      ]
+    },
+    "revisionReview": {
+      "student": "I now want to focus on typography.",
+      "status": "pending review",
+      "approvedMilestones": [
+        {
+          "title": "Record project baseline",
+          "date": "2026-11-27",
+          "action": "Save the initial project observations and progress.",
+          "done": true
+        },
+        {
+          "title": "Complete the next project step",
+          "date": "2026-12-04",
+          "action": "Write a short caption describing the design decision and feedback.",
+          "done": false
+        },
+        {
+          "title": "Compare target college programs",
+          "date": "2026-12-11",
+          "action": "Compare one relevant program feature at California College of the Arts and San Jose State University using their official pages.",
+          "done": false
+        }
+      ],
+      "proposedUpcomingMilestones": [
+        {
+          "title": "Complete the revised project step",
+          "date": "2026-12-06",
+          "action": "Prioritize a piece with a clear type hierarchy and explain how it guides the reader.",
+          "done": false
+        },
+        {
+          "title": "Compare target college programs",
+          "date": "2026-12-11",
+          "action": "Compare one relevant program feature at California College of the Arts and San Jose State University using their official pages.",
+          "done": false
+        }
+      ]
+    },
+    "afterRevisionApproval": {
+      "completed": 1,
+      "total": 3,
+      "recommendedNextStep": "Prioritize a piece with a clear type hierarchy and explain how it guides the reader.",
+      "milestones": [
+        {
+          "title": "Record project baseline",
+          "date": "2026-11-27",
+          "action": "Save the initial project observations and progress.",
+          "done": true
+        },
+        {
+          "title": "Complete the revised project step",
+          "date": "2026-12-06",
+          "action": "Prioritize a piece with a clear type hierarchy and explain how it guides the reader.",
+          "done": false
+        },
+        {
+          "title": "Compare target college programs",
+          "date": "2026-12-11",
+          "action": "Compare one relevant program feature at California College of the Arts and San Jose State University using their official pages.",
+          "done": false
+        }
+      ]
+    }
+  },
+  "sessions": [
+    {
+      "id": "session-1",
+      "exchanges": [
+        {
+          "id": "s1-1",
+          "recordedAt": "2026-11-24T17:00:00Z",
+          "student": "Which work from art and Digital Media could help me start a design portfolio?",
+          "mentor": "Choose a project that shows choices from Foundations of Art and revisions from Digital Media. Pair the final piece with one earlier draft and explain what changed."
+        },
+        {
+          "id": "s1-2",
+          "recordedAt": "2026-11-24T17:05:00Z",
+          "student": "How do I scale a recipe from four servings to six?",
+          "mentor": "Multiply each ingredient amount by 1.5."
+        }
+      ]
+    },
+    {
+      "id": "session-2",
+      "profileUpdatesSaved": [
+        {
+          "field": "courses",
+          "operation": "replace",
+          "previousValue": "Grade 11 | Graphic Design | B+",
+          "value": "Grade 11 | Graphic Design | A"
+        },
+        {
+          "field": "notes",
+          "operation": "add",
+          "value": "I want to keep working on Three-piece design portfolio during short sessions."
+        }
+      ],
+      "exchanges": [
+        {
+          "id": "s2-1",
+          "recordedAt": "2026-11-25T17:00:00Z",
+          "student": "What should I work on next in my saved college roadmap?",
+          "mentor": "For your saved college roadmap, take the next step you approved. Prioritize a piece with a clear type hierarchy and explain how it guides the reader."
+        }
+      ]
+    },
+    {
+      "id": "session-3",
+      "exchanges": [
+        {
+          "id": "s3-1",
+          "recordedAt": "2026-11-26T17:00:00Z",
+          "student": "How can I use my updated Graphic Design grade to choose a next step for Three-piece design portfolio? Separately, how much is half a cup when scaling that four-serving recipe to six?",
+          "mentor": "1. Your current profile lists Graphic Design as A. For Three-piece design portfolio, build on the earlier discussion. Choose a project that shows choices from Foundations of Art and revisions from Digital Media. Pair the final piece with one earlier draft and explain what changed.\n\n2. Using the earlier factor of 1.5, half a cup becomes three-quarters of a cup.",
+          "recalledExchanges": [
+            {
+              "id": "s1-1",
+              "appliesToQuestions": [
+                1
+              ]
+            },
+            {
+              "id": "s1-2",
+              "appliesToQuestions": [
+                2
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
