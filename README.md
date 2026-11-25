@@ -39,35 +39,31 @@ unrelated chat. Select
 **Download summary** for a text copy of the summary, or **Delete chat memory**
 to remove both the summary and saved exchanges.
 
-## Set up on this Mac
+## Run from Git on a Mac
 
-1. Install Ollama for macOS from [ollama.com/download](https://ollama.com/download)
-   and open it.
-2. Download the default model:
+Install Python 3 if it isn't already available, then run:
 
-   ```sh
-   ollama pull qwen3:4b-instruct-2507-q4_K_M
-   ```
+```sh
+git clone https://github.com/intelagentcc-lgtm/mentor.git
+cd mentor
+./run-mentor.sh
+```
 
-   Download either of the other models if you plan to select it:
+The launcher creates a Python environment and installs the document dependencies
+on its first run. Later runs reuse the environment. Keep Terminal open and visit
+[http://localhost:4173](http://localhost:4173) for the Studio demo. Stop the server
+with Ctrl+C. If port 4173 is occupied, try `./run-mentor.sh --port 4174` and open
+the corresponding port in your browser.
 
-   ```sh
-   ollama pull qwen2.5:3b
-   ollama pull qwen2.5:1.5b
-   ```
+For local AI chat, install and open [Ollama for macOS](https://ollama.com/download),
+then download the default model once:
 
-3. In this folder, start the app:
+```sh
+ollama pull qwen3:4b-instruct-2507-q4_K_M
+```
 
-   ```sh
-   python3 -m venv .venv
-   .venv/bin/python -m pip install -r requirements.txt
-   .venv/bin/python server.py
-   ```
-
-4. Visit [http://localhost:4173](http://localhost:4173) for the Studio demo. Switch
-   between Maya and Alex to explore the guided workflows without Ollama.
-5. Select **Open local AI mentor** or visit [the local AI workspace](http://localhost:4173/local-ai.html)
-   for Ollama chat. Its header shows whether Ollama and the model are available.
+Open the [local AI workspace](http://localhost:4173/local-ai.html). If you want
+one of the alternate models, pull `qwen2.5:1.5b` or `qwen2.5:3b` before selecting it.
 
 The browser connects directly to Ollama's local API at `localhost:11434`. If your
 Ollama installation blocks the page's origin, allow `http://localhost:4173` in its
