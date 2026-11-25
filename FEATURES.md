@@ -39,4 +39,4 @@ Mentor is a browser-based study and exploration assistant for high school studen
 - **Public reference fallback.** A failed draft can get one retry. For predefined public topics, Mentor can look up Wikipedia excerpts and cite them when used. Only the predefined topic label is sent for that lookup. Profile information, chat text, and uploads stay local. When Mentor cannot give a reviewed answer, it asks a follow-up question.
 - **Browser interface.** Collapsible profile, plan, materials, and memory panels are available alongside chat. On narrow screens, the profile opens in a separate panel. Press Enter to send or Shift+Enter to add a line.
 
-The repository includes [fictional student test cases, transcripts, and evaluations](test-cases/README.md) covering topic changes, indirect follow-ups, multi-year coursework, and the app's mentoring modes.
+The repository includes [fictional student test cases](test_cases) and [simulated responses](test_cases/response) covering multi-year coursework, profile updates, project progress, college plan approvals, and topic recall across sessions.
